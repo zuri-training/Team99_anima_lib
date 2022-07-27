@@ -65,7 +65,7 @@ Once you have added all the relevant script tags to the head tag of your HTML do
 - Fade In
 - Fade Out
 - Flip
-- 
+
 ### Calling and executing specific animation functions  ⚛️ :computer:
 
 Once you have successfully imported/ installed the Animate99 library, calling the functions you want to use is the next step. The Animate99 library is stored as  an object called ‘anima’ which contains all the animations available. Each animation function can be called from the library using the following syntax;
