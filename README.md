@@ -1,6 +1,6 @@
 # anima_lib_team99 :trophy:
 
-## Documentation: Animate99 Animation library :space_invader: :technologist:	
+## Documentation: Animate99 Animation Library :space_invader: :technologist:	
 
 ### What is Animate99? :grinning:
 
