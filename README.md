@@ -18,7 +18,7 @@ This also reduces the number of third-party dependencies a program will ultimate
 
 ### Getting started! :rocket:
 
-In order to get started using the Animate99 animation library, you will first need to register as a user on our [website] (www.animate99.com) . Once you are a registered user, you will have access to the library and the option of either embedding/importing the animation library script file.
+In order to get started using the Animate99 animation library, you will first need to register as a user on our website. Once you are a registered user, you will have access to the library and the option of either embedding/importing the animation library script file.
 
 
 ### Importing Animate99 :computer:
