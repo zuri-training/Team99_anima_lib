@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'apps.main.apps.MainConfig',
     'apps.accounts.apps.AccountsConfig',
     'apps.user_review.apps.UserReviewConfig',
+    'apps.blog.apps.BlogConfig',
 ]
 
 MIDDLEWARE = [
@@ -134,6 +135,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR/'static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
