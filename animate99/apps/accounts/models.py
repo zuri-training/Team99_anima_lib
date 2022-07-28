@@ -4,7 +4,7 @@ from uuid import uuid4
 from django.contrib.auth.models import AbstractUser, PermissionsMixin
 from .managers import CustomUserManager
 
-class UserAccount(AbstractUser):
+class CustomUser(AbstractUser):
     username=None
     email = models.EmailField(max_length=50, db_index=True, unique=True)
     

@@ -41,13 +41,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    #apps
-    'landing',
-    'main',
-    'accounts',
+    
     
     #3rd Party
     'django_extensions',
+    
+    #apps
+    'apps.common.apps.CommonConfig',
+    'apps.main.apps.MainConfig',
+    'apps.accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +67,7 @@ ROOT_URLCONF = 'animate99.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/"templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -90,6 +92,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+AUTH_USER_MODEL = "accounts.CustomUser"
 
 
 # Password validation
