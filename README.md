@@ -33,6 +33,7 @@ In order to use Animate99, you will need to import the library by adding the lib
     <script src="https://animate99.com/script.js" defer></script>
     <script src="index.js" defer></script>
 </head>
+</html>
 
 ```
 In some cases it may also help to use the defer keyword within the script tags to make sure that you avoid the possibility of console errors when running your program. For more information about the usefulness of the defer keyword and how it can impact the performance of your program check out this [article](https://javascript.info/script-async-defer).
