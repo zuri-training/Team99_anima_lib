@@ -1,0 +1,213 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anima99</title>
+
+    <script src="https://anima99.bitbucket.io/script.js"></script>
+    <link rel="stylesheet" href="{% static 'main/style.css'  %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="anim">
+                <div class="logo-head">
+                    <h1>Animate</h1>
+                </div>
+                <div class="logo-num"><span>99</span></div>
+            </div>
+            <div class="nav-cont">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Documentation</a></li>
+                    <li class="nav-item"><a href="#">Download</a></li>
+                    <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
+                <div class="btns">
+                    <button class="btn-head">Sign In</button>
+                    <button class="btn-reg-head">Register</button>
+                </div>
+            </div>
+        </nav>
+        <div class="header-info">
+            <div class="header-info-text">
+                <h1>
+                    The Perfect<br />
+                    <span class="header-text-js">JavaScript Animation</span><br />
+                    Library For You.
+                </h1>
+                <p>Add cool animations to your program with ease and flexibility</p>
+                <button class="btn-info-text">Get Started &#129130;</button>
+            </div>
+            <div class="header-info-image">
+                <img src="{% static 'main/header-image.png'  %}" alt="Animation" id="headImg" onload="anima.flip('headImg',500, 2)" />
+            </div>
+        </div>
+    </header>
+
+    <div class="middle">
+        <div class="middle-text">
+            <h1>What is Animate99?</h1>
+            <p>
+                Animate99 is a JavaScript animation library built upon the Web
+                Animations API in order to allow beginner developers create basic
+                animations using <strong>simple yet powerful functions</strong> that
+                are also customizable. It allows you to easily incorporate animations
+                into your programs without the hassle of writing the code from
+                scratch. Built into the library is a collection of functions written
+                using normal language. The Animate99 library also provides the
+                developer with substantial flexibility in how they choose to apply the
+                animations to their programs.
+            </p>
+        </div>
+        <div class="mid-box-1">
+            <div class="box-1-image">
+                <img src="{% static 'main/mid-dude.png'  %}" alt="male-icon" class="mid-icons" />
+            </div>
+            <div class="box-1-text">
+                <h1>Register: Why You Should</h1>
+                <p>
+                    In order to get started using the Animate99 JavaScript library, you
+                    will first need to register as a user on our website.
+                </p>
+                <button class="reg-btn">Register &#129130;</button>
+            </div>
+        </div>
+        <div class="mid-box-2">
+            <div class="box-2-text">
+                <h1>How To: Documentation</h1>
+                <p>
+                    Check out our comprehensive documentation to quickly learn how to
+                    start creating awesome animations with the Animate99 JavaScript
+                    library!
+                </p>
+                <button class="doc-btn">Documentation &#129130;</button>
+            </div>
+            <div>
+                <img src="{% static 'main/mid-hijabi.png'  %}" alt="female-icon" class="mid-icons" />
+            </div>
+        </div>
+        <div class="mid-box-3">
+            <div>
+                <img src="{% static 'main/mid-girl.png'  %}" alt="female-icon" class="mid-icons" />
+            </div>
+            <div class="box-3-text">
+                <h1>Usage Examples</h1>
+                <p>
+                    Not sure what kind of animations you'd like to create? Not to worry!
+                    check out our interactive usage examples for some inspiration.
+                </p>
+                <button class="use-btn">Usage Examples &#129130;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="bottom-head">
+            <h1>Hover on any of the boxes for some visuals!</h1>
+        </div>
+
+        <div class="carousel">
+            <div class="bottom-left">
+                <p>
+                    Register or sign in now to have access to our full library of
+                    customizable animations.
+                </p>
+                <button class="bottom-left-btn">View More &#129130;</button>
+            </div>
+
+            <div class="bottom-right">
+                <div class="ball-1">
+                    <div class="ball-cont-1">
+                        <div class="ball" id="b-1" onmouseover="anima.shake('b-1', 500, 2)"></div>
+                    </div>
+                    <h2>Shake</h2>
+                </div>
+                <div class="ball-2">
+                    <div class="ball-cont-2">
+                        <div class="ball" id="b-2" onmouseover="anima.pulse('b-2', 800, 2)"></div>
+                    </div>
+                    <h2>Pulse</h2>
+                </div>
+
+                <div class="ball-3">
+                    <div class="ball-cont-3">
+                        <div class="ball" id="b-3" onmouseover="anima.bounce('b-3', 200, 4)"></div>
+                    </div>
+                    <h2>Bounce</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="carousel-btns">
+        <div class="carousel-btn-1"><button>&#129168;</button></div>
+        <div class="carousel-btn-2"><button>&#129170;</button></div>
+      </div> -->
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="foot-top-left">
+                <div class="logo-foot">
+                    <h1>Animate</h1>
+                    <div class="logo-num"><span>99</span></div>
+                </div>
+                <div class="foot-top-text">
+                    <p>
+                        Animate99 is an animation library created by Team 99 as a
+                        necessary requirement to complete the I4GxZuri Internship program.
+                    </p>
+                </div>
+            </div>
+            <div class="foot-top-right">
+                <div class="foot-top-right-1">
+                    <h2>Navigation</h2>
+                    <p>Home</p>
+                    <p>Documentation</p>
+                    <p>Forum</p>
+                </div>
+                <div class="foot-top-right-2">
+                    <h2>Resources</h2>
+                    <p>Team</p>
+                    <p>Licence</p>
+                    <p>Versions</p>
+                    <p>Project Info</p>
+                </div>
+                <div class="foot-top-right-3">
+                    <h2>Installation</h2>
+                    <p>Installation</p>
+                    <p>About Animate99</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mid">
+            <div class="footer-mid-top">
+                <p>v1.0</p>
+                <div class="create">
+                    <p>Created by Team99</p>
+                </div>
+                <p>2022</p>
+            </div>
+
+            <div class="footer-mid-bottom">
+                <p>&copy;ZuriTeam</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            Animate99 is a Zuri project animation library. You can use it freely,
+            respecting the terms included in the license file.
+        </p>
+    </div>
+
+   
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import download_page
+from .views import home
 
 urlpatterns = [
-     path('download/', download_page, name='download' )
+     path("", home, name='download' )
 ]

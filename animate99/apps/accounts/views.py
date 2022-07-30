@@ -13,8 +13,8 @@ def register_view(request):
         form = CreateUserForm(request.POST)
         if form.is_valid():
             form.save()
-            user = form.cleaned_data.get('username')
-            messages.success(request, 'account was created for ' + user)
+            user = form.cleaned_data.get('email')
+            messages.success(request, 'account was created for ' +  ' ' + user)
             
             
             return redirect('login')

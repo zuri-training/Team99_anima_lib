@@ -21,7 +21,7 @@ urlpatterns = [
     path("accounts/", include("apps.accounts.urls")),
     path("", include("apps.common.urls")),
     path("blog/", include("apps.blog.urls")),
-    path("animate/", include("apps.main.urls")),
+    path("home/", include("apps.main.urls")),
     
     
 ]
