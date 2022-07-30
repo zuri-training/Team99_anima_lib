@@ -5,9 +5,9 @@ from .managers import CustomUserManager
 class CustomUser(AbstractUser):
     username=None
     email = models.EmailField(max_length=50, db_index=True, unique=True)
-    github_url = models.URLField(max_length=255)
-    project_url = models.URLField(max_length=255)
-    twitter_url = models.URLField(max_length=255)
+    github_url = models.URLField(max_length=255, blank=True)
+    project_url = models.URLField(max_length=255, blank=True)
+    twitter_url = models.URLField(max_length=255, blank=True)
     
     
     USERNAME_FIELD = "email"
