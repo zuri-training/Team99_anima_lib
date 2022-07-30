@@ -1,5 +1,6 @@
 #virtual environment forder
 venv
+myenv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
