@@ -1,0 +1,355 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="{% static 'main/documentation.css'  %}">
+    <script src="https://kit.fontawesome.com/27ed1e60c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    Animate<a href="#" type="button" class="cta">99</a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Download</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <a href="#" type="button" class="cta1">Get Full Access</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Documentation Section -->
+    <section id="Documentation">
+        <div class="documentation">
+            <div class="col-left">
+                <div class="first-col">
+                    <div class="heading">
+                        <div id="book"></div>
+                        <h1>Introduction</h1>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="#Animate99" data-after="hero">About Animate99</a></li>
+
+                            <li><a href="#Animate99Works" data-after="hero">How does it work?</a></li>
+
+                            <li><a href="#JavaCssAnimation" data-after="hero">JavaScript VS CSS Animations</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="second-col">
+                    <div class="heading">
+                        <div id="book"></div>
+                        <h1>Getting Started</h1>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li><a href="#GettingStarted" data-after="hero">How do I start?</a></li>
+                            <li><a href="#ImportingAnimate99" data-after="hero">Importing Animate99</a></li>
+                            <li><a href="#Keywords" data-after="hero">Keywords</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="first-col">
+                    <div class="heading">
+                        <div id="book"></div>
+                        <h1>Application</h1>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li> <a href="#Application" data-after="hero">Calling and Executing Specific <br>
+                                    Animation Functions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right">
+                <div class="project-item">
+                    <h1>Documentation</h1>
+                    <br>
+                    <div class="documentation-info">
+                        <section id="Animate99">
+                            <h2>About Animate99</h2>
+                            <br>
+                            <p>
+                                Animate99 is a JavaScript animation library built for beginner
+                                developers. It allows you to easily incorporate animations into
+                                your programs without the hassle of writing the code from
+                                scratch. <br>
+                                <br />
+                                Built into the library is a collection of functions written using
+                                normal language (for ease of use) and defined to produce specific
+                                animation effects. The developer is also provided with substantial
+                                flexibility in how they choose to apply the animations to their
+                                code.
+                            </p>
+                        </section>
+                        <br>
+                        <section id="Animate99Works">
+                            <h2>How does it work?</h2>
+                            <br>
+                            <p>
+                                Animate99 is built upon the Web Animations API. This API is a
+                                native implementation of scripted animations which allows
+                                developers to manipulate the animation engine of a browser using
+                                nothing else but plain JavaScript, this means developers can have
+                                little to no need to utilize multiple libraries in order to create
+                                cool animations. <br>
+                                <br>
+                                This also reduces the number of third-party
+                                dependencies a program will ultimately have. Another benefit of
+                                using JavaScript as the main animation engine is that it aids in
+                                maintaining a distinction between behavioral and presentational
+                                attributes and this is very important in modern web development
+                            </p>
+                        </section>
+                        <br>
+                        <section id="JavaCssAnimation">
+                            <h2>JavaScript vs CSS Animations</h2>
+                            <br>
+                            <h3>The difference?</h3>
+                            <br>
+                            <p>
+                                Scripted animations provide greater control and flexibility
+                                compared to CSS animations. Animating with CSS may seem like the
+                                easiest way to get something moving on your screen but you will
+                                need JavaScript when you need significant control over your
+                                animations, because JavaScript doesn’t just provide you with
+                                animation functionality, it allows you to easily customize exactly
+                                just how you want these animations to behave in your program. <br>
+                                <br>
+                                The selling point of the Animate99 library is that it does the heavy
+                                lifting of creating customizable and flexible animation functions,
+                                all you have to do is sit back and call on them.
+                            </p>
+                        </section>
+                        <br>
+                        <hr>
+                        <br>
+                        <section id="GettingStarted">
+                            <h2>Getting started</h2>
+                            <br>
+                            <h3>How can I get started?</h3>
+                            <br>
+                            <p>
+                                In order to get started using the Animate99 animation library, you
+                                will first need to register as a user on our website at
+                                www.animate99.com . Once you are a registered user, you will have
+                                access to the library and the option of either embedding/importing
+                                the animation library script file.
+                            </p>
+                        </section>
+                        <br>
+                        <section id="ImportingAnimate99">
+                            <h2>Importing Animate99</h2>
+                            <br>
+                            <p>
+                                In order to use Animate99, you will need to import the library by
+                                adding the library’s script.js file as a script tag to the head
+                                tag of your HTML document. To ensure that your other JavaScript
+                                files have access to all the animation functions within the
+                                library, you need to also make sure that along with the library’s
+                                script.js file, all other JavaScript files being used in your
+                                program are added as script tags within the head tag of the HTML
+                                document.
+                            </p>
+                            <br>
+                            <div class="code">
+                                <pre>
+                                    &lt;html&gt; <br>
+                                    &lt;head&gt;<br>
+                                             &lt;meta charset="utf-8"&gt;<br>
+                                             &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+                                             &lt;title&gt;Home&lt;/title&gt;<br>
+                                             &lt;script src="https://animate99.com/script.js" defer&gt;&lt;/script&gt;<br>
+                                             &lt;script src="index.js" defer&gt;&lt;/script&gt;<br>
+                                    &lt;/head&gt;
+                                        </pre>
+                            </div>
+                        </section>
+                        <br>
+                        <section id="Keywords">
+                            <h2>Keywords</h2>
+                            <br>
+                            <p class="first">
+                                It may also be important to use the defer keyword within the script
+                                tags to make sure that you avoid the possibility of console errors
+                                when running your program. For more information about the
+                                usefulness of the defer keyword and how it can impact the
+                                performance of your program check out this article
+                                <span><a href="https://javascript.info/script-async-defer">here</a></span>.
+                                <br>
+                                <br>
+                                You might also want to avoid using a self closing script tag such as;
+                            </p>
+                            <br>
+                            <div class="code2">
+                                <pre>
+                                        &lt;script type="text/javascript" src="script.js"/&gt;
+                                        </pre>
+                            </div>
+                            <br>
+                            <p class="second">
+                                and instead use opening and closing script tags for your
+                                JavaScript files like so;
+                            </p>
+                            <br>
+                            <div class="code2">
+                                <pre>
+                                        &lt;script src="script.js" defer&gt;&lt;/script&gt;
+                                        </pre>
+                            </div>
+                            <br>
+                            <p class="third">
+                                This will also reduce the chances of running into errors down the
+                                line when running your program. <br />
+                                <br />
+                                Once you have added all the relevant script tags to the head tag
+                                of your HTML document, you have successfully imported Animate99
+                                and you will have access to all its animation functions. To learn
+                                how to apply these functions to your code, check out the ‘<span><a
+                                        href="#Application">Calling and applying specific animation
+                                        functions</a></span>' section of this document.
+                            </p>
+                        </section>
+                        <br>
+
+                        <hr>
+                        <br>
+
+                        <section id="Application">
+                            <h2>Calling and executing specific animation functions</h2>
+                            <br>
+                            <p class="first">
+                                Once you have successfully imported/ installed the Animate99
+                                library, calling the functions you want to use is the next step.
+                                The Animate99 library is stored as an object called ‘
+                                <span>anima</span>' which contains all the animations available.
+                                Each animation function can be called from the library using the
+                                following syntax;
+                            </p>
+                            <br>
+                            <div class="code2">
+                                <pre>
+                                            anima.animationName(id, duration, iterations);
+                                        </pre>
+                            </div>
+                            <br>
+                            <p class="second">
+                                For example, you can use the shake animation by calling the
+                                following function and passing in the corresponding arguments that
+                                match each parameter;
+                            </p>
+                            <br>
+                            <div class="code2">
+                                <pre class="pre2">
+                                  anima.shake(‘myElementId’, 500, 1);
+                                  </pre>
+                            </div>
+                            <br>
+                            <p class="third">
+                                It is important to note that when using the animation functions,
+                                the animation names should be in lowercase not uppercase, so in
+                                the above example, using ' <span>anima.Shake</span> ' would return
+                                an error.<br />
+                                <br />
+                                Now that you are clear on the correct syntax to use when calling
+                                the animation functions, you might be wondering what the function
+                                parameters mean. <br />
+                                <br />
+                                To put it plainly, the id parameter represents the id of the
+                                element you would like to animate, thus you need to make sure that
+                                each element you want to animate has an id assigned to it. <br />
+                                The duration parameter (in Milliseconds) represents how fast or
+                                slow you would like the animation to run. When no argument is
+                                passed in for this parameter, the default value is 500 Ms. By
+                                increasing the value of this parameter your animation moves
+                                slower. The opposite is the case when you decrease the value.
+                                <br />
+                                <br />
+                                The iterations parameter simply represents how many times you want
+                                the animation to repeat. When no argument is passed in for this
+                                parameter, the default value is 1.
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Project Section -->
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="foot-top-left">
+                <div class="brand">
+                    Animate<a href="#" type="button" class="cta">99</a>
+                </div>
+                <div class="foot-top-text">
+                    <p>
+                        Animate99 is an animation library created by Team 99 as a
+                        necessary requirement to complete the I4GxZuri Internship program.
+                    </p>
+                </div>
+            </div>
+            <div class="foot-top-right">
+                <div class="foot-top-right-1">
+                    <h2>Navigation</h2>
+                    <p>Home</p>
+                    <p>Documentation</p>
+                    <p>Forum</p>
+                </div>
+                <div class="foot-top-right-2">
+                    <h2>Resources</h2>
+                    <p>Team</p>
+                    <p>Licence</p>
+                    <p>Versions</p>
+                    <p>Project Info</p>
+                </div>
+                <div class="foot-top-right-3">
+                    <h2>Installation</h2>
+                    <p>Installation</p>
+                    <p>About Animate99</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mid">
+            <div class="footer-mid-top">
+                <p>v1.0</p>
+                <div class="create">
+                    <p>Created by Team99</p>
+                </div>
+                <p>2022</p>
+            </div>
+
+            <div class="footer-mid-bottom">
+                <p>&copy;ZuriTeam</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            Animate99 is a Zuri project animation library. You can use it freely,
+            respecting the terms included in the license file.
+        </p>
+    </div>
+    <!-- END FOOTER -->
+</body>
+
+</html>
