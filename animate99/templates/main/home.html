@@ -24,14 +24,14 @@
             </div>
             <div class="nav-cont">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="documentation">Documentation</a></li>
-                    <li class="nav-item"><a href="#">Download</a></li>
+                    <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
+                    <li class="nav-item"><a href="{% url 'download' %}">Download</a></li>
                     <li class="nav-item"><a href="#">Support</a></li>
                 </ul>
                 <div class="btns">
-                    <button class="btn-head">Sign In</button>
-                    <button class="btn-reg-head">Register</button>
+                    <a href="{% url 'login' %}"><button class="btn-head">Sign In</button></a>
+                    <a href="{% url 'register' %}"><button class="btn-reg-head">Register</button></a>
                 </div>
             </div>
         </nav>
