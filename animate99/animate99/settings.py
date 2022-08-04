@@ -22,11 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("DJANGO_SECRET_KEY", default='django-insecure-*4vwnjdg58b5*(e4!wn4d41+og2y^7pc8-uaat1c2o7v=ysyqf')
-
+# SECRET_KEY = config("DJANGO_SECRET_KEY", default='django-insecure-*4vwnjdg58b5*(e4!wn4d41+og2y^7pc8-uaat1c2o7v=ysyqf')
+import os
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config("DJANGO_DEBUG", default=False, cast=bool)
 
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+
+DJANGO_DEBUG ='False'
 
 ALLOWED_HOSTS = ["*"]
 
@@ -85,7 +88,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'animate99.wsgi.application'
+WSGI_APPLICATION = 'animate99.wsgi.application'
 
 
 # Database
@@ -139,10 +142,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_URL = 'static/'
-# STATICFILES_DIRS = [BASE_DIR/'staticfiles']
+STATICFILES_DIRS = [BASE_DIR/'staticfiles']
 STATIC_ROOT = BASE_DIR / "staticfiles"
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
