@@ -1,1 +1,0 @@
-web: gunicorn animate99.animate99.wsgi
