@@ -1,1 +1,1 @@
-web: gunicorn animate99.wsgi
+web: gunicorn animate99.wsgi:application --log-file -
