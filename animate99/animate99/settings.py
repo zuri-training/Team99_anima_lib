@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'animate99.wsgi.application'
+# WSGI_APPLICATION = 'animate99.wsgi.application'
 
 
 # Database
