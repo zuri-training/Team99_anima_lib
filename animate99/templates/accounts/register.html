@@ -13,13 +13,22 @@
 
 <body>
     <header>
-        <h1>Animate<span>99</span></h1>
+        <nav>
+            <div class="anim">
+                <div class="logo-head">
+                    <h1>Animate</h1>
+                </div>
+                <div class="logo-num"><span>99</span></div>
+            </div>
+        
+        
+        </nav>
     </header>
     <main class="container">
         <div class="left">
             <h2>Gain Full Access!
             </h2>
-            <p>Register your account in just a few minutes<br> to gain access to our whole library!</p>
+            <p>Register your account in just a few minutes to gain access to our whole library!</p>
         </div>
         <div class="right">
             <div class="right__top">
@@ -42,7 +51,7 @@
                     <small>Already have an account?
                         <span>
 
-                            <a href="./index.html">Sign in</a></small></span>
+                            <a href="{% url 'login' %}">Sign in</a></small></span>
                 </div>
             </form>
         </div>

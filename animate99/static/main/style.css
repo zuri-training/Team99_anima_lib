@@ -71,11 +71,7 @@ nav a:hover {
   text-decoration: underline #eebbc3;
 }
 
-.btn-reg-head {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.btn-head-2 {
   padding: 6px;
   gap: 8px;
 
@@ -233,7 +229,7 @@ ul {
 .middle {
   display: flex;
   flex-direction: column;
-  background-image: url('bg.png');
+  background-image: url("bg.png");
   background-size: cover;
   /* background-color: white; */
   padding: 4em;
@@ -291,7 +287,7 @@ ul {
 
 .box-1-text p {
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   color: white;
   margin-bottom: 1em;
@@ -339,7 +335,7 @@ ul {
 
 .box-2-text p {
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   color: white;
   margin-bottom: 1em;
@@ -373,7 +369,7 @@ ul {
 
 .box-3-text p {
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   color: white;
   margin-bottom: 1em;
@@ -439,7 +435,7 @@ ul {
   align-content: center;
   width: 200px;
   height: 200px;
-  background-color: #ffa9b6;
+  background-color: #000000;
   border-radius: 40px;
   padding: 3em;
   margin-left: 2em;
@@ -449,7 +445,7 @@ ul {
 .ball-cont-2 {
   width: 200px;
   height: 200px;
-  background-color: #b2e2e8;
+  background-color: #000000;
   border-radius: 40px;
   padding: 3em;
   margin-bottom: 2em;
@@ -458,7 +454,7 @@ ul {
 .ball-cont-3 {
   width: 200px;
   height: 200px;
-  background-color: #2a3e74;
+  background-color: #000000;
   border-radius: 40px;
   padding: 3em;
   margin-bottom: 2em;
@@ -484,8 +480,18 @@ ul {
   height: 100px;
   left: 67px;
   top: 68px;
-  background: linear-gradient(180deg, #fdf6f3 0%, #ccd1de 100%);
   border-radius: 50%;
+}
+#b-1 {
+  background: linear-gradient(180deg, #fdf6f3 0%, #1d54e1 100%);
+}
+
+#b-2 {
+  background: linear-gradient(180deg, #ffffff 0%, #e55f5f 100%);
+}
+
+#b-3 {
+  background: linear-gradient(180deg, #fdf6f3 0%, #d8d015 100%);
 }
 
 .bottom-left {
@@ -941,7 +947,7 @@ ul {
   .middle {
     display: flex;
     flex-direction: column;
-    background-image: url('bg.png');
+    background-image: url("bg.png");
     background-size: cover;
     /* background-color: white; */
     padding: 4em;
@@ -963,7 +969,7 @@ ul {
 
   .middle-text p {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 72px;
     line-height: 150%;
     text-align: justify;
@@ -998,7 +1004,7 @@ ul {
 
   .box-1-text p {
     font-family: "DM Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     color: white;
     margin-bottom: 1em;
@@ -1046,7 +1052,7 @@ ul {
 
   .box-2-text p {
     font-family: "DM Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     color: white;
     margin-bottom: 1em;
@@ -1080,7 +1086,7 @@ ul {
 
   .box-3-text p {
     font-family: "DM Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     color: white;
     margin-bottom: 1em;
@@ -1146,7 +1152,7 @@ ul {
     align-content: center;
     width: 200px;
     height: 200px;
-    background-color: #ffa9b6;
+    background-color: #000000;
     border-radius: 40px;
     padding: 3em;
     margin-left: 2em;
@@ -1156,7 +1162,7 @@ ul {
   .ball-cont-2 {
     width: 200px;
     height: 200px;
-    background-color: #b2e2e8;
+    background-color: linear-gradient(180deg, #ffffff 0%, #e55f5f 100%);
     border-radius: 40px;
     padding: 3em;
     margin-bottom: 2em;
@@ -1165,7 +1171,7 @@ ul {
   .ball-cont-3 {
     width: 200px;
     height: 200px;
-    background-color: #2a3e74;
+    background-color: #000000;
     border-radius: 40px;
     padding: 3em;
     margin-bottom: 2em;
@@ -1191,8 +1197,19 @@ ul {
     height: 100px;
     left: 67px;
     top: 68px;
-    background: linear-gradient(180deg, #fdf6f3 0%, #ccd1de 100%);
     border-radius: 50%;
+  }
+
+  #b-1 {
+    background: linear-gradient(180deg, #fdf6f3 0%, #1d54e1 100%);
+  }
+
+  #b-2 {
+    background: linear-gradient(180deg, #ffffff 0%, #e55f5f 100%);
+  }
+
+  #b-3 {
+    background: linear-gradient(180deg, #fdf6f3 0%, #d8d015 100%);
   }
 
   .bottom-left {
@@ -1815,7 +1832,7 @@ ul {
     align-content: center;
     width: 150px;
     height: 150px;
-    background-color: #ffa9b6;
+    background-color: #000000;
     border-radius: 40px;
     padding: 3em;
     margin-left: 2em;
@@ -1825,7 +1842,7 @@ ul {
   .ball-cont-2 {
     width: 150px;
     height: 150px;
-    background-color: #b2e2e8;
+    background-color: #000000;
     border-radius: 40px;
     padding: 3em;
     margin-bottom: 2em;
@@ -1834,7 +1851,7 @@ ul {
   .ball-cont-3 {
     width: 150px;
     height: 150px;
-    background-color: #2a3e74;
+    background-color: #000000;
     border-radius: 40px;
     padding: 3em;
     margin-bottom: 2em;
@@ -1860,8 +1877,18 @@ ul {
     height: 60px;
     left: 67px;
     top: 68px;
-    background: linear-gradient(180deg, #fdf6f3 0%, #ccd1de 100%);
     border-radius: 50%;
+  }
+  #b-1 {
+    background: linear-gradient(180deg, #fdf6f3 0%, #1d54e1 100%);
+  }
+
+  #b-2 {
+    background: linear-gradient(180deg, #ffffff 0%, #e55f5f 100%);
+  }
+
+  #b-3 {
+    background: linear-gradient(180deg, #fdf6f3 0%, #d8d015 100%);
   }
 
   .foot-top-left p {
