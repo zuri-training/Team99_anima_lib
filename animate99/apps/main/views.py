@@ -16,3 +16,6 @@ def login (request):
 
 def register (request):
     return render(request, 'accounts/register.html',)
+
+def support (request):
+    return render(request, 'main/support.html',)
