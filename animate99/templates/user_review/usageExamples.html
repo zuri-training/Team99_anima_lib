@@ -1,0 +1,189 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
+    <title>Usage Examples</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-sidebar">
+        <h2 class="sidebar-title">Animate <span class="number">99</span></h2>
+        <div class="dashboard-user">
+          <img
+            src="{% static 'user_review/man.jpg' %}"
+            alt="user-image"
+            class="dashboard-userImage"
+          />
+          <p class="dashboard-username">John Doe</p>
+        </div>
+        <div class="user-options">
+          <div class="user-animation">
+            <img
+              src="{% static 'user_review/library.png' %}"
+              alt="heart-img"
+              class="user-animation-img"
+            />
+            <p class="title">Library</p>
+          </div>
+
+          <div class="user-usageExamples sidebar-active">
+            <img
+              src="{% static 'user_review/usage.png' %}"
+              alt="heart-img"
+              class="user-usageExamples-img"
+            />
+            <p class="title">Usage Examples</p>
+          </div>
+
+          <div class="user-likes">
+            <img
+              src="{% static 'user_review/heart.png' %}"
+              alt="heart-img"
+              class="user-likes-img"
+            />
+            <p class="title">My Likes</p>
+          </div>
+
+          <div class="user-settings">
+            <img
+              src="{% static 'user_review/setting.png' %}"
+              alt="heart-img"
+              class="user-settings-img"
+            />
+            <p class="title">Settings</p>
+          </div>
+        </div>
+        <div class="user-logout">
+          <img
+            src="{% static 'user_review/heart.png' %}"
+            alt="heart-img"
+            class="user-logout-img"
+          />
+          <p class="title">Logout</p>
+        </div>
+      </div>
+
+      <div class="dashboard-main">
+        <nav class="dashboard-nav">
+          <ul class="dashboard-nav__list">
+            <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
+            <li class="dashboard-nav__list-item active">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="dashboard-nav__list-item">
+              <a href="#">Documentation</a>
+            </li>
+            <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
+          </ul>
+          <button class="dashboard-download">Download Library</button>
+        </nav>
+
+        <!-- dashboard-usageExamples"-->
+        <section class="dashboard-usageExamples">
+          <h2 class="dashboard-usageExamples__heading">Usage Examples!</h2>
+          <div class="dashboard-usageExamples__main">
+            <div class="codepen-box">
+              <div class="codepen-screen">
+                <iframe height="300" style="width: 100%;" scrolling="no" title="Bouncing Clouds"
+                  src="https://codepen.io/gneisscode/embed/LYddEdW?default-tab=js%2Cresult&editable=true&theme-id=light"
+                  frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                  See the Pen <a href="https://codepen.io/gneisscode/pen/LYddEdW">
+                    Bouncing Clouds</a> by gneisscode (<a href="https://codepen.io/gneisscode">@gneisscode</a>)
+                  on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+              </div>
+              <div class="codepen-example">
+                <p class="codepen-example__name">Bouncing Clouds</p>
+                <div class="codepen-example__likes">
+                  <p>12</p>
+                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                </div>
+              </div>
+            </div>
+
+            <div class="codepen-box">
+              <div class="codepen-screen">
+                <iframe height="300" style="width: 100%;" scrolling="no" title="404"
+                  src="https://codepen.io/gneisscode/embed/ZExxGzQ?default-tab=js%2Cresult&editable=true&theme-id=light"
+                  frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                  See the Pen <a href="https://codepen.io/gneisscode/pen/ZExxGzQ">
+                    404</a> by gneisscode (<a href="https://codepen.io/gneisscode">@gneisscode</a>)
+                  on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+              </div>
+              <div class="codepen-example">
+                <p class="codepen-example__name">404</p>
+                <div class="codepen-example__likes">
+                  <p>12</p>
+                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                </div>
+              </div>
+            </div>
+
+
+            <div class="codepen-box">
+              <div class="codepen-screen">
+                <iframe height="300" style="width: 100%;" scrolling="no" title="radial gradient"
+                  src="https://codepen.io/gneisscode/embed/QWmmjyv?default-tab=js%2Cresult&editable=true&theme-id=light"
+                  frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                  See the Pen <a href="https://codepen.io/gneisscode/pen/QWmmjyv">
+                    radial gradient</a> by gneisscode (<a href="https://codepen.io/gneisscode">@gneisscode</a>)
+                  on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+              </div>
+              <div class="codepen-example">
+                <p class="codepen-example__name">Radial</p>
+                <div class="codepen-example__likes">
+                  <p>12</p>
+                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                </div>
+              </div>
+            </div>
+
+            <div class="codepen-box">
+              <div class="codepen-screen">
+                <iframe height="300" style="width: 100%;" scrolling="no" title="PEACE NOT WAR!"
+                  src="https://codepen.io/gneisscode/embed/MWVVwZo?default-tab=js%2Cresult&editable=true&theme-id=light"
+                  frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                  See the Pen <a href="https://codepen.io/gneisscode/pen/MWVVwZo">
+                    PEACE NOT WAR!</a> by gneisscode (<a href="https://codepen.io/gneisscode">@gneisscode</a>)
+                  on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+              </div>
+              <div class="codepen-example">
+                <p class="codepen-example__name">Peace not war</p>
+                <div class="codepen-example__likes">
+                  <p>12</p>
+                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <!-- <div class="dashboard-usageExamples__btn">
+              <a href="#">&lt; <span>Previous</span> </a>
+              <a href="#"> <span>Next </span>&gt;</a>
+            </div> -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
