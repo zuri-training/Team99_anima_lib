@@ -1,3 +1,4 @@
+{% load socialaccount %}
 <h1>login</h1>
 <form action="" method="POST">
     {% csrf_token %}
@@ -7,9 +8,13 @@
     <input type="submit">
 </form>
 
+<a href="{% provider_login_url 'google' method='oauth2'%}">google auth</a>
+
+<a href="{% url 'account_login' %}">login 2</a>
 
 
 {% for message in messages %}
 <p>{{message}}</p>
 
 {% endfor %}
+

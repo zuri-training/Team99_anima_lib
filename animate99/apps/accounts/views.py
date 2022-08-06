@@ -40,7 +40,7 @@ def login_view(request):
             
             if user is not None:
                 login(request, user)
-                return redirect('download')
+                return redirect('home')
             else:
                 messages.info(request, 'Username OR password is incorrect')
                 
@@ -49,7 +49,7 @@ def login_view(request):
         context= {}
         return render(request, "accounts/login.html", context )
 
-@login_required(login_url='login')
+# @login_required(login_url='login')
 def logout_user(request):
     logout(request)
     return redirect('accounts:login')
