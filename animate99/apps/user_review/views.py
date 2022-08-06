@@ -11,3 +11,6 @@ def settings (request):
 def usageExamples (request):
     return render(request, 'user_review/usageExamples.html',)
 
+def likes (request):
+    return render(request, 'user_review/likes.html',)
+
