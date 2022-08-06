@@ -20,9 +20,29 @@
     <title>Library</title>
   </head>
   <body>
+    <!-- Changes -->
+    <div class="dashboard-header">
+      <h2 class="dashboard-header__title">
+        Animate <span class="number">99</span>
+      </h2>
+      <nav class="dashboard-nav">
+        <ul class="dashboard-nav__list">
+          <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
+          <li class="dashboard-nav__list-item active">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="dashboard-nav__list-item">
+            <a href="#">Documentation</a>
+          </li>
+          <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <button class="dashboard-download">Download Library</button>
+    </div>
+
     <div class="dashboard">
+      <!-- end -->
       <div class="dashboard-sidebar">
-        <h2 class="sidebar-title">Animate <span class="number">99</span></h2>
         <div class="dashboard-user">
           <img
             src="images/man.jpg"
@@ -38,7 +58,7 @@
               alt="heart-img"
               class="user-library-img"
             />
-            <p class="title">Library</p>
+            <p class="title"><a href="library.html">Library</a></p>
           </div>
 
           <div class="user-usageExamples">
@@ -47,7 +67,9 @@
               alt="heart-img"
               class="user-usageExamples-img"
             />
-            <p class="title">Usage Examples</p>
+            <p class="title">
+              <a href="usageExamples.html">Usage Examples </a>
+            </p>
           </div>
 
           <div class="user-likes">
@@ -56,7 +78,7 @@
               alt="heart-img"
               class="user-likes-img"
             />
-            <p class="title">My Likes</p>
+            <p class="title"><a href="dashboard.html">My Likes</a></p>
           </div>
 
           <div class="user-settings">
@@ -65,34 +87,20 @@
               alt="heart-img"
               class="user-settings-img"
             />
-            <p class="title">Settings</p>
+            <p class="title"><a href="settings.html">Settings</a></p>
           </div>
-        </div>
-        <div class="user-logout">
-          <img
-            src="/images/heart.png"
-            alt="heart-img"
-            class="user-logout-img"
-          />
-          <p class="title">Logout</p>
+          <div class="user-logout">
+            <img
+              src="/images/heart.png"
+              alt="heart-img"
+              class="user-logout-img"
+            />
+            <p class="title">Logout</p>
+          </div>
         </div>
       </div>
 
       <div class="dashboard-main">
-        <nav class="dashboard-nav">
-          <ul class="dashboard-nav__list">
-            <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
-            <li class="dashboard-nav__list-item active">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="dashboard-nav__list-item">
-              <a href="#">Documentation</a>
-            </li>
-            <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
-          </ul>
-          <button class="dashboard-download">Download Library</button>
-        </nav>
-
         <!-- dashboard-library"-->
         <section class="dashboard-library">
           <h2 class="dashboard-library__heading">Library</h2>
