@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&
 # DEBUG = config("DJANGO_DEBUG", default=True, cast=bool)
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'animate99.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'animate-99.herokuapp.com']
 
 
 # Application definition
