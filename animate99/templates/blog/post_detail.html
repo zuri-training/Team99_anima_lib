@@ -1,0 +1,48 @@
+{% extends 'blog/blog.html' %} {% block content %}
+
+<h1 class="title">{{ post.title }}</h1>
+
+<small> Posted at {{ post.updated_on }} </small>
+
+<p>{{ post.content }}</p>
+
+<p>{{ post.author }}</p>
+
+<hr />
+
+<h2 class="subtitle">Comments</h2>
+
+{% for comment in post.comments.all %}
+<article class="media">
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong> {{ comment.email }} </strong>
+        <small> {{ comment.created_on }} </small>
+        <br />
+        {{ comment.content }}
+      </p>
+    </div>
+  </div>
+</article>
+
+{% empty %}
+<div class="notification">
+  <p>No Comments Yet!</p>
+</div>
+{% endfor %}
+
+<hr />
+
+<h2 class="subtitle">Add Comment</h2>
+
+<form method="post" action=".">
+  {% csrf_token %} {{ form.as_p }}
+
+  <div class="field">
+    <div class="control">
+      <button class="button is-success">Submit</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

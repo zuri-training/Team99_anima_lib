@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     
     #3rd Party
     'django_extensions',
-    'crispy_forms',
     
     #apps
     'apps.common.apps.CommonConfig',

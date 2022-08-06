@@ -1,7 +1,11 @@
+from . import views
 from django.urls import path
-from .views import blog_page
+from apps.blog.views import front_page, post_detail
 
-app_name='blog'
+
+#My imports
 urlpatterns = [
-    path("", blog_page, name="index" ),
+    path("", front_page, name="front_page.html" ),
+    path('<slug:slug>/', post_detail, name='post_detail'),
+    #path('', views.PostList.as_view(), name='post_detail'), <<using generic views>>
 ]
