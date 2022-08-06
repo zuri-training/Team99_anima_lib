@@ -3032,6 +3032,15 @@ nav a:hover {
   margin-bottom: 16px;
 }
 
+.dashboard-usageExamples{
+  height: 700px;
+  overflow: scroll;
+}
+
+.dashboard-usageExamples__main{
+  gap: 24px;
+}
+
 .codepen-box {
   max-width: 750px;
   height: 500px;
