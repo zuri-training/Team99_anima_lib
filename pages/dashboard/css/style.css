@@ -21,20 +21,15 @@ body {
   font-weight: 400;
 }
 
-.dashboard {
+/* Additions */
+.dashboard-header {
   display: flex;
-  gap: 40px;
-  background-color: #ebebeb;
-  min-height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1d223a;
 }
 
-.dashboard-sidebar {
-  width: 423px;
-  background-color: #232946;
-  position: relative;
-}
-
-.dashboard-sidebar .number {
+.dashboard-header .number {
   font-family: "Open Sans", sans-serif;
   background-color: #eebbc3;
   color: #232946;
@@ -46,13 +41,90 @@ body {
   line-height: 44px;
 }
 
-.sidebar-title {
-  margin-block: 50px;
-  padding-left: 120px;
+.dashboard-header__title {
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #fff;
+  color: #f1f3fb;
+  margin-left: 120px;
+  margin-block: 26px;
+}
+
+/* Navbar of the the Dashboard */
+.dashboard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+
+.dashboard-nav__list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-nav__list-item {
+  margin-inline: 20px;
+}
+
+.dashboard-nav__list-item a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #f1f3fb;
+  font-size: 18px;
+  line-height: 120%;
+  margin-top: 5px;
+  margin-bottom: 1px;
+}
+
+.active {
+  border-bottom: 4px solid #eebbc3;
+}
+
+.dashboard-nav__list-item + .active a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #eebbc3;
+}
+
+.dashboard-download {
+  padding: 10px 16px;
+  color: #232946;
+  background-color: #d0d6f2;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 8px 16px;
+  gap: 8px;
+
+  margin-right: 154px;
+}
+
+.dashboard-download:hover {
+  cursor: pointer;
+}
+
+/* For the dashboard itself */
+.dashboard {
+  display: flex;
+  gap: 40px;
+  background-color: #ebebeb;
+  min-height: 100vh;
+}
+
+.dashboard-sidebar {
+  width: 363px;
+  background-color: #f1f3fb;
+  position: relative;
 }
 
 .dashboard-userImage {
@@ -61,34 +133,38 @@ body {
   border: 1px solid #c5c6cc;
   display: block;
   border-radius: 40px;
-  margin-left: 118px;
-  margin-right: 110px;
+  margin-top: 56px;
+  margin-left: 84.5px;
+  margin-right: 83.5px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .dashboard-username {
   text-align: center;
-  margin-top: 8px;
-  margin-bottom: 21px;
-  color: #e8e8eb;
+  margin-top: 6px;
+  margin-bottom: 73px;
+  color: #232946;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 /* For the user options */
 .user-options {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
-  padding-left: 119px;
-  padding-right: 44px;
 }
 
 .user-options > * {
   display: flex;
   align-items: center;
-  gap: 19.25px;
+  gap: 17.25px;
   border-radius: 4px;
-  padding-left: 8px;
+  padding-left: 9.25px;
   padding-block: 5px;
   transition: all 0.5s ease-in;
 
@@ -102,15 +178,18 @@ body {
 }
 
 .sidebar-active {
-  background-color: #eebbc3;
+  background-color: #f4d2d7;
   color: #232946;
 }
 
-.user-options p {
+.user-options p a {
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 36px;
-  color: #e8e8eb;
+  margin-block: 12px;
+  color: #1d223a;
+  text-decoration: none;
 }
 
 .user-options p:hover {
@@ -154,11 +233,13 @@ body {
 .user-logout {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: #e8e8eb;
+  justify-content: center;
+  background-color: #f1f3fb;
+  gap: 12px;
+  color: #1d223a;
   position: absolute;
-  bottom: 12px;
-  left: 30%;
+  bottom: 52px;
+  border: 1px solid #232946;
 }
 
 .user-logout:hover {
@@ -166,76 +247,17 @@ body {
 }
 
 .user-logout p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding-block: 3px;
 }
 
 /* Main section of the Dashboard */
 .dashboard-main {
   background-color: #ebebeb;
   width: 100%;
-}
-
-/* Navbar of the the Dashboard */
-.dashboard-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: 5rem;
-  margin-block: 40px;
-}
-
-.dashboard-nav__list {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.dashboard-nav__list-item {
-  margin-inline: 20px;
-}
-
-.dashboard-nav__list-item a {
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 18px;
-  color: #484d65;
-  font-size: 18px;
-  line-height: 120%;
-  margin-top: 5px;
-  margin-bottom: 1px;
-}
-
-.active {
-  border-bottom: 4px solid #232946;
-}
-
-.dashboard-nav__list-item + .active a {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 120%;
-  color: #232946;
-}
-
-.dashboard-download {
-  padding: 10px 16px;
-  color: #e8e8eb;
-  background-color: #232946;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 23px;
-  padding: 8px 16px;
-  gap: 8px;
-}
-
-.dashboard-download:hover {
-  cursor: pointer;
+  padding-top: 56px;
 }
 
 .likes-heading {
@@ -446,7 +468,6 @@ body {
 }
 
 /* For the Dashboard library*/
-
 .dashboard-library__main {
   font-size: 14px;
   line-height: 150%;
@@ -471,7 +492,7 @@ body {
 .dashboard-library__main-type004,
 .dashboard-library__main-type005,
 .dashboard-library__main-type006 {
-  width: 303px;
+  width: 343px;
   height: 344px;
   background: #ffffff;
   box-shadow: 0px 4px 40px rgba(96, 96, 96, 0.2);
@@ -487,14 +508,14 @@ body {
 .dashboard-library__main-type006--box {
   width: 243px;
   height: 232px;
-  background-color: #6e2a74;
+  background-color: #1a1a1a;
   border-radius: 28.1333px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
+  left: 50px;
   top: 32.5px;
-  left: 30px;
 }
 
 .dashboard-library__main-type001--circle,
@@ -505,8 +526,27 @@ body {
 .dashboard-library__main-type006--circle {
   width: 116.05px;
   height: 116.05px;
-  background: linear-gradient(180deg, #fdf6f3 0%, #ccd1de 100%);
   border-radius: 50%;
+}
+
+.dashboard-library__main-type001--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #1d54e1 100%);
+}
+
+.dashboard-library__main-type002--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #363b49 100%);
+}
+.dashboard-library__main-type003--circle {
+  background: linear-gradient(180deg, #ffffff 0%, #e55f5f 100%);
+}
+.dashboard-library__main-type004--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #c861be 100%);
+}
+.dashboard-library__main-type005--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #6fe645 100%);
+}
+.dashboard-library__main-type006--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #d8d015 100%);
 }
 
 .dashboard-library__main-type001 p,
@@ -516,8 +556,13 @@ body {
 .dashboard-library__main-type005 p,
 .dashboard-library__main-type006 p {
   position: absolute;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
   bottom: 34.5px;
   left: 30px;
+  color: #232946;
 }
 
 .dashboard-library__main-type001--likes,
@@ -543,22 +588,6 @@ body {
   display: block;
   height: 23px;
   width: 21px;
-}
-
-.dashboard-library__main-type002--box {
-  background-color: #2a3e74;
-}
-.dashboard-library__main-type003--box {
-  background-color: #3fc41e;
-}
-.dashboard-library__main-type004--box {
-  background-color: #2a3e74;
-}
-.dashboard-library__main-type005--box {
-  background-color: #bbbf04;
-}
-.dashboard-library__main-type006--box {
-  background-color: #1a7fab;
 }
 
 /* ------- Usage Examples------ */
