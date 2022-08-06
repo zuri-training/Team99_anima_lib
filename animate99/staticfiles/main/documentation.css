@@ -64,7 +64,7 @@ span a {
 /* Header Section */
 
 #header .header {
-  min-height: 144px;
+  min-height: 80px;
   transition: 0.3s ease background-color;
   font-family: "DM Sans";
   font-style: normal;
@@ -76,7 +76,7 @@ span a {
   align-items: flex-start;
   justify-content: space-between;
   width: 1512px;
-  height: 144px;
+  height: 80px;
   padding: 40px 120px;
   gap: 10px;
   border-bottom: 0.3px solid #d0d6f2;
