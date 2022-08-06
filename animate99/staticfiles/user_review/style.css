@@ -345,7 +345,7 @@ nav a:hover {
   border: 1px solid #232946;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  margin-left: 2em;
+  margin-left: 6em;
   align-self: center;
 }
 
@@ -3037,16 +3037,14 @@ nav a:hover {
   overflow: scroll;
 }
 
-.dashboard-usageExamples__main{
-  gap: 24px;
-}
+
 
 .codepen-box {
   max-width: 750px;
   height: 500px;
   background: #232946;
   border-radius: 8px;
-  margin-bottom: 154px;
+  margin-bottom: 75px;
   margin-top: 32px;
 
   position: relative;
