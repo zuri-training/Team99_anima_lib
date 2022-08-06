@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://anima99.bitbucket.io/script.js"></script>
     <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
     <title>Library</title>
   </head>
@@ -121,10 +122,10 @@
           <div class="dashboard-library__main">
             <div class="dashboard-library__main-type001">
               <div class="dashboard-library__main-type001--box">
-                <div class="dashboard-library__main-type001--circle"></div>
+                <div class="dashboard-library__main-type001--circle" id="a-1" onmouseover="anima.bounce('a-1',500, 4)"></div>
               </div>
 
-              <p class="dashboard-library__main-type001--name">Bounce</p>
+              <p class="dashboard-library__main-type001--name">bounce</p>
               <div class="dashboard-library__main-type001--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -134,10 +135,10 @@
             <!-- Second box  -->
             <div class="dashboard-library__main-type002">
               <div class="dashboard-library__main-type002--box">
-                <div class="dashboard-library__main-type002--circle"></div>
+                <div class="dashboard-library__main-type002--circle"  id="a-2" onmouseover="anima.moveUp('a-2',500, 1)"></div>
               </div>
 
-              <p class="dashboard-library__main-type002--name">Up</p>
+              <p class="dashboard-library__main-type002--name">moveUp</p>
               <div class="dashboard-library__main-type002--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -147,10 +148,10 @@
             <!-- Third box  -->
             <div class="dashboard-library__main-type003">
               <div class="dashboard-library__main-type003--box">
-                <div class="dashboard-library__main-type003--circle"></div>
+                <div class="dashboard-library__main-type003--circle" id="a-3" onmouseover="anima.moveDown('a-3',500, 1)"></div>
               </div>
 
-              <p class="dashboard-library__main-type003--name">Down</p>
+              <p class="dashboard-library__main-type003--name">moveDown</p>
               <div class="dashboard-library__main-type003--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -160,10 +161,10 @@
             <!-- Fourth box  -->
             <div class="dashboard-library__main-type004">
               <div class="dashboard-library__main-type004--box">
-                <div class="dashboard-library__main-type004--circle"></div>
+                <div class="dashboard-library__main-type004--circle" id="a-4" onmouseover="anima.moveLeft('a-4',500, 1)"></div>
               </div>
 
-              <p class="dashboard-library__main-type004--name">Left</p>
+              <p class="dashboard-library__main-type004--name">moveLeft</p>
               <div class="dashboard-library__main-type004--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -173,10 +174,10 @@
             <!-- Fifth box  -->
             <div class="dashboard-library__main-type005">
               <div class="dashboard-library__main-type005--box">
-                <div class="dashboard-library__main-type005--circle"></div>
+                <div class="dashboard-library__main-type005--circle" id="a-5" onmouseover="anima.moveRight('a-5',500, 1)"></div>
               </div>
 
-              <p class="dashboard-library__main-type005--name">Right</p>
+              <p class="dashboard-library__main-type005--name">moveRight</p>
               <div class="dashboard-library__main-type005--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -186,10 +187,10 @@
             <!-- 6th box  -->
             <div class="dashboard-library__main-type006">
               <div class="dashboard-library__main-type006--box">
-                <div class="dashboard-library__main-type006--circle"></div>
+                <div class="dashboard-library__main-type006--circle" id="a-6" onmouseover="anima.blink('a-6',500, 1)"></div>
               </div>
 
-              <p class="dashboard-library__main-type006--name">Blink</p>
+              <p class="dashboard-library__main-type006--name">blink</p>
               <div class="dashboard-library__main-type006--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -200,10 +201,10 @@
             <!-- 7th box  -->
             <div class="dashboard-library__main-type001">
               <div class="dashboard-library__main-type001--box">
-                <div class="dashboard-library__main-type006--circle"></div>
+                <div class="dashboard-library__main-type006--circle" id="a-7" onmouseover="anima.fadeIn('a-7',1000, 2)"></div>
               </div>
             
-              <p class="dashboard-library__main-type001--name">Fade In</p>
+              <p class="dashboard-library__main-type001--name">fadeIn</p>
               <div class="dashboard-library__main-type001--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -213,10 +214,10 @@
             <!-- 8th box  -->
             <div class="dashboard-library__main-type002">
               <div class="dashboard-library__main-type002--box">
-                <div class="dashboard-library__main-type002--circle"></div>
+                <div class="dashboard-library__main-type002--circle" id="a-8" onmouseover="anima.fadeOut('a-8',1000, 2)"></div>
               </div>
             
-              <p class="dashboard-library__main-type002--name">Fade Out</p>
+              <p class="dashboard-library__main-type002--name">fadeOut</p>
               <div class="dashboard-library__main-type002--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -226,10 +227,10 @@
             <!-- 9th box  -->
             <div class="dashboard-library__main-type003">
               <div class="dashboard-library__main-type003--box">
-                <div class="dashboard-library__main-type003--circle"></div>
+                <div class="dashboard-library__main-type003--circle" id="a-9" onmouseover="anima.pulse('a-9',1000, 2)"></div>
               </div>
             
-              <p class="dashboard-library__main-type003--name">Pulse</p>
+              <p class="dashboard-library__main-type003--name">pulse</p>
               <div class="dashboard-library__main-type003--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -239,10 +240,10 @@
             <!-- 10th box  -->
             <div class="dashboard-library__main-type004">
               <div class="dashboard-library__main-type004--box">
-                <div class="dashboard-library__main-type004--circle"></div>
+                <div class="dashboard-library__main-type004--circle" id="a-10" onmouseover="anima.flip('a-10',1000, 1)"></div>
               </div>
             
-              <p class="dashboard-library__main-type004--name">Flip</p>
+              <p class="dashboard-library__main-type004--name">flip</p>
               <div class="dashboard-library__main-type004--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -252,10 +253,10 @@
             <!-- 11th box  -->
             <div class="dashboard-library__main-type005">
               <div class="dashboard-library__main-type005--box">
-                <div class="dashboard-library__main-type005--circle"></div>
+                <div class="dashboard-library__main-type005--circle" id="a-11" onmouseover="anima.shake('a-11',500, 1)"></div>
               </div>
             
-              <p class="dashboard-library__main-type005--name">Shake</p>
+              <p class="dashboard-library__main-type005--name">shake</p>
               <div class="dashboard-library__main-type005--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -265,10 +266,10 @@
             <!-- 12th box  -->
             <div class="dashboard-library__main-type006">
               <div class="dashboard-library__main-type006--box">
-                <div class="dashboard-library__main-type006--circle"></div>
+                <div class="dashboard-library__main-type006--circle" id="a-12" onmouseover="anima.rotate('a-12',500, 1)"></div>
               </div>
             
-              <p class="dashboard-library__main-type006--name">Rotate</p>
+              <p class="dashboard-library__main-type006--name">rotate</p>
               <div class="dashboard-library__main-type006--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
@@ -278,10 +279,10 @@
             <!-- 13th box  -->
             <div class="dashboard-library__main-type003">
               <div class="dashboard-library__main-type003--box">
-                <div class="dashboard-library__main-type006--circle"></div>
+                <div class="dashboard-library__main-type006--circle" id="a-13" onmouseover="anima.slide('a-13',500, 1)"></div>
               </div>
             
-              <p class="dashboard-library__main-type003--name">Slide</p>
+              <p class="dashboard-library__main-type003--name">slide</p>
               <div class="dashboard-library__main-type003--likes">
                 <span>12</span>
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
