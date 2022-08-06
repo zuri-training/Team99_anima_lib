@@ -21,7 +21,7 @@ body {
   font-weight: 400;
 }
 
-/* Additions */
+/* Dashboard header*/
 .dashboard-header {
   display: flex;
   align-items: center;
@@ -82,6 +82,7 @@ body {
   margin-bottom: 1px;
 }
 
+/* Active Navbar */
 .active {
   border-bottom: 4px solid #eebbc3;
 }
@@ -200,35 +201,6 @@ body {
   color: #232946;
 }
 
-.upload-library {
-  display: flex;
-  align-items: center;
-  border: 1px solid #c5c6cc;
-  width: 250px;
-  gap: 12px;
-  margin-bottom: 3rem;
-  margin-left: 60px;
-  padding-left: 16px;
-  padding-block: 5px;
-  border: 1px solid #c5c6cc;
-  border-radius: 4px;
-}
-
-.upload-library:hover {
-  cursor: pointer;
-}
-
-.upload-library p {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 36px;
-}
-
-.upload-library img {
-  width: 24px;
-  height: 24px;
-}
-
 /* Logout dashboard */
 .user-logout {
   display: flex;
@@ -260,6 +232,17 @@ body {
   padding-top: 56px;
 }
 
+/* For my likes page */
+.dashboard-likes__main {
+  font-size: 14px;
+  line-height: 150%;
+  color: #232946;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 24px;
+}
 .likes-heading {
   font-weight: 700;
   font-size: 48px;
@@ -267,86 +250,108 @@ body {
   margin-bottom: 24px;
 }
 
-.library-img {
-  width: 257px;
-  height: auto;
-  border: 1px solid #c5c6cc;
-  border-radius: 4px;
-  background-color: #8b8d99;
-  text-align: center;
-}
-
-.likes-row1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 303px);
-  gap: 20px;
-}
-
-.likes-row1__div {
-  background-color: #fff;
-  border: 1px solid #c5c6cc;
+.dashboard-likes__main-type001,
+.dashboard-likes__main-type002,
+.dashboard-likes__main-type003,
+.dashboard-likes__main-type004,
+.dashboard-likes__main-type005,
+.dashboard-likes__main-type006 {
+  width: 343px;
+  height: 344px;
   background: #ffffff;
   box-shadow: 0px 4px 40px rgba(96, 96, 96, 0.2);
   border-radius: 8px;
-  padding: 20px;
+  position: relative;
 }
 
-.contributor {
+.dashboard-likes__main-type001--box,
+.dashboard-likes__main-type002--box,
+.dashboard-likes__main-type003--box,
+.dashboard-likes__main-type004--box,
+.dashboard-likes__main-type005--box,
+.dashboard-likes__main-type006--box {
+  width: 243px;
+  height: 232px;
+  background-color: #1a1a1a;
+  border-radius: 28.1333px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50px;
+  top: 32.5px;
 }
 
-.contributor-name {
-  margin-bottom: 8px;
+.dashboard-likes__main-type001--circle,
+.dashboard-likes__main-type002--circle,
+.dashboard-likes__main-type003--circle,
+.dashboard-likes__main-type004--circle,
+.dashboard-likes__main-type005--circle,
+.dashboard-likes__main-type006--circle {
+  width: 116.05px;
+  height: 116.05px;
+  border-radius: 50%;
 }
 
-.contributor-likes {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.dashboard-likes__main-type001--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #1d54e1 100%);
 }
 
-.contributor-likes img {
+.dashboard-likes__main-type002--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #363b49 100%);
+}
+.dashboard-likes__main-type003--circle {
+  background: linear-gradient(180deg, #ffffff 0%, #e55f5f 100%);
+}
+.dashboard-likes__main-type004--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #c861be 100%);
+}
+.dashboard-likes__main-type005--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #6fe645 100%);
+}
+.dashboard-likes__main-type006--circle {
+  background: linear-gradient(180deg, #fdf6f3 0%, #d8d015 100%);
+}
+
+.dashboard-likes__main-type001 p,
+.dashboard-likes__main-type002 p,
+.dashboard-likes__main-type003 p,
+.dashboard-likes__main-type004 p,
+.dashboard-likes__main-type005 p,
+.dashboard-likes__main-type006 p {
+  position: absolute;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  bottom: 34.5px;
+  left: 50px;
+  color: #232946;
+}
+
+.dashboard-likes__main-type001--likes,
+.dashboard-likes__main-type002--likes,
+.dashboard-likes__main-type003--likes,
+.dashboard-likes__main-type004--likes,
+.dashboard-likes__main-type005--likes,
+.dashboard-likes__main-type006--likes {
+  position: absolute;
+  bottom: 34.5px;
+  right: 50px;
+}
+
+.dashboard-likes__main-type001--likes img,
+.dashboard-likes__main-type002--likes img,
+.dashboard-likes__main-type003--likes img,
+.dashboard-likes__main-type004--likes img,
+.dashboard-likes__main-type005--likes img,
+.dashboard-likes__main-type006--likes img {
   display: block;
-}
-
-/* When there's no like  */
-.no-likes {
-  display: flex;
-  gap: 20px;
-}
-
-.no-likes__image {
-  width: 156.67px;
-  height: 156.67px;
-  border: 1px solid #8b8d99;
-  border-radius: 5px;
-}
-
-.no-likes__text {
-  width: 60%;
-}
-
-.no-likes__text-heading {
-  color: #232946;
-  margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 48px;
-}
-
-.no-likes__text-sub {
-  margin-bottom: 16px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  text-align: justify;
-  color: #232946;
+  height: 23px;
+  width: 21px;
 }
 
 /* Dashboard Settings page */
-
 .settings-heading {
   font-weight: 700;
   font-size: 48px;
@@ -374,6 +379,326 @@ body {
   font-family: "DM Sans";
   font-size: 16px;
   line-height: 150%;
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
   color: #1d223a;
 }
 
@@ -2542,7 +2867,7 @@ body {
 .dashboard-library__main-type001--likes img,
 .dashboard-library__main-type002--likes img,
 .dashboard-library__main-type003--likes img,
-.dashboard-library__main-type00--likes img,
+.dashboard-library__main-type004--likes img,
 .dashboard-library__main-type005--likes img,
 .dashboard-library__main-type006--likes img {
   display: block;
@@ -2658,5 +2983,3 @@ body {
   font-size: 20px;
   line-height: 32px;
 }
-
-  
