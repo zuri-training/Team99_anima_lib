@@ -36,7 +36,7 @@ In order to use Animate99, you will need to import the library by adding the lib
 </html>
 
 ```
-It may also be important to use the defer keyword within the script tags of any other script you are using in your code which makes use of our library. However, never defer the actual animation library script tag in order to make sure that you avoid the possibility of console errors when running your program.. For more information about the usefulness of the defer keyword and how it can impact the performance of your program check out this [article](https://javascript.info/script-async-defer).
+It may also be important to use the defer keyword within the script tags of any other script you are using in your code which makes use of our library. However, never defer the actual animation library script tag in order to make sure that you avoid the possibility of console errors when running your program. For more information about the usefulness of the defer keyword and how it can impact the performance of your program check out this [article](https://javascript.info/script-async-defer).
 You might also want to avoid using a self closing script tag such as;
 
 ```
