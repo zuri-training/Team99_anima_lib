@@ -30,12 +30,12 @@
                     <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
                 </ul>
                 <div class="btns">                   
-                    {% if user.is_authentication %}
+                    {% comment %} {% if user.is_authentication %}
                         <p>Welcome, {{customuser.first_name}}</p>
                     {% else %}
                     <button class="btn-head">Sign In</button>
                     <button class="btn-reg-head">Register</button>
-                    {% endif %}                    
+                    {% endif %}                     {% endcomment %}
                 <div class="btns">
                     <a href="{% url 'login' %}"><button class="btn-head">Sign In</button></a>
                     <a href="{% url 'register' %}"><button class="btn-head-2">Register</button></a>

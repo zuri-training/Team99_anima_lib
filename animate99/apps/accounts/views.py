@@ -20,7 +20,7 @@ def register_view(request):
                 messages.success(request, 'account was created for ' +  ' ' + user)
                 
                 
-                return redirect('login')
+                return redirect('library')
             
         context= {
             'form':form,
@@ -40,9 +40,9 @@ def login_view(request):
             
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return redirect('library')
             else:
-                messages.info(request, 'Username OR password is incorrect')
+                messages.info(request, 'Email OR password is incorrect')
                 
             
             
