@@ -23,5 +23,7 @@ urlpatterns = [
     path("blog/", include("apps.blog.urls")),
     path("home/", include("apps.main.urls")),
     path('google-auth/', include('allauth.urls')),
+    path("dashboard/", include("apps.user_review.urls")),
+    
     
 ]

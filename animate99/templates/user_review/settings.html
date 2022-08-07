@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard-sidebar">
+        <h2 class="sidebar-title">Animate<span class="number">99</span></h2>
+        <div class="dashboard-user">
+          <img
+            src="{% static 'user_review/man.jpg' %}"
+            alt="user-image"
+            class="dashboard-userImage"
+          />
+          <p class="dashboard-username">John Doe</p>
+        </div>
+        <div class="user-options">
+          <div class="user-animation">
+            <img
+              src="{% static 'user_review/library.png' %}"
+              alt="heart-img"
+              class="user-animation-img"
+            />
+            <a href="{% url 'library' %}"><p class="title">Library</p></a>
+          </div>
+
+          <div class="user-usageExamples">
+            <img
+              src="{% static 'user_review/usage.png' %}"
+              alt="heart-img"
+              class="user-usageExamples-img"
+            />
+            <p class="title">Usage Examples</p>
+          </div>
+
+          <div class="user-likes">
+            <img
+              src="{% static 'user_review/heart.png' %}"
+              alt="heart-img"
+              class="user-likes-img"
+            />
+            <p class="title">My Likes</p>
+          </div>
+
+          <div class="user-settings sidebar-active">
+            <img
+              src="{% static 'user_review/setting.png' %}"
+              alt="heart-img"
+              class="user-settings-img"
+            />
+            <p class="title">Settings</p>
+          </div>
+        </div>
+        <div class="user-logout">
+          <img
+            src="{% static 'user_review/heart.png' %}"
+            alt="heart-img"
+            class="user-logout-img"
+          />
+          <p class="title">Logout</p>
+        </div>
+      </div>
+
+      <div class="dashboard-main">
+        <nav class="dashboard-nav">
+          <ul class="dashboard-nav__list">
+            <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
+            <li class="dashboard-nav__list-item active">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="dashboard-nav__list-item">
+              <a href="#">Documentation</a>
+            </li>
+            <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
+          </ul>
+          <button class="dashboard-download">Download Library</button>
+        </nav>
+
+        <!-- Settings page -->
+        <section class="settings">
+          <h2 class="settings-heading">Settings</h2>
+          <div class="settings-main">
+            <form action="#" class="form-settings">
+              <div class="form-input">
+                <input type="text" placeholder="Name" />
+                <div class="remove">
+                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <span>Remove</span>
+                </div>
+              </div>
+              <p class="helper-text">
+                Your name may appear around Animate99 where you make
+                contributions. You can remove it any time
+              </p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
+              <p class="helper-text">Please use a valid e-mail address</p>
+
+              <div class="form-input">
+                <textarea placeholder="Bio"></textarea>
+                <div class="remove">
+                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <span>Remove</span>
+                </div>
+              </div>
+              <p class="helper-text">Tell us a little about yourself</p>
+              <div class="form-input">
+                <input
+                  type="url"
+                  name="twitter-link"
+                  id="twitter-link"
+                  placeholder="Twitter profile link"
+                />
+                <div class="remove">
+                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <span>Remove</span>
+                </div>
+              </div>
+              <div class="form-input">
+                <input
+                  type="url"
+                  name="github-link"
+                  id="github-link"
+                  placeholder="Github Profile link"
+                />
+                <div class="remove">
+                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <span>Remove</span>
+                </div>
+              </div>
+              <p class="helper-text">
+                Some of the fields in this page is optional and can be removed
+                at any time and by filling them out you're giving us consent to
+                share this data wherever your user profile appears
+              </p>
+
+              <input type="submit" value="Save" />
+            </form>
+
+            <!--  Settings for the image section-->
+            <div class="settings-image">
+              <img src="{% static 'user_review/man.jpg' %}" alt="profile-pix" />
+              <button class="change-picture">Change Picture</button>
+              <button class="delete-picture">Delete Picture</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

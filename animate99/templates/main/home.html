@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anima99</title>
+    <title>Animate99</title>
 
     <script src="https://anima99.bitbucket.io/script.js"></script>
     <link rel="stylesheet" href="{% static 'main/style.css'  %}">
@@ -24,10 +24,10 @@
             </div>
             <div class="nav-cont">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="documentation">Documentation</a></li>
-                    <li class="nav-item"><a href="#">Download</a></li>
-                    <li class="nav-item"><a href="#">Support</a></li>
+                    <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+                    <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
+                    <li class="nav-item"><a href="{% url 'download' %}">Download</a></li>
+                    <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
                 </ul>
                 <div class="btns">                   
                     {% if user.is_authentication %}
@@ -36,6 +36,9 @@
                     <button class="btn-head">Sign In</button>
                     <button class="btn-reg-head">Register</button>
                     {% endif %}                    
+                <div class="btns">
+                    <a href="{% url 'login' %}"><button class="btn-head">Sign In</button></a>
+                    <a href="{% url 'register' %}"><button class="btn-head-2">Register</button></a>
                 </div>
             </div>
         </nav>
@@ -47,7 +50,7 @@
                     Library For You.
                 </h1>
                 <p>Add cool animations to your program with ease and flexibility</p>
-                <button class="btn-info-text">Get Started &#129130;</button>
+                <a href="{% url 'login' %}"><button class="btn-info-text">Get Started &#129130;</button></a>
             </div>
             <div class="header-info-image">
                 <img src="{% static 'main/header-image.png'  %}" alt="Animation" id="headImg" onload="anima.flip('headImg',500, 2)" />
@@ -80,7 +83,7 @@
                     In order to get started using the Animate99 JavaScript library, you
                     will first need to register as a user on our website.
                 </p>
-                <button class="reg-btn">Register &#129130;</button>
+                <a href="{% url 'register' %}"><button class="reg-btn">Register &#129130;</button></a>
             </div>
         </div>
         <div class="mid-box-2">
@@ -91,7 +94,7 @@
                     start creating awesome animations with the Animate99 JavaScript
                     library!
                 </p>
-                <button class="doc-btn">Documentation &#129130;</button>
+                <a href="{% url 'documentation' %}"><button class="doc-btn">Documentation &#129130;</button></a>
             </div>
             <div>
                 <img src="{% static 'main/mid-hijabi.png'  %}" alt="female-icon" class="mid-icons" />
@@ -123,7 +126,7 @@
                     Register or sign in now to have access to our full library of
                     customizable animations.
                 </p>
-                <button class="bottom-left-btn">View More &#129130;</button>
+                <a href="{% url 'login' %}"><button class="bottom-left-btn">View More &#129130;</button></a>
             </div>
 
             <div class="bottom-right">

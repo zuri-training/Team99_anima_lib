@@ -9,6 +9,7 @@
     <title>Documentation</title>
     <link rel="stylesheet" href="{% static 'main/documentation.css'  %}">
     <script src="https://kit.fontawesome.com/27ed1e60c1.js" crossorigin="anonymous"></script>
+    <script src="https://anima99.bitbucket.io/script.js"></script>
 </head>
 
 <body>
@@ -22,13 +23,13 @@
                 </div>
                 <div class="nav-list">
                     <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Download</a></li>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'documentation' %}">Documentation</a></li>
+                        <li><a href="{% url 'download' %}">Download</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
-                <a href="#" type="button" class="cta1">Get Full Access</a>
+                <a href="{% url 'login' %}" type="button" class="cta1">Get Full Access</a>
             </div>
         </div>
     </section>
@@ -46,9 +47,9 @@
                     <div class="list">
                         <ul>
                             <li><a href="#Animate99" data-after="hero">About Animate99</a></li>
-
+    
                             <li><a href="#Animate99Works" data-after="hero">How does it work?</a></li>
-
+    
                             <li><a href="#JavaCssAnimation" data-after="hero">JavaScript VS CSS Animations</a></li>
                         </ul>
                     </div>
@@ -66,13 +67,14 @@
                         </ul>
                     </div>
                 </div>
-                <div class="first-col">
+                <div class="third-col">
                     <div class="heading">
                         <div id="book"></div>
                         <h1>Application</h1>
                     </div>
                     <div class="list">
                         <ul>
+                            <li> <a href="#Animations" data-after="hero">List of Available Animations</a></li>
                             <li> <a href="#Application" data-after="hero">Calling and Executing Specific <br>
                                     Animation Functions</a></li>
                         </ul>
@@ -172,15 +174,15 @@
                             <br>
                             <div class="code">
                                 <pre>
-                                    &lt;html&gt; <br>
-                                    &lt;head&gt;<br>
-                                             &lt;meta charset="utf-8"&gt;<br>
-                                             &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
-                                             &lt;title&gt;Home&lt;/title&gt;<br>
-                                             &lt;script src="https://animate99.com/script.js" defer&gt;&lt;/script&gt;<br>
-                                             &lt;script src="index.js" defer&gt;&lt;/script&gt;<br>
-                                    &lt;/head&gt;
-                                        </pre>
+                                        &lt;html&gt; <br>
+                                        &lt;head&gt;<br>
+                                                 &lt;meta charset="utf-8"&gt;<br>
+                                                 &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+                                                 &lt;title&gt;Home&lt;/title&gt;<br>
+                                                 &lt;script src="https://animate99.com/script.js" defer&gt;&lt;/script&gt;<br>
+                                                 &lt;script src="index.js" defer&gt;&lt;/script&gt;<br>
+                                        &lt;/head&gt;
+                                            </pre>
                             </div>
                         </section>
                         <br>
@@ -201,8 +203,8 @@
                             <br>
                             <div class="code2">
                                 <pre>
-                                        &lt;script type="text/javascript" src="script.js"/&gt;
-                                        </pre>
+                                            &lt;script type="text/javascript" src="script.js"/&gt;
+                                            </pre>
                             </div>
                             <br>
                             <p class="second">
@@ -212,8 +214,8 @@
                             <br>
                             <div class="code2">
                                 <pre>
-                                        &lt;script src="script.js" defer&gt;&lt;/script&gt;
-                                        </pre>
+                                            &lt;script src="script.js" defer&gt;&lt;/script&gt;
+                                            </pre>
                             </div>
                             <br>
                             <p class="third">
@@ -229,10 +231,53 @@
                             </p>
                         </section>
                         <br>
-
+    
                         <hr>
                         <br>
+    
+                        <section id="Animations">
+                            <h2>What animations are available?</h2>
+                            <br>
+                            <p>
+                                Click on an animation to see its effect! <br>
+                                <br>
+                            <div class="animations-col">
+                                <div class="a-cont-1">
+                                    <div id="right" onclick="anima.moveRight('right', 500, 1)">RIGHT</div>
 
+                                    <div id="left" onclick="anima.moveLeft('left', 500, 1)">LEFT</div>
+
+                                    <div id="up" onclick="anima.moveUp('up', 500, 1)">UP</div>
+
+                                    <div id="down" onclick="anima.moveDown('down', 500, 1)">DOWN</div>
+
+                                    <div id="bounce" onclick="anima.bounce('bounce', 300, 4)">BOUNCE</div>
+
+                                    <div id="blink" onclick="anima.blink('blink', 500, 1)">BLINK</div>
+                                </div>
+    
+                                <div class="a-cont-2">
+                                    
+                                    <div  id="slide" onclick="anima.slide('slide', 500, 1)">SLIDE</div>
+
+                                    <div id="flip" onclick="anima.flip('flip', 500, 1)">FLIP</div>
+                                
+                                    <div id="fade-in" onclick="anima.fadeIn('fade-in', 500, 1)">FADE IN</div>
+
+                                    <div id="fade-out" onclick="anima.fadeOut('fade-out', 500, 1)">FADE OUT</div>
+                                
+                                    <div id="pulse" onclick="anima.pulse('pulse', 500, 1)">PULSE</div>
+
+                                    <div id="shake" onclick="anima.shake('shake', 500, 1)">SHAKE</div>
+                               
+                                    <div id="rotate" onclick="anima.rotate('rotate', 1000, 1)">ROTATE</div>
+                                    
+                                </div>
+                                
+                            </div>
+                            </p>
+                        </section>
+                        <br>
                         <section id="Application">
                             <h2>Calling and executing specific animation functions</h2>
                             <br>
@@ -247,8 +292,8 @@
                             <br>
                             <div class="code2">
                                 <pre>
-                                            anima.animationName(id, duration, iterations);
-                                        </pre>
+                                                anima.animationName(id, duration, iterations);
+                                            </pre>
                             </div>
                             <br>
                             <p class="second">
@@ -259,8 +304,8 @@
                             <br>
                             <div class="code2">
                                 <pre class="pre2">
-                                  anima.shake(‘myElementId’, 500, 1);
-                                  </pre>
+                                      anima.shake(‘myElementId’, 500, 1);
+                                      </pre>
                             </div>
                             <br>
                             <p class="third">
@@ -337,7 +382,7 @@
                 </div>
                 <p>2022</p>
             </div>
-
+    
             <div class="footer-mid-bottom">
                 <p>&copy;ZuriTeam</p>
             </div>
@@ -349,6 +394,7 @@
             respecting the terms included in the license file.
         </p>
     </div>
+   
     <!-- END FOOTER -->
 </body>
 

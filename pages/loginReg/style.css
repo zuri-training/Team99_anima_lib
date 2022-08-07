@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Fraunces:opsz,wght@9..144,700&display=swap");
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/background.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+header {
+    margin: 2rem auto 0.55rem;
+    max-width: 85vw;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+header span {
+    background-color: pink;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.container {
+    max-width: 85vw;
+    margin: 1rem auto 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5rem;
+    /* flex-wrap: wrap; */
+}
+
+.left {
+    padding-top: 5rem;
+    text-align: left;
+}
+
+.left h2 {
+    font-size: 3rem;
+    margin-bottom: 0.7rem;
+}
+
+.left p {
+    font-size: 1.5rem;
+    width: 80%;
+    font-weight: 500;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    background-color: rgb(3, 21, 76);
+    padding: 3.5rem 3rem;
+    text-decoration-color: white;
+    width: 32rem;
+    border-radius: 1.5rem;
+}
+
+.right__top h2 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.right__top p,
+.right__top p.login_p {
+    margin: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    position: relative;
+}
+
+.right__top p::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 45%;
+    background-color: white;
+    top: 0.55rem;
+    left: 14rem;
+    z-index: 10;
+}
+
+.right__top p::before {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 45%;
+    background-color: white;
+    top: 0.55rem;
+    right: 14rem;
+    z-index: 10;
+}
+
+.right__top p.login_p::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 45%;
+    background-color: white;
+    top: 0.55rem;
+    left: 14rem;
+    z-index: 10;
+}
+
+.right__top p.login_p::before {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 45%;
+    background-color: white;
+    top: 0.55rem;
+    right: 14rem;
+    z-index: 10;
+}
+
+label {
+    color: white;
+}
+
+.email {
+    margin-bottom: 2rem;
+}
+
+.right form input {
+    display: block;
+    padding: 0.7rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    background-color: inherit;
+    border: 1px solid white;
+}
+
+.right form input::placeholder {
+    opacity: 0.7;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-google img {
+    margin-right: 0.5rem;
+}
+
+small {
+    color: #fff;
+    font-size: 1rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 950px) {
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 85vw;
+    }
+    .left {
+        padding-top: 2rem;
+        text-align: center;
+        /* width: 95vw; */
+        margin: 0 auto;
+    }
+    .left h2 {
+        font-size: 2.5rem;
+        margin-bottom: 0.7rem;
+        /* width: 80%; */
+    }
+    .left p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .right__top p::after {
+        top: 0.55rem;
+        left: 14rem;
+        z-index: 10;
+    }
+    .right__top p::before {
+        top: 0.55rem;
+        right: 14rem;
+        z-index: 10;
+    }
+    .right__top p.login_p::after {
+        top: 0.55rem;
+        left: 14rem;
+        z-index: 10;
+    }
+    .right__top p.login_p::before {
+        top: 0.55rem;
+        right: 14rem;
+        z-index: 10;
+    }
+    .right {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .right {
+        width: 25rem;
+    }
+    .right__top p::after {
+        top: 0.55rem;
+        left: 10rem;
+        z-index: 10;
+    }
+    .right__top p::before {
+        top: 0.55rem;
+        right: 10rem;
+        z-index: 10;
+    }
+    .right__top p.login_p::after {
+        top: 0.55rem;
+        left: 10rem;
+        z-index: 10;
+    }
+    .right__top p.login_p::before {
+        top: 0.55rem;
+        right: 10rem;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 470px) {
+    .container {
+        max-width: 95vw;
+        margin: 0 auto;
+    }
+    .left {
+        margin: 0;
+        gap: 0.1rem;
+    }
+    .right {
+        padding: 3rem 2.5rem;
+        width: 22rem;
+    }
+    .right__top p.login_p::after {
+        top: 0.55rem;
+        left: 9rem;
+        z-index: 10;
+    }
+    .right__top p.login_p::before {
+        top: 0.55rem;
+        right: 9rem;
+        z-index: 10;
+    }
+}

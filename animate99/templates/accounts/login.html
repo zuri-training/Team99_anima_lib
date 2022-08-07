@@ -1,5 +1,73 @@
-{% load socialaccount %}
-<h1>login</h1>
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="{% static 'accounts/style.css'  %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="anim">
+                <div class="logo-head">
+                    <h1>Animate</h1>
+                </div>
+                <div class="logo-num"><span>99</span></div>
+            </div>
+            
+           
+        </nav>
+    </header>
+    <main class="container">
+        <div class="left">
+            <h2>Welcome Back!</h2>
+            <p>Continue to your Animate99 account to access our full library!</p>
+        </div>
+        <div class="right">
+            <div class="right__top">
+                <h2> Log In</h2>
+                <button class="btn btn-google">
+                    <img src="{% static 'accounts/Google - png 0.png'  %}" alt="google icon">Login with Google</button>
+                <p class="login_p">Or</p>
+            </div>
+            <form action="./" method="post">
+                <div class="email">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email address" />
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password" />
+                </div>
+                <div class="button">
+                    <button class="btn btn__login">Log In</button>
+                    <small>Don't have an account?
+                        <span><a href="{% url 'register' %}">Register</a></small></span>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>login</h1>
 <form action="" method="POST">
     {% csrf_token %}
     <label for="email">email</label>
