@@ -523,6 +523,7 @@ ul {
   cursor: pointer;
   border: none;
   margin-right: 17em;
+  background-color:#d0d6f2;
 }
 
 .carousel-btns {
@@ -1242,7 +1243,7 @@ ul {
     cursor: pointer;
     border: none;
     margin-right: 17em;
-    color: #d0d6f2;
+    background-color: #d0d6f2;
   }
 
   .carousel-btns {
