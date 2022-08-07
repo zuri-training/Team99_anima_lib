@@ -20,9 +20,27 @@
     <title>Usage Examples</title>
   </head>
   <body>
+    <div class="dashboard-header">
+      <h2 class="dashboard-header__title">
+        Animate <span class="number">99</span>
+      </h2>
+      <nav class="dashboard-nav">
+        <ul class="dashboard-nav__list">
+          <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
+          <li class="dashboard-nav__list-item active">
+            <a href="#">Dashboard</a>
+          </li>
+          <li class="dashboard-nav__list-item">
+            <a href="#">Documentation</a>
+          </li>
+          <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
+        </ul>
+      </nav>
+      <button class="dashboard-download">Download Library</button>
+    </div>
+
     <div class="dashboard">
       <div class="dashboard-sidebar">
-        <h2 class="sidebar-title">Animate <span class="number">99</span></h2>
         <div class="dashboard-user">
           <img
             src="images/man.jpg"
@@ -32,13 +50,13 @@
           <p class="dashboard-username">John Doe</p>
         </div>
         <div class="user-options">
-          <div class="user-animation">
+          <div class="user-library">
             <img
               src="/images/library.png"
               alt="heart-img"
-              class="user-animation-img"
+              class="user-library-img"
             />
-            <p class="title">Library</p>
+            <p class="title"><a href="library.html">Library</a></p>
           </div>
 
           <div class="user-usageExamples sidebar-active">
@@ -47,7 +65,9 @@
               alt="heart-img"
               class="user-usageExamples-img"
             />
-            <p class="title">Usage Examples</p>
+            <p class="title">
+              <a href="usageExamples.html">Usage Examples </a>
+            </p>
           </div>
 
           <div class="user-likes">
@@ -56,7 +76,7 @@
               alt="heart-img"
               class="user-likes-img"
             />
-            <p class="title">My Likes</p>
+            <p class="title"><a href="likes.html">My Likes</a></p>
           </div>
 
           <div class="user-settings">
@@ -65,54 +85,42 @@
               alt="heart-img"
               class="user-settings-img"
             />
-            <p class="title">Settings</p>
+            <p class="title"><a href="settings.html">Settings</a></p>
           </div>
-        </div>
-        <div class="user-logout">
-          <img
-            src="/images/heart.png"
-            alt="heart-img"
-            class="user-logout-img"
-          />
-          <p class="title">Logout</p>
+          <div class="user-logout">
+            <img
+              src="/images/heart.png"
+              alt="heart-img"
+              class="user-logout-img"
+            />
+            <p class="title">Logout</p>
+          </div>
         </div>
       </div>
 
       <div class="dashboard-main">
-        <nav class="dashboard-nav">
-          <ul class="dashboard-nav__list">
-            <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
-            <li class="dashboard-nav__list-item active">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="dashboard-nav__list-item">
-              <a href="#">Documentation</a>
-            </li>
-            <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
-          </ul>
-          <button class="dashboard-download">Download Library</button>
-        </nav>
-
         <!-- dashboard-usageExamples"-->
         <section class="dashboard-usageExamples">
-          <h2 class="dashboard-usageExamples__heading">Usage Examples!</h2>
+          <h2 class="dashboard-usageExamples__heading">Usage Examples</h2>
           <div class="dashboard-usageExamples__main">
             <div class="codepen-box">
               <div class="codepen-screen">
-                <p>Codepen</p>
+                <p class="codepen-screen__code">Codepen</p>
+                <div class="codepen-screen__output">
+                  <div class="codepen-screen__output-circle"></div>
+                </div>
               </div>
               <div class="codepen-example">
-                <p class="codepen-example__name">Bouncing Castle</p>
+                <p class="codepen-example__name">Move up</p>
                 <div class="codepen-example__likes">
                   <p>12</p>
                   <img src="./images/heart.png" alt="likes" />
                 </div>
               </div>
-            </div>
-
-            <div class="dashboard-usageExamples__btn">
-              <a href="#">&lt; <span>Previous</span> </a>
-              <a href="#"> <span>Next </span>&gt;</a>
+              <div class="dashboard-usageExamples__btn">
+                <a href="#">&lt; <span>Swipe Left</span> </a>
+                <a href="#"> <span>Swipe Right </span>&gt;</a>
+              </div>
             </div>
           </div>
         </section>

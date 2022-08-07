@@ -21,9 +21,30 @@
     <title>Settings</title>
   </head>
   <body>
+    <header class="head-top">
+      <nav class="nav-top">
+        <div class="anim">
+          <div class="logo-head">
+            <h1>Animate</h1>
+          </div>
+          <div class="logo-num"><span>99</span></div>
+        </div>
+        <div class="nav-cont">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Documentation</a></li>
+            <li class="nav-item"><a href="#">Dashboard</a></li>
+            <li class="nav-item"><a href="#">Support</a></li>
+          </ul>
+        </div>
+    
+        <div class="btns">
+          <button class="btn-head">Download Library</button>
+        </div>
+      </nav>
+    </header>
     <div class="dashboard">
       <div class="dashboard-sidebar">
-        <h2 class="sidebar-title">Animate<span class="number">99</span></h2>
         <div class="dashboard-user">
           <img
             src="{% static 'user_review/man.jpg' %}"
@@ -53,7 +74,7 @@
 
           <div class="user-likes">
             <img
-              src="{% static 'user_review/heart.png' %}"
+              src="{% static 'user_review/heart-2.png' %}"
               alt="heart-img"
               class="user-likes-img"
             />
@@ -71,7 +92,7 @@
         </div>
         <div class="user-logout">
           <img
-            src="{% static 'user_review/heart.png' %}"
+            src="{% static 'user_review/logout.png' %}"
             alt="heart-img"
             class="user-logout-img"
           />
@@ -80,19 +101,6 @@
       </div>
 
       <div class="dashboard-main">
-        <nav class="dashboard-nav">
-          <ul class="dashboard-nav__list">
-            <li class="dashboard-nav__list-item"><a href="#">Home</a></li>
-            <li class="dashboard-nav__list-item active">
-              <a href="#">Dashboard</a>
-            </li>
-            <li class="dashboard-nav__list-item">
-              <a href="#">Documentation</a>
-            </li>
-            <li class="dashboard-nav__list-item"><a href="#">Support</a></li>
-          </ul>
-          <button class="dashboard-download">Download Library</button>
-        </nav>
 
         <!-- Settings page -->
         <section class="settings">
