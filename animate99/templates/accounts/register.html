@@ -37,17 +37,26 @@
                     <img src="{% static 'accounts/Google - png 0.png'  %}" alt="google icon">Sign up with Google</button>
                 <p>Or</p>
             </div>
-            <form action="./" method="post">
+            <form action="./" method="POST">
+                {% csrf_token %}
                 <div class="email">
                     <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Enter email address" />
+                    {% comment %} <input type="email" name="email" id="email" placeholder="Enter email address" /> {% endcomment %}
+                    {{form.email}}
                 </div>
                 <div class="password">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter password" />
+                    {{form.password1}}
+                    {% comment %} <input type="password" name="password" id="password" placeholder="Enter password" /> {% endcomment %}
+                </div>
+                <div class="password">
+                    <label for="password">Confirm Password</label>
+                    {{form.password2}}
+                    {% comment %} <input type="password" name="password" id="password" placeholder="Enter password" /> {% endcomment %}
                 </div>
                 <div class="button">
-                    <button class="btn btn__login">Register</button>
+                    <input type="submit" name="register_user">
+                    {% comment %} <button class="btn btn__login">Register</button> {% endcomment %}
                     <small>Already have an account?
                         <span>
 

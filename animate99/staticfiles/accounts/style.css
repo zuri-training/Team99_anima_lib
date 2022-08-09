@@ -92,7 +92,8 @@ h1 {
 }
 
 #email,
-#password {
+#id_password1,
+#id_password2 {
     background-color: white;
 }
 
