@@ -181,7 +181,6 @@ WHITENOISE_USE_FINDERS = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-<<<<<<< HEAD
 
 #All_auth set up to remove user name field
 SOCIALACCOUNT_FORMS ={'signup': 'accounts.forms.CreateUserForm'}
@@ -198,13 +197,3 @@ LOGIN_REDIRECT_URL = "/home/"
 
 
 SITE_ID = 1
-=======
-#Email setup
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "animate99team99@gmail.com"
-EMAIL_HOST_PASSWORD = "rrhwrsvquqznnahd"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
->>>>>>> main
