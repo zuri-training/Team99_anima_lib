@@ -4,14 +4,16 @@ Wrote code for animation library;
 coded landing page;
 
 
+
 integrated django templates;
 
 
 created documentation for library;
-
+https://docs.google.com/document/d/12Q0UEOiwLy0EhZYZUNOorUVH9tESye_w7R7n4_ih_EM/edit
 
 
 recorded first presentation;
+https://drive.google.com/file/d/1hOpN87S7-0G3ihddSvmtBcjmv3dBaD1O/view
 
 
 coded download page;
@@ -19,6 +21,15 @@ coded download page;
 
 
 added cloudinary;
+
+
+
+created usage examples code;
+
+
+
+deployed to heroku;
+https://animate-99.herokuapp.com/home/
 
 
 
