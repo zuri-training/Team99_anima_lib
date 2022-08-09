@@ -78,7 +78,7 @@ nav a:hover {
   width: 100px;
   height: 38px;
 
-  background: #ffffff;
+  background: #d0d6f2;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -120,6 +120,7 @@ nav a:hover {
   font-family: "DM Sans", sans-serif;
   cursor: pointer;
   border: none;
+  background-color: #d0d6f2;
 }
 
 .logo-head {
@@ -302,7 +303,7 @@ ul {
   font-family: "DM Sans", sans-serif;
   cursor: pointer;
   border: none;
-  background-color: #ffa9b6;
+  background-color: #d0d6f2;
   color: #232946;
 }
 
@@ -522,6 +523,7 @@ ul {
   cursor: pointer;
   border: none;
   margin-right: 17em;
+  background-color:#d0d6f2;
 }
 
 .carousel-btns {
@@ -725,6 +727,15 @@ ul {
   color: #232946;
 }
 
+
+
+
+
+
+
+
+
+
 /*                                    LARGER LAPTOP SCREENS                                          */
 
 @media only screen and (min-width: 1366px) {
@@ -797,7 +808,7 @@ ul {
     width: 100px;
     height: 38px;
 
-    background: #ffffff;
+    background: #d0d6f2;
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -839,6 +850,7 @@ ul {
     font-family: "DM Sans", sans-serif;
     cursor: pointer;
     border: none;
+    background-color: #d0d6f2;
   }
 
   .logo-head {
@@ -1019,7 +1031,7 @@ ul {
     font-family: "DM Sans", sans-serif;
     cursor: pointer;
     border: none;
-    background-color: #ffa9b6;
+    background-color: #d0d6f2;
     color: #232946;
   }
 
@@ -1240,6 +1252,7 @@ ul {
     cursor: pointer;
     border: none;
     margin-right: 17em;
+    background-color: #d0d6f2;
   }
 
   .carousel-btns {

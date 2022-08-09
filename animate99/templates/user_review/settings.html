@@ -37,7 +37,7 @@
             <li class="nav-item"><a href="#">Support</a></li>
           </ul>
         </div>
-    
+
         <div class="btns">
           <button class="btn-head">Download Library</button>
         </div>
@@ -69,7 +69,9 @@
               alt="heart-img"
               class="user-usageExamples-img"
             />
-            <p class="title">Usage Examples</p>
+            <a href="{% url 'usageexamples' %}"
+              ><p class="title">Usage Examples</p></a
+            >
           </div>
 
           <div class="user-likes">
@@ -78,7 +80,7 @@
               alt="heart-img"
               class="user-likes-img"
             />
-            <p class="title">My Likes</p>
+            <a href="{% url 'likes' %}"><p class="title">My Likes</p></a>
           </div>
 
           <div class="user-settings sidebar-active">
@@ -87,7 +89,7 @@
               alt="heart-img"
               class="user-settings-img"
             />
-            <p class="title">Settings</p>
+            <a href="{% url 'settings' %}"><p class="title">Settings</p></a>
           </div>
         </div>
         <div class="user-logout">
@@ -103,7 +105,6 @@
       </div>
 
       <div class="dashboard-main">
-
         <!-- Settings page -->
         <section class="settings">
           <h2 class="settings-heading">Settings</h2>
@@ -112,7 +113,10 @@
               <div class="form-input">
                 <input type="text" placeholder="Name" />
                 <div class="remove">
-                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <img
+                    src="{% static 'user_review/cancel.png' %}"
+                    alt="remove-icon"
+                  />
                   <span>Remove</span>
                 </div>
               </div>
@@ -131,7 +135,10 @@
               <div class="form-input">
                 <textarea placeholder="Bio"></textarea>
                 <div class="remove">
-                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <img
+                    src="{% static 'user_review/cancel.png' %}"
+                    alt="remove-icon"
+                  />
                   <span>Remove</span>
                 </div>
               </div>
@@ -144,7 +151,10 @@
                   placeholder="Twitter profile link"
                 />
                 <div class="remove">
-                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <img
+                    src="{% static 'user_review/cancel.png' %}"
+                    alt="remove-icon"
+                  />
                   <span>Remove</span>
                 </div>
               </div>
@@ -156,7 +166,10 @@
                   placeholder="Github Profile link"
                 />
                 <div class="remove">
-                  <img src="{% static 'user_review/cancel.png' %}" alt="remove-icon" />
+                  <img
+                    src="{% static 'user_review/cancel.png' %}"
+                    alt="remove-icon"
+                  />
                   <span>Remove</span>
                 </div>
               </div>

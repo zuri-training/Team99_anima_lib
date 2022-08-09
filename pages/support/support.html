@@ -1,0 +1,156 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support</title>
+    <link rel="stylesheet" href="{% static 'main/support.css'  %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="anim">
+                <div class="logo-head">
+                    <h1>Animate</h1>
+                </div>
+                <div class="logo-num"><span>99</span></div>
+            </div>
+            <div class="nav-cont">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Documentation</a></li>
+                    <li class="nav-item"><a href="#">Download</a></li>
+                    <li class="nav-item"><a href="#">Support</a></li>
+                </ul>
+            </div>
+
+            <div class="btns">
+                <button class="btn-head">Get Full Access</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-box-1">
+        <div class="box-1-text">
+            <h1>Welcome To Animate99 Support</h1>
+            <p>Got a question? we are here to help!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header-box-2">
+            <div class="box-2-text">
+                <h1>Installation</h1>
+                <p>Have installation issues? Click on the link to learn more</p>
+                <button class="get-btn">Documentation</button>
+            </div>
+        </div>
+        <div class="header-box-3">
+            <div class="box-3-text">
+                <h1>Library</h1>
+                <p>Want to use our animations? Click the link to learn more</p>
+                <button class="dow-btn">Download library</button>
+            </div>
+        </div>
+        <div class="header-box-4">
+            <div class="box-4-text">
+                <h1>Available animations</h1>
+                <p>View all the available animations, Click the link to learn more</p>
+                <button class="us-btn">Usage Examples</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="middle">
+        <div class="middle-text">
+            <h1>Can't find what you're looking for ?</h1>
+            <p>
+                Our goal is to help make your life easier so send us a mail and we
+                will solve your problem.
+            </p>
+        </div>
+
+        <div class="mid-box-1">
+            <form class="contact-form">
+                <input type="text" name="name" id="name" placeholder="Name" required />
+                <input type="email" placeholder="E-mail" required />
+                <textarea name="textarea" id="" cols="30" rows="10" placeholder="Type your message" required></textarea>
+                <p class="register">Are you a registered user ?</p>
+
+                <div class="radioButtons">
+                    <label for="html">
+                        <input type="radio" id="html" name="fav_language" value="HTML" />Yes
+                    </label>
+
+                    <label for="css">
+                        <input type="radio" id="css" name="fav_language" value="CSS" /> No
+                    </label>
+                </div>
+                <button class="sub-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-top">
+            <div class="foot-top-left">
+                <div class="logo-foot">
+                    <h1>Animate</h1>
+                    <div class="logo-num"><span>99</span></div>
+                </div>
+                <div class="foot-top-text">
+                    <p>
+                        Animate99 is an animation library created by Team 99 as a
+                        necessary requirement to complete the I4GxZuri Internship program.
+                    </p>
+                </div>
+            </div>
+            <div class="foot-top-right">
+                <div class="foot-top-right-1">
+                    <h2>Navigation</h2>
+                    <p>Home</p>
+                    <p>Documentation</p>
+                    <p>Forum</p>
+                </div>
+                <div class="foot-top-right-2">
+                    <h2>Resources</h2>
+                    <p>Team</p>
+                    <p>Licence</p>
+                    <p>Versions</p>
+                    <p>Project Info</p>
+                </div>
+                <div class="foot-top-right-3">
+                    <h2>Installation</h2>
+                    <p>Installation</p>
+                    <p>About Animate99</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-mid">
+            <div class="footer-mid-top">
+                <p>v1.0</p>
+                <div class="create">
+                    <p>Created by Team99</p>
+                </div>
+                <p>2022</p>
+            </div>
+
+            <div class="footer-mid-bottom">
+                <p>&copy;ZuriTeam</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>
+            Animate99 is a Zuri project animation library. You can use it freely,
+            respecting the terms included in the license file.
+        </p>
+    </div>
+</body>
+
+</html>

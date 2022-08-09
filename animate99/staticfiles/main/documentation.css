@@ -64,19 +64,20 @@ span a {
 /* Header Section */
 
 #header .header {
-  min-height: 144px;
+  min-height: 80px;
   transition: 0.3s ease background-color;
   font-family: "DM Sans";
   font-style: normal;
   font-size: 18px;
+  width: 100%;
 }
 
 #header .nav-bar {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 1512px;
-  height: 144px;
+  width: 100%;
+  height: 80px;
   padding: 40px 120px;
   gap: 10px;
   border-bottom: 0.3px solid #d0d6f2;
@@ -238,6 +239,7 @@ span a {
   line-height: 150%;
   width: 363px;
   height: 72px;
+  margin-top: -2em;
 }
 
 .project-item h2 {
@@ -329,7 +331,7 @@ background: #1d223a;
     border-radius: 0.5em;
   /* width: 800px; */
 }
-.a-cont-1{
+.a-cont-2{
     margin-left: 6em;
 }
 .animations-col:hover{

@@ -21,9 +21,9 @@ body {
   font-weight: 400;
 }
 
-div a{
+div a {
   text-decoration: none;
-  color:#000 ;
+  color: #000;
 }
 .head-top {
   display: flex;
@@ -49,7 +49,7 @@ div a{
 
 nav a {
   text-decoration: none;
-  color: #D0D6F2;
+  color: #d0d6f2;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 500;
@@ -114,7 +114,6 @@ nav a:hover {
   list-style-type: none;
 }
 
-
 .btn-head {
   padding: 8px, 12px;
   border-radius: 4px;
@@ -123,7 +122,7 @@ nav a:hover {
   font-weight: 700;
   cursor: pointer;
   border: 1px solid #232946;
-  background-color: #D0D6F2;
+  background-color: #d0d6f2;
   color: #232946;
   line-height: 23.44px;
   width: 185px;
@@ -217,7 +216,7 @@ nav a:hover {
   border-bottom: 4px solid #eebbc3;
 }
 
-.dashboard-nav__list-item+.active a {
+.dashboard-nav__list-item + .active a {
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
@@ -291,7 +290,7 @@ nav a:hover {
   gap: 12px;
 }
 
-.user-options>* {
+.user-options > * {
   display: flex;
   align-items: center;
   gap: 17.25px;
@@ -303,7 +302,7 @@ nav a:hover {
   width: 250px;
 }
 
-.user-options>*:hover {
+.user-options > *:hover {
   cursor: pointer;
   background-color: #eebbc3;
   color: #232946;
@@ -343,9 +342,9 @@ nav a:hover {
   position: absolute;
   bottom: 52px;
   border: 1px solid #232946;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  /* margin-left: 2em; */
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 6em;
   align-self: center;
 }
 
@@ -381,7 +380,7 @@ nav a:hover {
 
 .likes-heading {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 42px;
   color: #232946;
   margin-bottom: 24px;
 }
@@ -2897,6 +2896,10 @@ nav a:hover {
 }
 
 /* For the Dashboard library*/
+.dashboard-library {
+  height: 700px;
+  overflow: scroll;
+}
 .dashboard-library__main {
   font-size: 14px;
   line-height: 150%;
@@ -3032,12 +3035,17 @@ nav a:hover {
   margin-bottom: 16px;
 }
 
+.dashboard-usageExamples {
+  height: 700px;
+  overflow: scroll;
+}
+
 .codepen-box {
   max-width: 750px;
   height: 500px;
   background: #232946;
   border-radius: 8px;
-  margin-bottom: 154px;
+  margin-bottom: 75px;
   margin-top: 32px;
 
   position: relative;
