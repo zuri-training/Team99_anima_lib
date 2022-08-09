@@ -90,6 +90,10 @@ h1 {
     gap: 5rem;
     /* flex-wrap: wrap; */
 }
+.pword{
+    background-color: white;
+
+}
 
 #email,
 #id_password1,
@@ -204,7 +208,7 @@ label {
     width: 100%;
     border-radius: 0.3rem;
     margin: 0.5rem 0;
-    background-color: inherit;
+    background-color: white;
     border: 1px solid white;
 }
 
@@ -230,6 +234,8 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #D0D6F2;
+    padding: 0.7em;
+    margin-top: 0.5em;
 }
 
 .btn-google img {
