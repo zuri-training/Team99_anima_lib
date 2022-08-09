@@ -76,9 +76,10 @@
         </div>
 
         <div class="mid-box-1">
-            <form class="contact-form">
+            <form class="contact-form" action="" method="POST">
+                {% csrf_token %}
                 <input type="text" name="name" id="name" placeholder="Name" required />
-                <input type="email" placeholder="E-mail" required />
+                <input type="email" name="email" placeholder="E-mail" required />
                 <textarea name="textarea" id="" cols="30" rows="10" placeholder="Type your message" required></textarea>
                 <p class="register">Are you a registered user ?</p>
 
