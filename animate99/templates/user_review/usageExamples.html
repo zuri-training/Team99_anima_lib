@@ -47,48 +47,36 @@
     <div class="dashboard">
       <div class="dashboard-sidebar">
         <div class="dashboard-user">
-          <img
-            src="{% static 'user_review/man.jpg' %}"
-            alt="user-image"
-            class="dashboard-userImage"
-          />
+          <img src="{% static 'user_review/man.jpg' %}" alt="user-image" class="dashboard-userImage" />
           <p class="dashboard-username">John Doe</p>
         </div>
         <div class="user-options">
           <div class="user-animation">
-            <img
-              src="{% static 'user_review/library.png' %}"
-              alt="heart-img"
-              class="user-animation-img"
-            />
-            <p class="title">Library</p>
+            <img src="{% static 'user_review/library.png' %}" alt="heart-img" class="user-animation-img" />
+            <a href="{% url 'library' %}">
+              <p class="title">Library</p>
+            </a>
           </div>
-
-          <div class="user-usageExamples sidebar-active">
-            <img
-              src="{% static 'user_review/usage.png' %}"
-              alt="heart-img"
-              class="user-usageExamples-img"
-            />
-            <p class="title">Usage Examples</p>
+    
+          <div class="user-usageExamples">
+            <img src="{% static 'user_review/usage.png' %}" alt="heart-img" class="user-usageExamples-img" />
+            <a href="{% url 'usageexamples' %}">
+              <p class="title">Usage Examples</p>
+            </a>
           </div>
-
+    
           <div class="user-likes">
-            <img
-              src="{% static 'user_review/heart-2.png' %}"
-              alt="heart-img"
-              class="user-likes-img"
-            />
-            <p class="title">My Likes</p>
+            <img src="{% static 'user_review/heart-2.png' %}" alt="heart-img" class="user-likes-img" />
+            <a href="{% url 'likes' %}">
+              <p class="title">My Likes</p>
+            </a>
           </div>
-
-          <div class="user-settings">
-            <img
-              src="{% static 'user_review/setting.png' %}"
-              alt="heart-img"
-              class="user-settings-img"
-            />
-            <p class="title">Settings</p>
+    
+          <div class="user-settings sidebar-active">
+            <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
+            <a href="{% url 'settings' %}">
+              <p class="title">Settings</p>
+            </a>
           </div>
         </div>
         <div class="user-logout">
@@ -121,8 +109,7 @@
               <div class="codepen-example">
                 <p class="codepen-example__name">Bouncing Clouds</p>
                 <div class="codepen-example__likes">
-                  <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                  
                 </div>
               </div>
             </div>
@@ -140,8 +127,7 @@
               <div class="codepen-example">
                 <p class="codepen-example__name">404</p>
                 <div class="codepen-example__likes">
-                  <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                  
                 </div>
               </div>
             </div>
@@ -160,8 +146,6 @@
               <div class="codepen-example">
                 <p class="codepen-example__name">Radial</p>
                 <div class="codepen-example__likes">
-                  <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
                 </div>
               </div>
             </div>
@@ -179,8 +163,7 @@
               <div class="codepen-example">
                 <p class="codepen-example__name">Peace not war</p>
                 <div class="codepen-example__likes">
-                  <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                 
                 </div>
               </div>
             </div>

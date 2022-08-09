@@ -49,29 +49,29 @@
             <div class="user-options">
                 <div class="user-library">
                     <img src="{% static 'user_review/library.png' %}" alt="heart-img" class="user-library-img" />
-                    <p class="title"><a href="library.html">Library</a></p>
+                    <a href="{% url 'library' %}"><p class="title">Library</p></a>
                 </div>
 
                 <div class="user-usageExamples">
                     <img src="{% static 'user_review/usage.png' %}" alt="heart-img" class="user-usageExamples-img" />
-                    <p class="title">
-                        <a href="usageExamples.html">Usage Examples </a>
-                    </p>
+                    <a href="{% url 'usageexamples' %}"><p class="title">
+                        Usage Examples
+                    </p></a>
                 </div>
 
                 <div class="user-likes sidebar-active">
                     <img src="{% static 'user_review/heart-2.png' %}" alt="heart-img" class="user-likes-img" />
-                    <p class="title"><a href="likes.html">My Likes</a></p>
+                    <a href="{% url 'likes' %}"><p class="title">My Likes</p></a>
                 </div>
 
                 <div class="user-settings">
                     <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
-                    <p class="title"><a href="settings.html">Settings</a></p>
+                    <a href="{% url 'settings' %}"><p class="title">Settings</p></a>
                 </div>
-                <div class="user-logout">
+                <!-- <div class="user-logout">
                     <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
                     <p class="title">Logout</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
