@@ -35,6 +35,11 @@ ALLOWED_HOSTS = ['127.0.0.1', 'animate-99.herokuapp.com']
 
 # Application definition
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.admin',
@@ -43,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     
     
     
@@ -56,6 +62,12 @@ INSTALLED_APPS = [
     'apps.accounts.apps.AccountsConfig',
     'apps.user_review.apps.UserReviewConfig',
     'apps.blog.apps.BlogConfig',
+    
+    #google authentication
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -68,6 +80,21 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+
+# Provider specific settings
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        
+        'APP': {
+            'client_id': '205496138072-9u3qvl2arbo61bcroogiuppr8kngsi26.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        }
+    }
+}
+
 
 ROOT_URLCONF = 'animate99.urls'
 
@@ -154,6 +181,24 @@ WHITENOISE_USE_FINDERS = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+<<<<<<< HEAD
+
+#All_auth set up to remove user name field
+SOCIALACCOUNT_FORMS ={'signup': 'accounts.forms.CreateUserForm'}
+ACCOUNT_USER_MODEL_USERNAME_FIELD = None
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+
+# Account redirect URL
+ACCOUNT_SIGNUP_REDIRECT_URL = "/home/"
+LOGIN_REDIRECT_URL = "/home/"
+
+
+
+SITE_ID = 1
+=======
 #Email setup
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
@@ -162,3 +207,4 @@ EMAIL_HOST_USER = "animate99team99@gmail.com"
 EMAIL_HOST_PASSWORD = "rrhwrsvquqznnahd"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+>>>>>>> main
