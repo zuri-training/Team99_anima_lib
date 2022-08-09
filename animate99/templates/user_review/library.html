@@ -13,11 +13,13 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap"
       rel="stylesheet"
     />
     <script src="https://anima99.bitbucket.io/script.js"></script>
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
     <title>Library</title>
   </head>
@@ -105,22 +107,38 @@
         </nav> -->
 
         <!-- dashboard-library"-->
+        
         <section class="dashboard-library">
           <h2 class="dashboard-library__heading">Library</h2>
           <div class="dashboard-library__main">
+            {% for animation in animations %}
+              {% if animation.name == 'bounce' %}
             <div class="dashboard-library__main-type001">
               <div class="dashboard-library__main-type001--box">
                 <div class="dashboard-library__main-type001--circle" id="a-1" onmouseover="anima.bounce('a-1',500, 4)"></div>
               </div>
-
+                
               <p class="dashboard-library__main-type001--name">bounce</p>
-              <div class="dashboard-library__main-type001--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                      {% comment %} <input type="hidden" name="next" value="{{request.path}}"> {% endcomment %}
+                      {% if is_favourite %}
+                      <h2>True</h2>
+                      {% else %}
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                     
+                    </div>
+                  </button>
+              </form>
+              
             </div>
+              {% endif %}
 
-            <!-- Second box  -->
+              {% if animation.name == 'moveup' %}
+                <!-- Second box  -->
             <div class="dashboard-library__main-type002">
               <div class="dashboard-library__main-type002--box">
                 <div class="dashboard-library__main-type002--circle"  id="a-2" onmouseover="anima.moveUp('a-2',500, 1)"></div>
@@ -132,8 +150,10 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
+              {% endif %}
 
-            <!-- Third box  -->
+              {% if animation.name == 'movedown' %}
+              <!-- Third box  -->
             <div class="dashboard-library__main-type003">
               <div class="dashboard-library__main-type003--box">
                 <div class="dashboard-library__main-type003--circle" id="a-3" onmouseover="anima.moveDown('a-3',500, 1)"></div>
@@ -145,8 +165,9 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-
-            <!-- Fourth box  -->
+              {% endif %}
+              {% if animation.name == 'moveleft' %}
+              <!-- Fourth box  -->
             <div class="dashboard-library__main-type004">
               <div class="dashboard-library__main-type004--box">
                 <div class="dashboard-library__main-type004--circle" id="a-4" onmouseover="anima.moveLeft('a-4',500, 1)"></div>
@@ -158,8 +179,9 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-
-            <!-- Fifth box  -->
+              {% endif %}
+              {% if animation.name == 'moveRight'%}
+              <!-- Fifth box  -->
             <div class="dashboard-library__main-type005">
               <div class="dashboard-library__main-type005--box">
                 <div class="dashboard-library__main-type005--circle" id="a-5" onmouseover="anima.moveRight('a-5',500, 1)"></div>
@@ -171,7 +193,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-
+              {% endif %}
+              {% if animation.name == "blink" %}
             <!-- 6th box  -->
             <div class="dashboard-library__main-type006">
               <div class="dashboard-library__main-type006--box">
@@ -184,8 +207,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-
-
+              {% endif %}
+              {% if animation.name == "fadein" %}
             <!-- 7th box  -->
             <div class="dashboard-library__main-type001">
               <div class="dashboard-library__main-type001--box">
@@ -198,7 +221,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-
+              {% endif %}
+              {% if animation.name == "fadeout" %}
             <!-- 8th box  -->
             <div class="dashboard-library__main-type002">
               <div class="dashboard-library__main-type002--box">
@@ -211,7 +235,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-            
+              {% endif %}
+              {% if animation.name == "pulse" %}
             <!-- 9th box  -->
             <div class="dashboard-library__main-type003">
               <div class="dashboard-library__main-type003--box">
@@ -224,7 +249,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-            
+            {% endif %}
+            {% if animation.name == "flip"  %}
             <!-- 10th box  -->
             <div class="dashboard-library__main-type004">
               <div class="dashboard-library__main-type004--box">
@@ -237,7 +263,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-
+              {% endif %}
+              {% if animation.name == "shake" %}
             <!-- 11th box  -->
             <div class="dashboard-library__main-type005">
               <div class="dashboard-library__main-type005--box">
@@ -250,7 +277,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-            
+              {% endif %}
+              {% if animation.name == 'rotate'%}
             <!-- 12th box  -->
             <div class="dashboard-library__main-type006">
               <div class="dashboard-library__main-type006--box">
@@ -263,7 +291,8 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
-            
+              {% endif %}
+              {% if animation.name == "slide" %}
             <!-- 13th box  -->
             <div class="dashboard-library__main-type003">
               <div class="dashboard-library__main-type003--box">
@@ -276,6 +305,11 @@
                 <img src="{% static 'user_review/heart.png' %}" alt="like" />
               </div>
             </div>
+              
+              {% endif %}
+            {% endfor %}   
+
+        
 
           </div>
         </section>
