@@ -1,16 +1,15 @@
-from multiprocessing import context
-from urllib import request
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from .models import Animation
+from django.views import View
+from django.http import HttpResponse
+from apps.accounts.models import CustomUser
 from django.views import View
 # Create your views here.
 
 class LibraryListView(View):
     def get(self, request, *args, **kwargs):
-        animations = Animation.objects.all().order_by('created_on')
-        
-
+        animations = Animation.objects.all().order_by('created_on')       
         context = {
             'animations': animations,
         }
@@ -32,12 +31,19 @@ class LibraryDetailView(View):
         }
         
         return render(request, 'user_review/library.html', context)
-# def library (request):
-    
-#     return render(request, 'user_review/library.html',)
 
-def settings (request):
-    return render(request, 'user_review/settings.html',)
+class SettingsView(View):
+    def get(self,request, pk, *args, **kwargs):
+        user = CustomUser.objects.get(pk=request.user.id)
+
+        context = {
+            'user':user
+        }
+
+        return render(request, 'user_review/settings.html', context)
+
+
+
     
 def usageExamples (request):
     return render(request, 'user_review/usageExamples.html',)
@@ -55,20 +61,6 @@ class IsFavoriteView(View):
             is_favourite = True
         
             
-        # animations = Animation.objects.all()
-            
-            
-        
-        # for favourite in animation.favourites.all():
-        #     if favourite == request.user:
-        #         is_favourite = True
-        #         break
-            
-        # if not is_favourite:
-        #     animation.favourites.add(request.user)
-        
-        # if is_favourite:
-        #     animation.favourites.remove(request.user)
             
         next = request.POST.get('next', "/dashboard/library")
         return  HttpResponseRedirect(next)

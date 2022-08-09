@@ -46,11 +46,9 @@
     <div class="dashboard">
       <div class="dashboard-sidebar">
         <div class="dashboard-user">
-          <img
-            src="{% static 'user_review/man.jpg' %}"
-            alt="user-image"
-            class="dashboard-userImage"
-          />
+          <img src="{{user.image.url}}" alt="image" class="dashboard-userImage">
+
+    
           <p class="dashboard-username">John Doe</p>
         </div>
         <div class="user-options">
@@ -89,7 +87,7 @@
               alt="heart-img"
               class="user-settings-img"
             />
-            <a href="{% url 'settings' %}"><p class="title">Settings</p></a>
+            <a href="{% url 'settings' user.pk %}"><p class="title">Settings</p></a>
           </div>
         </div>
         <div class="user-logout">
@@ -98,9 +96,9 @@
             alt="heart-img"
             class="user-logout-img"
           />
-          <a href="{% url 'logout' %}">
+          
           <p class="title">Logout</p>
-          </a>
+        
         </div>
       </div>
 
@@ -184,7 +182,9 @@
 
             <!--  Settings for the image section-->
             <div class="settings-image">
-              <img src="{% static 'user_review/man.jpg' %}" alt="profile-pix" />
+             
+              <img src="{{user.image.url}}" alt="image">
+              
               <button class="change-picture">Change Picture</button>
               <button class="delete-picture">Delete Picture</button>
             </div>
