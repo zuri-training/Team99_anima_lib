@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from .managers import CustomUserManager
+from cloudinary.models import CloudinaryField
 
 class CustomUser(AbstractUser):
     username=None
@@ -8,6 +9,7 @@ class CustomUser(AbstractUser):
     github_url = models.URLField(max_length=255, blank=True)
     project_url = models.URLField(max_length=255, blank=True)
     twitter_url = models.URLField(max_length=255, blank=True)
+    image = CloudinaryField('image', null=True)
     
     
     USERNAME_FIELD = "email"

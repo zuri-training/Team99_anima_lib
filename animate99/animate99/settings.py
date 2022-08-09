@@ -14,6 +14,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 from decouple import config
 import dj_database_url
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -55,6 +58,7 @@ INSTALLED_APPS = [
     #3rd Party
     'django_extensions',
     'crispy_forms',
+    'cloudinary',
     
     #apps
     'apps.common.apps.CommonConfig',
@@ -95,6 +99,13 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+
+# Cloudinary configuration
+cloudinary.config( 
+  cloud_name = "dosj9cjie", 
+  api_key = "177852858536987", 
+  api_secret = "R8vSHpzBPvWvZ3k4fA4trIecaQg" 
+)
 
 ROOT_URLCONF = 'animate99.urls'
 
