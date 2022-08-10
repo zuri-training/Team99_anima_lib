@@ -13,10 +13,13 @@ from django.views.generic.edit import UpdateView
 from django.contrib.auth.decorators import login_required
 
 class LibraryListView(View):
-    def get(self, request, *args, **kwargs):
-        animations = Animation.objects.all().order_by('created_on')       
+    def get(self, request, pk, *args, **kwargs):
+        animations = Animation.objects.all().order_by('created_on')  
+
+        user = CustomUser.objects.get(pk=pk)     
         context = {
             'animations': animations,
+            'user':user,
         }
         
         return render(request, 'user_review/library.html', context)
