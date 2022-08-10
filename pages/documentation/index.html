@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documentation</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/27ed1e60c1.js" crossorigin="anonymous"></script>
-    <script src="https://anima99.bitbucket.io/script.js"></script> 
+    <script src="https://anima99.bitbucket.io/script.js"></script>
 </head>
 
 <body>
@@ -21,14 +20,27 @@
                     Animate<a href="#" type="button" class="cta">99</a>
                 </div>
                 <div class="nav-list">
-                    <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Download</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <a href="#">Home</a>
+                     <a href="#">Documentation</a>
+                    <a href="#">Download</a>
+                    <a href="#">Support</a>
                 </div>
                 <a href="#" type="button" class="cta1">Get Full Access</a>
+            </div>
+
+            <div class="mobile__navbar">
+                <div class="brand">
+                    Animate<a href="#" type="button" class="cta">99</a>
+                </div>
+                <div class="hamburger"><div class="bar"></div></div>
+                <ul>
+                    <li><a href="#header" data-after="Dashboard">Dashboard</a></li>
+                    <li><a href="#Documentation" data-after="Documentation">Documentation</a></li>
+                    <li><a href="#header" data-after="Download">Download</a></li>
+                    <li><a href="#footer" data-after="Contact">Contact</a></li>
+                    <a href="#" type="button" class="cta1">Get Full Access</a>
+                </ul>
+                
             </div>
         </div>
     </section>
@@ -46,9 +58,9 @@
                     <div class="list">
                         <ul>
                             <li><a href="#Animate99" data-after="hero">About Animate99</a></li>
-
+    
                             <li><a href="#Animate99Works" data-after="hero">How does it work?</a></li>
-
+    
                             <li><a href="#JavaCssAnimation" data-after="hero">JavaScript VS CSS Animations</a></li>
                         </ul>
                     </div>
@@ -173,15 +185,14 @@
                             <br>
                             <div class="code">
                                 <pre>
-                                    &lt;html&gt; <br>
-                                    &lt;head&gt;<br>
-                                             &lt;meta charset="utf-8"&gt;<br>
-                                             &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
-                                             &lt;title&gt;Home&lt;/title&gt;<br>
-                                             &lt;script src="https://animate99.com/script.js" defer&gt;&lt;/script&gt;<br>
-                                             &lt;script src="index.js" defer&gt;&lt;/script&gt;<br>
-                                    &lt;/head&gt;
-                                        </pre>
+&lt;html&gt; <br>
+&lt;head&gt;<br>
+        &lt;meta charset="utf-8"&gt;<br>
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+        &lt;title&gt;Home&lt;/title&gt;<br>
+        &lt;script src="https://animate99.com/script.js" defer&gt;&lt;/script&gt;<br>
+        &lt;script src="index.js" defer&gt;&lt;/script&gt;<br>
+&lt;/head&gt;</pre>
                             </div>
                         </section>
                         <br>
@@ -194,17 +205,14 @@
                                 when running your program. For more information about the
                                 usefulness of the defer keyword and how it can impact the
                                 performance of your program check out this article
-                                <span><a
-                                        href="https://javascript.info/script-async-defer">here</a></span>.
+                                <span><a href="https://javascript.info/script-async-defer">here</a></span>.
                                 <br>
                                 <br>
                                 You might also want to avoid using a self closing script tag such as;
                             </p>
                             <br>
                             <div class="code2">
-                                <pre>
-                                        &lt;script type="text/javascript" src="script.js"/&gt;
-                                        </pre>
+                                <pre> &lt;script type="text/javascript" src="script.js"/&gt; </pre>
                             </div>
                             <br>
                             <p class="second">
@@ -213,9 +221,7 @@
                             </p>
                             <br>
                             <div class="code2">
-                                <pre>
-                                        &lt;script src="script.js" defer&gt;&lt;/script&gt;
-                                        </pre>
+                                <pre> &lt;script src="script.js" defer&gt;&lt;/script&gt;</pre>
                             </div>
                             <br>
                             <p class="third">
@@ -231,50 +237,50 @@
                             </p>
                         </section>
                         <br>
-
+    
                         <hr>
                         <br>
-
+    
                         <section id="Animations">
-                            <h2>List of Available Animations</h2>
+                            <h2>What animations are available?</h2>
                             <br>
                             <p>
-                              Click on an animation to see its effect! <br>
-                            <br>
-                            <div class="animations">
-                              <ul>
-                                <li id="right" onclick="anima.moveRight('right', 500, 1)">Right</li>
-                                <li id="left" onclick="anima.moveLeft('left', 500, 1)">Left</li>
-                              </ul>
-                              <ul>
-                                <li id="up" onclick="anima.moveUp('up', 500, 1)">Up</li>
-                                <li id="down" onclick="anima.moveDown('down', 500, 1)">Down</li>
-                              </ul>
-                              <ul>
-                                <li id="bounce" onclick="anima.bounce('bounce', 500, 1)">Bounce</li>
-                                <li id="blink" onclick="anima.blink('blink', 500, 1)">Blink</li>
-                              </ul> 
-                              
-                              <ul>
-                                <li id="slide" onclick="anima.slide('slide', 500, 1)">Slide</li>
-                                <li id="flip" onclick="anima.flip('flip', 500, 1)">Flip</li>
-                              </ul>
-                              
-                              <ul>
-                                <li id="fade-in" onclick="anima.fadeIn('fade-in', 500, 1)">Fade In</li>
-                                <li id="fade-out" onclick="anima.fadeOut('fade-out', 500, 1)">Fade Out</li>
-                              </ul>
-                              <ul>
-                                <li id="pulse" onclick="anima.pulse('pulse', 500, 1)">Pulse</li>
-                                <li id="shake" onclick="anima.shake('shake', 500, 1)">Shake</li>
-                              </ul>
-                              <ul>
-                                <li id="rotate" onclick="anima.rotate('rotate', 1000, 1)">Rotate</li>
-                              </ul>
+                                Click on an animation to see its effect! <br>
+                                <br>
+                            <div class="animations-col">
+                                <div class="a-cont-1">
+                                    <div id="right" onclick="anima.moveRight('right', 500, 1)">RIGHT</div>
+
+                                    <div id="left" onclick="anima.moveLeft('left', 500, 1)">LEFT</div>
+
+                                    <div id="up" onclick="anima.moveUp('up', 500, 1)">UP</div>
+
+                                    <div id="down" onclick="anima.moveDown('down', 500, 1)">DOWN</div>
+
+                                    <div id="bounce" onclick="anima.bounce('bounce', 300, 4)">BOUNCE</div>
+
+                                    <div id="blink" onclick="anima.blink('blink', 500, 1)">BLINK</div>
+                                    
+                                    <div  id="slide" onclick="anima.slide('slide', 500, 1)">SLIDE</div>
+
+                                    <div id="flip" onclick="anima.flip('flip', 500, 1)">FLIP</div>
+                                
+                                    <div id="fade-in" onclick="anima.fadeIn('fade-in', 500, 1)">FADE IN</div>
+
+                                    <div id="fade-out" onclick="anima.fadeOut('fade-out', 500, 1)">FADE OUT</div>
+                                
+                                    <div id="pulse" onclick="anima.pulse('pulse', 500, 1)">PULSE</div>
+
+                                    <div id="shake" onclick="anima.shake('shake', 500, 1)">SHAKE</div>
+                               
+                                    <div id="rotate" onclick="anima.rotate('rotate', 1000, 1)">ROTATE</div>
+                                    
+                                </div>
+                                
                             </div>
                             </p>
                         </section>
-                          <br>
+                        <br>
                         <section id="Application">
                             <h2>Calling and executing specific animation functions</h2>
                             <br>
@@ -288,9 +294,7 @@
                             </p>
                             <br>
                             <div class="code2">
-                                <pre>
-                                            anima.animationName(id, duration, iterations);
-                                        </pre>
+                                <pre> anima.animationName(id, duration, iterations);</pre>
                             </div>
                             <br>
                             <p class="second">
@@ -300,9 +304,7 @@
                             </p>
                             <br>
                             <div class="code2">
-                                <pre class="pre2">
-                                  anima.shake(‘myElementId’, 500, 1);
-                                  </pre>
+                                <pre>anima.shake(‘myElementId’, 500, 1);</pre>
                             </div>
                             <br>
                             <p class="third">
@@ -339,18 +341,18 @@
     <!-- FOOTER -->
     <div class="footer">
         <div class="footer-top">
-            <div class="foot-top-left">
-                <div class="brand">
-                    Animate<a href="#" type="button" class="cta">99</a>
-                </div>
-                <div class="foot-top-text">
-                    <p>
-                        Animate99 is an animation library created by Team 99 as a
-                        necessary requirement to complete the I4GxZuri Internship program.
-                    </p>
-                </div>
-            </div>
             <div class="foot-top-right">
+                <div class="foot-top-left">
+                    <div class="brand">
+                        Animate<a href="#" type="button" class="cta">99</a>
+                    </div>
+                    <div class="foot-top-text">
+                        <p>
+                            Animate99 is an animation library created by Team 99 as a
+                            necessary requirement to complete the I4GxZuri Internship program.
+                        </p>
+                    </div>
+                </div>
                 <div class="foot-top-right-1">
                     <h2>Navigation</h2>
                     <p>Home</p>
@@ -379,7 +381,7 @@
                 </div>
                 <p>2022</p>
             </div>
-
+    
             <div class="footer-mid-bottom">
                 <p>&copy;ZuriTeam</p>
             </div>
@@ -391,7 +393,9 @@
             respecting the terms included in the license file.
         </p>
     </div>
+   
     <!-- END FOOTER -->
+    <script src="./index.js"></script>
 </body>
 
 </html>
