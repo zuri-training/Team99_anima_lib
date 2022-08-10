@@ -49,3 +49,10 @@ def login_view(request):
 def logout_user(request):
     logout(request)
     return redirect('accounts:login')
+
+
+def forgot_view(request):
+    return render (request,'accounts/reset_page1.html')
+
+def reset_view(request):
+    return render (request,'accounts/reset_page2.html')

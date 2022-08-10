@@ -11,6 +11,7 @@
 
     <script src="https://anima99.bitbucket.io/script.js"></script>
     <link rel="stylesheet" href="{% static 'main/style.css'  %}">
+    <link rel="shortcut icon" href="{% static 'main/favicon.svg' %}" type="image/x-icon">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <div class="logo-head">
                     <h1>Animate</h1>
                 </div>
-                <div class="logo-num"><span>99</span></div>
+                <div class="logo-num"><a href="{% url 'home' %}"><span>99</span></a></div>
             </div>
             <div class="nav-cont">
                 <ul class="nav-list">

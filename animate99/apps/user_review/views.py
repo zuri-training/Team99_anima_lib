@@ -15,7 +15,7 @@ from django.contrib.auth.decorators import login_required
 class LibraryListView(View):
     def get(self, request, *args, **kwargs):
         animations = Animation.objects.all().order_by('created_on') 
-              
+        
         context = {
             'animations': animations,
         }
