@@ -125,11 +125,7 @@
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
                       {% comment %} <input type="hidden" name="next" value="{{request.path}}"> {% endcomment %}
-                      {% if is_favourite %}
-                      <h2>True</h2>
-                      {% else %}
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
-                      {% endif %}                     
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
                     </div>
                   </button>
               </form>
