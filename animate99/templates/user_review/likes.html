@@ -67,7 +67,7 @@
 
                 <div class="user-settings">
                     <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
-                    <a href="{% url 'settings' %}"><p class="title">Settings</p></a>
+                    <a href="{% url 'settings' user.pk %}"><p class="title">Settings</p></a>
                 </div>
                 <!-- <div class="user-logout">
                     <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />

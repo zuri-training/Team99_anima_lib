@@ -24,7 +24,7 @@ def register_view(request):
         context= {
             'form':form,
         }
-        return render(request, "accounts/register.html", context )
+        return render(request, "accounts/register.html", context)
 
 
 def login_view(request):
@@ -41,10 +41,7 @@ def login_view(request):
                 login(request, user)
                 return redirect('library')
             else:
-                messages.info(request, 'Email OR password is incorrect')
-                
-            
-            
+                messages.info(request, 'Email OR password is incorrect')           
         context= {}
         return render(request, "accounts/login.html", context )
 
