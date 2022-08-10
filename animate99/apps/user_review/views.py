@@ -13,7 +13,7 @@ from django.views.generic.edit import UpdateView
 from django.contrib.auth.decorators import login_required
 
 class LibraryListView(View):
-    def get(self, request, *args, **kwargs):
+    def get(self, request, pk, *args, **kwargs):
         animations = Animation.objects.all().order_by('created_on') 
         
         context = {
@@ -25,6 +25,7 @@ class LibraryListView(View):
 class LibraryDetailView(View):
     def get(self, request, pk, *args, **kwargs):
         animation = Animation.objects.get(pk=pk)
+        user = CustomUser.objects.get(pk=request.user.id)
         is_favourite = False
         
         if animation.favourites.filter(id=request.user.id).exists():
@@ -105,6 +106,9 @@ class IsFavoriteView(View):
         animation = Animation.objects.get(pk=pk)
         is_favourite = False
         
+        link_id = request.user.id
+        
+        
         if animation.favourites.filter(id=request.user.id).exists():
             animation.favourites.remove(request.user)
             is_favourite = False
@@ -114,9 +118,8 @@ class IsFavoriteView(View):
         
             
             
-        next = request.POST.get('next', "user_review:library")
+        next = request.POST.get('next', f"/dashboard/library/{link_id}")
         return  HttpResponseRedirect(next)
-        # return render(request, 'library')
         
 
 def likes (request):
