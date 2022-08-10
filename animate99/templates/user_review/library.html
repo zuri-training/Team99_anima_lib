@@ -70,7 +70,7 @@
   
         <div class="user-likes">
           <img src="{% static 'user_review/heart-2.png' %}" alt="heart-img" class="user-likes-img" />
-          <a href="{% url 'likes' %}">
+          <a href="{% url 'likes' user.pk %}">
             <p class="title">My Likes</p>
           </a>
         </div>
@@ -142,10 +142,16 @@
               </div>
 
               <p class="dashboard-library__main-type002--name">moveUp</p>
-              <div class="dashboard-library__main-type002--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                      {% comment %} <input type="hidden" name="next" value="{{request.path}}"> {% endcomment %}
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
 
@@ -157,10 +163,15 @@
               </div>
 
               <p class="dashboard-library__main-type003--name">moveDown</p>
-              <div class="dashboard-library__main-type003--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == 'moveleft' %}
@@ -171,10 +182,15 @@
               </div>
 
               <p class="dashboard-library__main-type004--name">moveLeft</p>
-              <div class="dashboard-library__main-type004--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == 'moveRight'%}
@@ -185,10 +201,15 @@
               </div>
 
               <p class="dashboard-library__main-type005--name">moveRight</p>
-              <div class="dashboard-library__main-type005--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == "blink" %}
@@ -199,10 +220,15 @@
               </div>
 
               <p class="dashboard-library__main-type006--name">blink</p>
-              <div class="dashboard-library__main-type006--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == "fadein" %}
@@ -213,10 +239,15 @@
               </div>
             
               <p class="dashboard-library__main-type001--name">fadeIn</p>
-              <div class="dashboard-library__main-type001--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == "fadeout" %}
@@ -227,10 +258,15 @@
               </div>
             
               <p class="dashboard-library__main-type002--name">fadeOut</p>
-              <div class="dashboard-library__main-type002--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == "pulse" %}
@@ -241,10 +277,15 @@
               </div>
             
               <p class="dashboard-library__main-type003--name">pulse</p>
-              <div class="dashboard-library__main-type003--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
             {% endif %}
             {% if animation.name == "flip"  %}
@@ -255,10 +296,15 @@
               </div>
             
               <p class="dashboard-library__main-type004--name">flip</p>
-              <div class="dashboard-library__main-type004--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == "shake" %}
@@ -269,10 +315,15 @@
               </div>
             
               <p class="dashboard-library__main-type005--name">shake</p>
-              <div class="dashboard-library__main-type005--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == 'rotate'%}
@@ -283,10 +334,15 @@
               </div>
             
               <p class="dashboard-library__main-type006--name">rotate</p>
-              <div class="dashboard-library__main-type006--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               {% endif %}
               {% if animation.name == "slide" %}
@@ -297,10 +353,15 @@
               </div>
             
               <p class="dashboard-library__main-type003--name">slide</p>
-              <div class="dashboard-library__main-type003--likes">
-                <span>12</span>
-                <img src="{% static 'user_review/heart.png' %}" alt="like" />
-              </div>
+              <form action="{% url 'favourite' animation.pk %}" method="post">
+                {% csrf_token %}
+                <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
+                    <div class="dashboard-library__main-type001--likes">
+                      <span>{{animation.favourites.all.count}}</span>
+                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                    </div>
+                  </button>
+              </form>
             </div>
               
               {% endif %}

@@ -39,62 +39,13 @@ class LibraryDetailView(View):
         
         return render(request, 'user_review/library.html', context)
     
-    # def post(self, request,pk, *args, **kwargs):
-    #     animation = Animation.objects.get(pk=pk)
-    #     is_favourite = False
-        
-    #     if animation.favourites.filter(id=request.user.id).exists():
-    #         animation.favourites.remove(request.user)
-    #         is_favourite = False
-    #     else:
-    #         animation.favourites.add(request.user)
-    #         is_favourite = True
-        
-    #     # return render(request, 'user_review/library.html')   
-            
-    #     next = request.POST.get('next', "./")
-    #     return  HttpResponseRedirect(next)
-
-# class SettingsView(View):
-#     def get(self,request, pk, *args, **kwargs):
-#         user = CustomUser.objects.get(pk=request.user.id)
-#         # form = UserUpdateForm()
-#         # context = {
-#         #     'user':user,
-#         #     'form':form
-#         # }
-
-#         return render(request, 'user_review/settings.html')
     
-    # def put(self, request, pk, *args, **kwargs):
-    #     user = CustomUser.objects.get(pk=request.user.id)
-    #     form = UserUpdateForm(request.PUT)
-
-    #     if form.is_valid():
-    #         form.save()
-    #         return redirect('settings/<int:pk>')
-            
-    #     context = {
-    #         'user':user,
-    #         'form':form,
-    #     }
-        
-    #     return render(request, 'user_review/settings.html', context)
-        
-        
-# import generic UpdateView
-
 
 class ProfileEditView(UpdateView):
     model = CustomUser
     template_name='user_review/settings.html'
     fields = ["name", "twitter_url","github_url", "image"]
-    success_url ="/"    
-# @login_required
-# def edit_profile(request):
-#     if request.method == 'POST':
-#         form = EditProfileForm(request.POST, instance=request.user)
-#         profile_form = ProfileForm(request.POST, request.FILES, instance=request.user.userprofile)  # request.FILES is show the selected image or file
+    success_url ="/" 
 
 
     
@@ -122,6 +73,18 @@ class IsFavoriteView(View):
         return  HttpResponseRedirect(next)
         
 
-def likes (request):
-    return render(request, 'user_review/likes.html',)
 
+class LikesView(View):
+    def get(self, request, pk, *args, **kwargs):
+        user = CustomUser.objects.get(pk=pk)
+        animations = Animation.objects.filter(favourites=request.user.id)
+        
+        context = {
+            'user': user,
+            'animations': animations,
+        }
+        
+        print(animations)
+        
+        return render(request, 'user_review/likes.html', context)
+        
