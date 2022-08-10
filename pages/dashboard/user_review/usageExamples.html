@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-    <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Usage Examples</title>
   </head>
   <body>
@@ -47,63 +47,39 @@
     <div class="dashboard">
       <div class="dashboard-sidebar">
         <div class="dashboard-user">
-          <img
-            src="{% static 'user_review/man.jpg' %}"
-            alt="user-image"
-            class="dashboard-userImage"
-          />
-          <p class="dashboard-username">John Doe</p>
+            <img src="./images/man.jpg" alt="user-image" class="dashboard-userImage" />
+            <p class="dashboard-username">John Doe</p>
         </div>
         <div class="user-options">
-          <div class="user-animation">
-            <img
-              src="{% static 'user_review/library.png' %}"
-              alt="heart-img"
-              class="user-animation-img"
-            />
-            <p class="title">Library</p>
-          </div>
+            <div class="user-library">
+                <img src="./images/library.png" alt="library-img" class="user-library-img" />
+                <p class="title"><a href="library.html">Library</a></p>
+            </div>
 
-          <div class="user-usageExamples sidebar-active">
-            <img
-              src="{% static 'user_review/usage.png' %}"
-              alt="heart-img"
-              class="user-usageExamples-img"
-            />
-            <p class="title">Usage Examples</p>
-          </div>
+            <div class="user-usageExamples sidebar-active">
+                <img src="./images/usage.png" alt="usage-img" class="user-usageExamples-img" />
+                <p class="title">
+                    <a href="usageExamples.html">Usage Examples </a>
+                </p>
+            </div>
 
-          <div class="user-likes">
-            <img
-              src="{% static 'user_review/heart-2.png' %}"
-              alt="heart-img"
-              class="user-likes-img"
-            />
-            <p class="title">My Likes</p>
-          </div>
+            <div class="user-likes ">
+                <img src="./images/heart-2.png" alt="heart-img" class="user-likes-img" />
+                <p class="title"><a href="likes.html">My Likes</a></p>
+            </div>
 
-          <div class="user-settings">
-            <img
-              src="{% static 'user_review/setting.png' %}"
-              alt="heart-img"
-              class="user-settings-img"
-            />
-            <p class="title">Settings</p>
-          </div>
+            <div class="user-settings">
+                <img src="./images/setting.png" alt="settings-img" class="user-settings-img" />
+                <p class="title"><a href="settings.html">Settings</a></p>
+            </div>
+            <div class="user-logout">
+                <img src="./images/logout.png" alt="logout-img" class="user-logout-img" />
+                <p class="title">Logout</p>
+            </div>
         </div>
-        <div class="user-logout">
-          <img
-            src="{% static 'user_review/logout.png' %}"
-            alt="heart-img"
-            class="user-logout-img"
-          />
-          <p class="title">Logout</p>
-        </div>
-      </div>
+    </div>
 
       <div class="dashboard-main">
-        
-
         <!-- dashboard-usageExamples"-->
         <section class="dashboard-usageExamples">
           <h2 class="dashboard-usageExamples__heading">Usage Examples!</h2>
@@ -122,7 +98,7 @@
                 <p class="codepen-example__name">Bouncing Clouds</p>
                 <div class="codepen-example__likes">
                   <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                  <img src="./images/heart.png" alt="likes-img" />
                 </div>
               </div>
             </div>
@@ -141,7 +117,7 @@
                 <p class="codepen-example__name">404</p>
                 <div class="codepen-example__likes">
                   <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                  <img src="./images/heart.png" alt="likes-img" />
                 </div>
               </div>
             </div>
@@ -161,7 +137,7 @@
                 <p class="codepen-example__name">Radial</p>
                 <div class="codepen-example__likes">
                   <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                  <img src="./images/heart.png" alt="likes-img" />
                 </div>
               </div>
             </div>
@@ -180,7 +156,7 @@
                 <p class="codepen-example__name">Peace not war</p>
                 <div class="codepen-example__likes">
                   <p>12</p>
-                  <img src="{% static 'user_review/heart.png' %}" alt="likes" />
+                  <img src="./images/heart.png" alt="likes-img" />
                 </div>
               </div>
             </div>
@@ -194,5 +170,108 @@
         </section>
       </div>
     </div>
+
+     <!-- for the small header -->
+     <div class="small-header">
+      <div class="small-header__nav">
+        <div class="small-header__logo">
+          <h1>Animate</h1>
+          <p class="logo-num"><span>99</span></p>
+        </div>
+        <div class="small-header__menu">
+          <a href="#" class="small-header__open" onclick="openNav()"> </a>
+        </div>
+      </div>
+
+      <div class="small-header__sidebar" id="mySidenav">
+        <img
+          src="./images/cancel.png"
+          alt="cancel-img"
+          class="small-header__cancel"
+          onclick="closeNav()"
+        />
+        <div class="small-header__user">
+          <img
+            src="./images/man.jpg"
+            alt="user-image"
+            class="small-header__userImage"
+          />
+          <p class="small-header__username">John Doe</p>
+        </div>
+
+        <div class="small-header__nav-cont">
+          <ul class="small-header__nav-list">
+            <li class="small-header__nav-item"><a href="#">Home</a></li>
+            <li class="small-header__nav-item">
+              <a href="#">Documentation</a>
+            </li>
+            <li class="small-header__nav-item"><a href="#">Dashboard</a></li>
+            <li class="small-header__nav-item"><a href="#">Support</a></li>
+            <li class="small-header__nav-item"><a href="#">Download</a></li>
+          </ul>
+        </div>
+
+        <div class="small-header__options">
+          <div class="small-header__library">
+            <img
+              src="./images/library.png"
+              alt="library-img"
+              class="small-header__library-img"
+            />
+            <p class="title"><a href="library.html">Library</a></p>
+          </div>
+
+          <div class="small-header__usageExamples">
+            <img
+              src="./images/usage.png"
+              alt="usage-img"
+              class="small-header__usageExamples-img"
+            />
+            <p class="title">
+              <a href="usageExamples.html">Usage Examples </a>
+            </p>
+          </div>
+
+          <div class="small-header__likes">
+            <img
+              src="./images/heart-2.png"
+              alt="heart-img"
+              class="small-header__likes-img"
+            />
+            <p class="title"><a href="likes.html">My Likes</a></p>
+          </div>
+
+          <div class="small-header__settings">
+            <img
+              src="./images/setting.png"
+              alt="settings-img"
+              class="small-header__settings-img"
+            />
+            <p class="title"><a href="settings.html">Settings</a></p>
+          </div>
+          <div class="small-header__logout">
+            <img
+              src="./images/logout.png"
+              alt="logout-img"
+              class="small-header__logout-img"
+            />
+            <p class="title">Logout</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- end -->
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "60%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
   </body>
 </html>

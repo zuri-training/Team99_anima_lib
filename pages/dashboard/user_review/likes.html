@@ -1,158 +1,283 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>My Likes</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="head-top">
-        <nav class="nav-top">
-            <div class="anim">
-                <div class="logo-head">
-                    <h1>Animate</h1>
-                </div>
-                <div class="logo-num"><span>99</span></div>
-            </div>
-            <div class="nav-cont">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#">Home</a></li>
-                    <li class="nav-item"><a href="#">Documentation</a></li>
-                    <li class="nav-item"><a href="#">Dashboard</a></li>
-                    <li class="nav-item"><a href="#">Support</a></li>
-                </ul>
-            </div>
-    
-            <div class="btns">
-                <button class="btn-head">Download Library</button>
-            </div>
-        </nav>
+      <nav class="nav-top">
+        <div class="anim">
+          <div class="logo-head">
+            <h1>Animate</h1>
+          </div>
+          <div class="logo-num"><span>99</span></div>
+        </div>
+        <div class="nav-cont">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#">Home</a></li>
+            <li class="nav-item"><a href="#">Documentation</a></li>
+            <li class="nav-item"><a href="#">Dashboard</a></li>
+            <li class="nav-item"><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="btns">
+          <button class="btn-head">Download Library</button>
+        </div>
+      </nav>
     </header>
-   
+
     <div class="dashboard">
-        <div class="dashboard-sidebar">
-            <div class="dashboard-user">
-                <img src="{% static 'user_review/man.jpg' %}" alt="user-image" class="dashboard-userImage" />
-                <p class="dashboard-username">John Doe</p>
-            </div>
-            <div class="user-options">
-                <div class="user-library">
-                    <img src="{% static 'user_review/library.png' %}" alt="heart-img" class="user-library-img" />
-                    <p class="title"><a href="library.html">Library</a></p>
-                </div>
-
-                <div class="user-usageExamples">
-                    <img src="{% static 'user_review/usage.png' %}" alt="heart-img" class="user-usageExamples-img" />
-                    <p class="title">
-                        <a href="usageExamples.html">Usage Examples </a>
-                    </p>
-                </div>
-
-                <div class="user-likes sidebar-active">
-                    <img src="{% static 'user_review/heart-2.png' %}" alt="heart-img" class="user-likes-img" />
-                    <p class="title"><a href="likes.html">My Likes</a></p>
-                </div>
-
-                <div class="user-settings">
-                    <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
-                    <p class="title"><a href="settings.html">Settings</a></p>
-                </div>
-                <div class="user-logout">
-                    <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
-                    <p class="title">Logout</p>
-                </div>
-            </div>
+      <div class="dashboard-sidebar">
+        <div class="dashboard-user">
+          <img
+            src="./images/man.jpg"
+            alt="user-image"
+            class="dashboard-userImage"
+          />
+          <p class="dashboard-username">John Doe</p>
         </div>
+        <div class="user-options">
+          <div class="user-library">
+            <img
+              src="./images/library.png"
+              alt="library-img"
+              class="user-library-img"
+            />
+            <p class="title"><a href="library.html">Library</a></p>
+          </div>
 
-        <div class="dashboard-main">
-            <section class="likes">
-                <h2 class="likes-heading">My Likes</h2>
-                <div class="dashboard-likes__main">
-                    <div class="dashboard-likes__main-type001">
-                        <div class="dashboard-likes__main-type001--box">
-                            <div class="dashboard-likes__main-type001--circle"></div>
-                        </div>
+          <div class="user-usageExamples">
+            <img
+              src="./images/usage.png"
+              alt="usage-img"
+              class="user-usageExamples-img"
+            />
+            <p class="title">
+              <a href="usageExamples.html">Usage Examples </a>
+            </p>
+          </div>
 
-                        <p class="dashboard-likes__main-type001--name">Shake</p>
-                        <div class="dashboard-likes__main-type001--likes">
-                            <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />
-                        </div>
-                    </div>
+          <div class="user-likes sidebar-active">
+            <img
+              src="./images/heart-2.png"
+              alt="heart-img"
+              class="user-likes-img"
+            />
+            <p class="title"><a href="likes.html">My Likes</a></p>
+          </div>
 
-                    <!-- Second box  -->
-                    <div class="dashboard-likes__main-type002">
-                        <div class="dashboard-likes__main-type002--box">
-                            <div class="dashboard-likes__main-type002--circle"></div>
-                        </div>
-
-                        <p class="dashboard-likes__main-type002--name">Fade In</p>
-                        <div class="dashboard-likes__main-type002--likes">
-                            <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />
-                        </div>
-                    </div>
-
-                    <!-- Third box  -->
-                    <div class="dashboard-likes__main-type003">
-                        <div class="dashboard-likes__main-type003--box">
-                            <div class="dashboard-likes__main-type003--circle"></div>
-                        </div>
-
-                        <p class="dashboard-likes__main-type003--name">Blink</p>
-                        <div class="dashboard-likes__main-type003--likes">
-                            <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />
-                        </div>
-                    </div>
-
-                    <!-- Fourth box  -->
-                    <div class="dashboard-likes__main-type004">
-                        <div class="dashboard-likes__main-type004--box">
-                            <div class="dashboard-likes__main-type004--circle"></div>
-                        </div>
-
-                        <p class="dashboard-likes__main-type004--name">Slide</p>
-                        <div class="dashboard-likes__main-type004--likes">
-                            <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />
-                        </div>
-                    </div>
-
-                    <!-- Fifth box  -->
-                    <div class="dashboard-likes__main-type005">
-                        <div class="dashboard-likes__main-type005--box">
-                            <div class="dashboard-likes__main-type005--circle"></div>
-                        </div>
-
-                        <p class="dashboard-likes__main-type005--name">Bounce</p>
-                        <div class="dashboard-likes__main-type005--likes">
-                            <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />
-                        </div>
-                    </div>
-
-                    <!-- 6th box  -->
-                    <div class="dashboard-likes__main-type006">
-                        <div class="dashboard-likes__main-type006--box">
-                            <div class="dashboard-likes__main-type006--circle"></div>
-                        </div>
-
-                        <p class="dashboard-likes__main-type006--name">Flip</p>
-                        <div class="dashboard-likes__main-type006--likes">
-                            <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div class="user-settings">
+            <img
+              src="./images/setting.png"
+              alt="settings-img"
+              class="user-settings-img"
+            />
+            <p class="title"><a href="settings.html">Settings</a></p>
+          </div>
+          <div class="user-logout">
+            <img
+              src="./images/logout.png"
+              alt="logout-img"
+              class="user-logout-img"
+            />
+            <p class="title">Logout</p>
+          </div>
         </div>
+      </div>
+
+      <div class="dashboard-main">
+        <section class="likes">
+          <h2 class="likes-heading">My Likes</h2>
+          <div class="dashboard-likes__main">
+            <div class="dashboard-likes__main-type001">
+              <div class="dashboard-likes__main-type001--box">
+                <div class="dashboard-likes__main-type001--circle"></div>
+              </div>
+
+              <p class="dashboard-likes__main-type001--name">Shake</p>
+              <div class="dashboard-likes__main-type001--likes">
+                <img src="./images/heart-full.svg" alt="like-img" />
+              </div>
+            </div>
+
+            <!-- Second box  -->
+            <div class="dashboard-likes__main-type002">
+              <div class="dashboard-likes__main-type002--box">
+                <div class="dashboard-likes__main-type002--circle"></div>
+              </div>
+
+              <p class="dashboard-likes__main-type002--name">Fade In</p>
+              <div class="dashboard-likes__main-type002--likes">
+                <img src="./images/heart-full.svg" alt="like-img" />
+              </div>
+            </div>
+
+            <!-- Third box  -->
+            <div class="dashboard-likes__main-type003">
+              <div class="dashboard-likes__main-type003--box">
+                <div class="dashboard-likes__main-type003--circle"></div>
+              </div>
+
+              <p class="dashboard-likes__main-type003--name">Blink</p>
+              <div class="dashboard-likes__main-type003--likes">
+                <img src="./images/heart-full.svg" alt="like-img" />
+              </div>
+            </div>
+
+            <!-- Fourth box  -->
+            <div class="dashboard-likes__main-type004">
+              <div class="dashboard-likes__main-type004--box">
+                <div class="dashboard-likes__main-type004--circle"></div>
+              </div>
+
+              <p class="dashboard-likes__main-type004--name">Slide</p>
+              <div class="dashboard-likes__main-type004--likes">
+                <img src="./images/heart-full.svg" alt="like-img" />
+              </div>
+            </div>
+
+            <!-- Fifth box  -->
+            <div class="dashboard-likes__main-type005">
+              <div class="dashboard-likes__main-type005--box">
+                <div class="dashboard-likes__main-type005--circle"></div>
+              </div>
+
+              <p class="dashboard-likes__main-type005--name">Bounce</p>
+              <div class="dashboard-likes__main-type005--likes">
+                <img src="./images/heart-full.svg" alt="like-img" />
+              </div>
+            </div>
+
+            <!-- 6th box  -->
+            <div class="dashboard-likes__main-type006">
+              <div class="dashboard-likes__main-type006--box">
+                <div class="dashboard-likes__main-type006--circle"></div>
+              </div>
+
+              <p class="dashboard-likes__main-type006--name">Flip</p>
+              <div class="dashboard-likes__main-type006--likes">
+                <img src="./images/heart-full.svg" alt="like-img" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-</body>
 
+    <!-- for the small header -->
+    <div class="small-header">
+      <div class="small-header__nav">
+        <div class="small-header__logo">
+          <h1>Animate</h1>
+          <p class="logo-num"><span>99</span></p>
+        </div>
+        <div class="small-header__menu">
+          <a href="#" class="small-header__open" onclick="openNav()"> </a>
+        </div>
+      </div>
+
+      <div class="small-header__sidebar" id="mySidenav">
+        <img
+          src="./images/cancel.png"
+          alt="cancel-img"
+          class="small-header__cancel"
+          onclick="closeNav()"
+        />
+        <div class="small-header__user">
+          <img
+            src="./images/man.jpg"
+            alt="user-image"
+            class="small-header__userImage"
+          />
+          <p class="small-header__username">John Doe</p>
+        </div>
+
+        <div class="small-header__nav-cont">
+          <ul class="small-header__nav-list">
+            <li class="small-header__nav-item"><a href="#">Home</a></li>
+            <li class="small-header__nav-item">
+              <a href="#">Documentation</a>
+            </li>
+            <li class="small-header__nav-item"><a href="#">Dashboard</a></li>
+            <li class="small-header__nav-item"><a href="#">Support</a></li>
+            <li class="small-header__nav-item"><a href="#">Download</a></li>
+          </ul>
+        </div>
+
+        <div class="small-header__options">
+          <div class="small-header__library">
+            <img
+              src="./images/library.png"
+              alt="library-img"
+              class="small-header__library-img"
+            />
+            <p class="title"><a href="library.html">Library</a></p>
+          </div>
+
+          <div class="small-header__usageExamples">
+            <img
+              src="./images/usage.png"
+              alt="usage-img"
+              class="small-header__usageExamples-img"
+            />
+            <p class="title">
+              <a href="usageExamples.html">Usage Examples </a>
+            </p>
+          </div>
+
+          <div class="small-header__likes">
+            <img
+              src="./images/heart-2.png"
+              alt="heart-img"
+              class="small-header__likes-img"
+            />
+            <p class="title"><a href="likes.html">My Likes</a></p>
+          </div>
+
+          <div class="small-header__settings">
+            <img
+              src="./images/setting.png"
+              alt="settings-img"
+              class="small-header__settings-img"
+            />
+            <p class="title"><a href="settings.html">Settings</a></p>
+          </div>
+          <div class="small-header__logout">
+            <img
+              src="./images/logout.png"
+              alt="logout-img"
+              class="small-header__logout-img"
+            />
+            <p class="title">Logout</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- end -->
+    </div>
+
+    <!-- Javascript -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "60%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </body>
 </html>

@@ -1,24 +1,50 @@
 Wrote code for animation library;
+https://github.com/zuri-training/Team99_anima_lib/blob/main/script.js
 
 
 coded landing page;
+https://github.com/zuri-training/Team99_anima_lib/blob/main/animate99/templates/main/home.html
 
 
 integrated django templates;
+https://github.com/zuri-training/Team99_anima_lib/tree/main/animate99/templates
 
 
 created documentation for library;
-
+https://docs.google.com/document/d/12Q0UEOiwLy0EhZYZUNOorUVH9tESye_w7R7n4_ih_EM/edit
 
 
 recorded first presentation;
+https://drive.google.com/file/d/1hOpN87S7-0G3ihddSvmtBcjmv3dBaD1O/view
 
 
 coded download page;
+https://github.com/zuri-training/Team99_anima_lib/tree/main/pages/download
 
 
 
 added cloudinary;
+https://github.com/zuri-training/Team99_anima_lib/blob/main/animate99/animate99/settings.py
+
+
+created usage examples code;
+https://github.com/zuri-training/Team99_anima_lib/blob/main/animate99/templates/user_review/usageExamples.html
+
+set up github projects and assigned tasks;
+https://github.com/orgs/zuri-training/projects/200
+
+
+created README for team repository;
+https://github.com/zuri-training/Team99_anima_lib#readme
+
+
+
+deployed to heroku;
+https://animate-99.herokuapp.com/home/
+
+created googlesheets with tasks;
+https://docs.google.com/spreadsheets/d/1LXnCzISt79kpOWgIB5wwIX7cxnFjKPnwF7LcVCPxpPY/edit#gid=0
+
 
 
 
