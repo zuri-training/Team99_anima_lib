@@ -203,8 +203,19 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
 # Account redirect URL
 ACCOUNT_SIGNUP_REDIRECT_URL = "/home/"
-LOGIN_REDIRECT_URL = "/home/"
+# LOGIN_REDIRECT_URL = "/dashboard/library/"
 
 
 
 SITE_ID = 1
+
+SITE_ID = 1
+
+#Email setup
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "animate99team99@gmail.com"
+EMAIL_HOST_PASSWORD = "rrhwrsvquqznnahd"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

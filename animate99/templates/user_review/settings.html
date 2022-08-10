@@ -76,7 +76,7 @@
               alt="heart-img"
               class="user-likes-img"
             />
-            <a href="{% url 'likes' %}"><p class="title">My Likes</p></a>
+            <a href="{% url 'likes' user.pk %}"><p class="title">My Likes</p></a>
           </div>
 
           <div class="user-settings sidebar-active">

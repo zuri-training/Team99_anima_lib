@@ -84,7 +84,6 @@ class LikesView(View):
             'animations': animations,
         }
         
-        print(animations)
         
         return render(request, 'user_review/likes.html', context)
         
