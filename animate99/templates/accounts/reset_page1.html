@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="{% static 'accounts/style.css'  %}">
+    <link rel="shortcut icon" href="{% static 'main/favicon.svg' %}" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Animate <span>99</span></h1>
+    </header>
+    <main class="container">
+        <div class="left">
+            <h2>Forgot Password?</h2>
+            <p>A link would be sent to your registered email address</p>
+        </div>
+        <div class="right">
+            <form action="./" method="post">
+                <div class="password">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email address" />
+                </div>
+                <div class="button">
+                    <button class="btn btn__login">Reset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
