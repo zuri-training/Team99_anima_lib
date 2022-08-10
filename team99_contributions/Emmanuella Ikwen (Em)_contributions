@@ -3,6 +3,7 @@ https://github.com/zuri-training/Team99_anima_lib/blob/main/script.js
 
 
 coded landing page;
+user = CustomUser.objects.get(pk=request.user.id)
 
 
 
