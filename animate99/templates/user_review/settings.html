@@ -49,7 +49,7 @@
           <img src="{{user.image.url}}" alt="image" class="dashboard-userImage">
 
     
-          <p class="dashboard-username">John Doe</p>
+          <p class="dashboard-username">{{user.name}}</p>
         </div>
         <div class="user-options">
           <div class="user-animation">
@@ -101,15 +101,16 @@
         
         </div>
       </div>
-
       <div class="dashboard-main">
         <!-- Settings page -->
         <section class="settings">
           <h2 class="settings-heading">Settings</h2>
           <div class="settings-main">
-            <form action="#" class="form-settings">
+            <form class="form-settings" method="POST">
+              {% csrf_token %}
               <div class="form-input">
-                <input type="text" placeholder="Name" />
+                {% comment %} <input type="text" placeholder="Name" /> {% endcomment %}
+                {{form.name}}
                 <div class="remove">
                   <img
                     src="{% static 'user_review/cancel.png' %}"
@@ -122,15 +123,16 @@
                 Your name may appear around Animate99 where you make
                 contributions. You can remove it any time
               </p>
-              <input
+              {% comment %} <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
-              />
+              /> {% endcomment %}
+              {{form.email}}
               <p class="helper-text">Please use a valid e-mail address</p>
 
-              <div class="form-input">
+              {% comment %} <div class="form-input">
                 <textarea placeholder="Bio"></textarea>
                 <div class="remove">
                   <img
@@ -139,15 +141,16 @@
                   />
                   <span>Remove</span>
                 </div>
-              </div>
+              </div> {% endcomment %}
               <p class="helper-text">Tell us a little about yourself</p>
               <div class="form-input">
-                <input
+                {% comment %} <input
                   type="url"
                   name="twitter-link"
                   id="twitter-link"
                   placeholder="Twitter profile link"
-                />
+                /> {% endcomment %}
+                {{form.twitter_url}}
                 <div class="remove">
                   <img
                     src="{% static 'user_review/cancel.png' %}"
@@ -157,18 +160,22 @@
                 </div>
               </div>
               <div class="form-input">
-                <input
+                {% comment %} <input
                   type="url"
                   name="github-link"
                   id="github-link"
                   placeholder="Github Profile link"
-                />
+                /> {% endcomment %}
+                {{form.github_url}}
                 <div class="remove">
                   <img
                     src="{% static 'user_review/cancel.png' %}"
                     alt="remove-icon"
                   />
                   <span>Remove</span>
+                  {% for message in messages %}
+                    <p>{{message}}</p>
+                  {% endfor %}
                 </div>
               </div>
               <p class="helper-text">
@@ -176,6 +183,7 @@
                 at any time and by filling them out you're giving us consent to
                 share this data wherever your user profile appears
               </p>
+               {% comment %} {{ form.as_p }} {% endcomment %}
 
               <input type="submit" value="Save" />
             </form>
@@ -184,9 +192,15 @@
             <div class="settings-image">
              
               <img src="{{user.image.url}}" alt="image">
-              
+              {% comment %} <form class="form-settings" method="POST">
+                {% csrf_token %}
+                {{form.image}}
+                <input type="submit" value="Save" />
+
+                
+              </form> {% endcomment %}
               <button class="change-picture">Change Picture</button>
-              <button class="delete-picture">Delete Picture</button>
+                <button class="delete-picture">Delete Picture</button>
             </div>
           </div>
         </section>
@@ -194,3 +208,11 @@
     </div>
   </body>
 </html>
+{% comment %}  {% csrf_token %}
+        <div>{{form.email.label}}{{form.email}}</div>
+        <div>{{form.first_name.label}}{{form.first_name}}</div>
+        <div>{{form.last_name.label}}{{form.last_name}}</div>
+        <div>{{form.github_url.label}}{{form.github_url}}</div>
+        <div>{{form.password1.label}}{{form.password1}}</div>
+        <div>{{form.password2.label}}{{form.password2}}</div>
+         {% endcomment %}

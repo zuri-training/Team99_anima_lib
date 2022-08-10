@@ -1,0 +1,20 @@
+GENERAL
+Project SetUp
+Email setup
+
+BACKEND
+Database design. 
+Created a custom User. 
+Configure user manager. 
+User Authentication and Registration. 
+Support page logic (Configure send to email). 
+Library and Likes backend logic(favourites and likes). 
+Settings page backend logic. 
+Configuration of mail server. 
+Set up Google authentication and API key. 
+User Profile edit logic. 
+
+
+
+Frontend 
+Added Logic to Django Html templates.

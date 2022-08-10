@@ -76,7 +76,7 @@
   
         <div class="user-settings sidebar-active">
           <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
-          <a href="{% url 'settings' %}">
+          <a href="{% url 'settings' user.pk %}">
             <p class="title">Settings</p>
           </a>
         </div>

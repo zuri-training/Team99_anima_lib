@@ -1,11 +1,16 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from .models import Animation
 from django.views import View
 from django.http import HttpResponse
 from apps.accounts.models import CustomUser
 from django.views import View
+# from .forms import EditProfileForm
+from .forms import UserUpdateForm
+from django.views.generic.edit import UpdateView
+# from django.contrib.auth.forms import UserChangeForm
 # Create your views here.
+from django.contrib.auth.decorators import login_required
 
 class LibraryListView(View):
     def get(self, request, *args, **kwargs):
@@ -32,16 +37,55 @@ class LibraryDetailView(View):
         
         return render(request, 'user_review/library.html', context)
 
-class SettingsView(View):
-    def get(self,request, pk, *args, **kwargs):
-        user = CustomUser.objects.get(pk=request.user.id)
+# class SettingsView(View):
+#     def get(self,request, pk, *args, **kwargs):
+#         user = CustomUser.objects.get(pk=request.user.id)
+#         # form = UserUpdateForm()
+#         # context = {
+#         #     'user':user,
+#         #     'form':form
+#         # }
 
-        context = {
-            'user':user
-        }
+#         return render(request, 'user_review/settings.html')
+    
+    # def put(self, request, pk, *args, **kwargs):
+    #     user = CustomUser.objects.get(pk=request.user.id)
+    #     form = UserUpdateForm(request.PUT)
 
-        return render(request, 'user_review/settings.html', context)
+    #     if form.is_valid():
+    #         form.save()
+    #         return redirect('settings/<int:pk>')
+            
+    #     context = {
+    #         'user':user,
+    #         'form':form,
+    #     }
+        
+    #     return render(request, 'user_review/settings.html', context)
+        
+        
+# import generic UpdateView
 
+  
+
+  
+class ProfileEditView(UpdateView):
+    # specify the model you want to use
+    model = CustomUser
+    template_name='user_review/settings.html'
+    # specify the fields
+    fields = [
+        "name",
+        "twitter_url",
+        "github_url",
+        "image"
+    ]
+    success_url ="/"    
+# @login_required
+# def edit_profile(request):
+#     if request.method == 'POST':
+#         form = EditProfileForm(request.POST, instance=request.user)
+#         profile_form = ProfileForm(request.POST, request.FILES, instance=request.user.userprofile)  # request.FILES is show the selected image or file
 
 
     
