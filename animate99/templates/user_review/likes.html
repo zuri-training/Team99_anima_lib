@@ -154,6 +154,79 @@
             </section>
         </div>
     </div>
+    <!-- for the small header -->
+    <div class="small-header">
+        <div class="small-header__nav">
+            <div class="small-header__logo">
+                <h1>Animate</h1>
+                <p class="logo-num"><span>99</span></p>
+            </div>
+            <div class="small-header__menu">
+                <a href="#" class="small-header__open" onclick="openNav()"> </a>
+            </div>
+        </div>
+    
+        <div class="small-header__sidebar" id="mySidenav">
+            <img src="./images/cancel.png" alt="cancel-img" class="small-header__cancel" onclick="closeNav()" />
+            <div class="small-header__user">
+                <img src="./images/man.jpg" alt="user-image" class="small-header__userImage" />
+                <p class="small-header__username">John Doe</p>
+            </div>
+    
+            <div class="small-header__nav-cont">
+                <ul class="small-header__nav-list">
+                    <li class="small-header__nav-item"><a href="#">Home</a></li>
+                    <li class="small-header__nav-item">
+                        <a href="#">Documentation</a>
+                    </li>
+                    <li class="small-header__nav-item"><a href="#">Dashboard</a></li>
+                    <li class="small-header__nav-item"><a href="#">Support</a></li>
+                    <li class="small-header__nav-item"><a href="#">Download</a></li>
+                </ul>
+            </div>
+    
+            <div class="small-header__options">
+                <div class="small-header__library">
+                    <img src="./images/library.png" alt="library-img" class="small-header__library-img" />
+                    <p class="title"><a href="library.html">Library</a></p>
+                </div>
+    
+                <div class="small-header__usageExamples">
+                    <img src="./images/usage.png" alt="usage-img" class="small-header__usageExamples-img" />
+                    <p class="title">
+                        <a href="usageExamples.html">Usage Examples </a>
+                    </p>
+                </div>
+    
+                <div class="small-header__likes">
+                    <img src="./images/heart-2.png" alt="heart-img" class="small-header__likes-img" />
+                    <p class="title"><a href="likes.html">My Likes</a></p>
+                </div>
+    
+                <div class="small-header__settings">
+                    <img src="./images/setting.png" alt="settings-img" class="small-header__settings-img" />
+                    <p class="title"><a href="settings.html">Settings</a></p>
+                </div>
+                <div class="small-header__logout">
+                    <img src="./images/logout.png" alt="logout-img" class="small-header__logout-img" />
+                    <p class="title">Logout</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- end -->
+    </div>
+    
+    <!-- Javascript -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "60%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
 
 </html>

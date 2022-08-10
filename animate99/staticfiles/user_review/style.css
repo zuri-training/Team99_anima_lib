@@ -25,6 +25,7 @@ div a {
   text-decoration: none;
   color: #000;
 }
+
 .head-top {
   display: flex;
   justify-content: space-between;
@@ -59,6 +60,7 @@ nav a {
 }
 
 nav a:hover {
+  -webkit-text-decoration: underline #eebbc3;
   text-decoration: underline #eebbc3;
 }
 
@@ -150,6 +152,7 @@ nav a:hover {
   padding: 10px 0px;
   gap: 10px;
 }
+
 /* Dashboard header*/
 .dashboard-header {
   display: flex;
@@ -216,7 +219,7 @@ nav a:hover {
   border-bottom: 4px solid #eebbc3;
 }
 
-.dashboard-nav__list-item + .active a {
+.dashboard-nav__list-item+.active a {
   font-weight: 700;
   font-size: 18px;
   line-height: 120%;
@@ -290,7 +293,7 @@ nav a:hover {
   gap: 12px;
 }
 
-.user-options > * {
+.user-options>* {
   display: flex;
   align-items: center;
   gap: 17.25px;
@@ -302,7 +305,7 @@ nav a:hover {
   width: 250px;
 }
 
-.user-options > *:hover {
+.user-options>*:hover {
   cursor: pointer;
   background-color: #eebbc3;
   color: #232946;
@@ -342,9 +345,8 @@ nav a:hover {
   position: absolute;
   bottom: 52px;
   border: 1px solid #232946;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  margin-left: 6em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   align-self: center;
 }
 
@@ -380,7 +382,7 @@ nav a:hover {
 
 .likes-heading {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 48px;
   color: #232946;
   margin-bottom: 24px;
 }
@@ -501,7 +503,8 @@ nav a:hover {
 
 .settings-main {
   display: flex;
-  gap: 2.5rem;
+  gap: 2rem;
+  margin-right: 10px;
 }
 
 .form-settings {
@@ -518,6 +521,6726 @@ nav a:hover {
   font-family: "DM Sans";
   font-size: 16px;
   line-height: 150%;
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-webkit-input-placeholder,
+.form-settings textarea::-webkit-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-moz-placeholder,
+.form-settings textarea::-moz-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input:-ms-input-placeholder,
+.form-settings textarea:-ms-input-placeholder {
+  color: #1d223a;
+}
+
+.form-settings input::-ms-input-placeholder,
+.form-settings textarea::-ms-input-placeholder {
   color: #1d223a;
 }
 
@@ -2896,10 +9619,6 @@ nav a:hover {
 }
 
 /* For the Dashboard library*/
-.dashboard-library {
-  height: 700px;
-  overflow: scroll;
-}
 .dashboard-library__main {
   font-size: 14px;
   line-height: 150%;
@@ -3035,17 +9754,12 @@ nav a:hover {
   margin-bottom: 16px;
 }
 
-.dashboard-usageExamples {
-  height: 700px;
-  overflow: scroll;
-}
-
 .codepen-box {
   max-width: 750px;
   height: 500px;
   background: #232946;
   border-radius: 8px;
-  margin-bottom: 75px;
+  margin-bottom: 154px;
   margin-top: 32px;
 
   position: relative;
@@ -3138,4 +9852,1122 @@ nav a:hover {
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
+}
+
+/* Media queries  */
+/* 
+@media only screen and (max-width: 320px) {
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) {
+} */
+
+/* For the Library page */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .head-top {
+    padding-left: 2em;
+    padding-right: 4em;
+  }
+
+  .nav-top {
+    gap: 10px;
+  }
+
+  .btns {
+    margin-left: 30px;
+  }
+
+  .dashboard-library__main-type001,
+  .dashboard-library__main-type002,
+  .dashboard-library__main-type003,
+  .dashboard-library__main-type004,
+  .dashboard-library__main-type005,
+  .dashboard-library__main-type006 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .dashboard-library__main-type001--box,
+  .dashboard-library__main-type002--box,
+  .dashboard-library__main-type003--box,
+  .dashboard-library__main-type004--box,
+  .dashboard-library__main-type005--box,
+  .dashboard-library__main-type006--box {
+    width: 186px;
+    height: 186px;
+  }
+
+  .dashboard-library__main-type001--circle,
+  .dashboard-library__main-type002--circle,
+  .dashboard-library__main-type003--circle,
+  .dashboard-library__main-type004--circle,
+  .dashboard-library__main-type005--circle,
+  .dashboard-library__main-type006--circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .head-top {
+    padding-left: 2em;
+    padding-right: 4em;
+  }
+
+  .nav-cont {
+    display: none;
+  }
+
+  .dashboard-library__main-type001,
+  .dashboard-library__main-type002,
+  .dashboard-library__main-type003,
+  .dashboard-library__main-type004,
+  .dashboard-library__main-type005,
+  .dashboard-library__main-type006 {
+    width: 170px;
+    height: 170px;
+  }
+
+  .dashboard-library__main-type001--box,
+  .dashboard-library__main-type002--box,
+  .dashboard-library__main-type003--box,
+  .dashboard-library__main-type004--box,
+  .dashboard-library__main-type005--box,
+  .dashboard-library__main-type006--box {
+    width: 120px;
+    height: 106px;
+    left: 23px;
+    top: 16.5px;
+  }
+
+  .dashboard-library__main-type001--circle,
+  .dashboard-library__main-type002--circle,
+  .dashboard-library__main-type003--circle,
+  .dashboard-library__main-type004--circle,
+  .dashboard-library__main-type005--circle,
+  .dashboard-library__main-type006--circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .dashboard-library__main-type001 p,
+  .dashboard-library__main-type002 p,
+  .dashboard-library__main-type003 p,
+  .dashboard-library__main-type004 p,
+  .dashboard-library__main-type005 p,
+  .dashboard-library__main-type006 p {
+    bottom: 10.5px;
+    left: 10px;
+  }
+
+  .dashboard-library__main-type001--likes,
+  .dashboard-library__main-type002--likes,
+  .dashboard-library__main-type003--likes,
+  .dashboard-library__main-type004--likes,
+  .dashboard-library__main-type005--likes,
+  .dashboard-library__main-type006--likes {
+    bottom: 10.5px;
+    right: 13px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .head-top {
+    border: 12px solid green;
+    padding-left: 1em;
+  }
+
+  .logo-head h1 {
+    font-size: 24px;
+  }
+
+  .logo-num span {
+    font-size: 24px;
+  }
+
+  .nav-cont {
+    display: none;
+  }
+
+  .btns {
+    margin-left: -60px;
+  }
+
+  .dashboard-sidebar {
+    width: 240px;
+  }
+
+  .dashboard-userImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 60px;
+  }
+
+  .dashboard-username {
+    text-align: left;
+    margin-left: 70px;
+  }
+
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  .dashboard-library__main {
+    flex-wrap: wrap;
+    margin-left: 15px;
+    justify-content: center;
+  }
+
+  .dashboard-library__main-type001,
+  .dashboard-library__main-type002,
+  .dashboard-library__main-type003,
+  .dashboard-library__main-type004,
+  .dashboard-library__main-type005,
+  .dashboard-library__main-type006 {
+    width: 217px;
+    height: 220px;
+  }
+
+  .dashboard-library__main-type001--box,
+  .dashboard-library__main-type002--box,
+  .dashboard-library__main-type003--box,
+  .dashboard-library__main-type004--box,
+  .dashboard-library__main-type005--box,
+  .dashboard-library__main-type006--box {
+    width: 155px;
+    height: 145px;
+    left: 35px;
+    top: 20.5px;
+  }
+
+  .dashboard-library__main-type001--circle,
+  .dashboard-library__main-type002--circle,
+  .dashboard-library__main-type003--circle,
+  .dashboard-library__main-type004--circle,
+  .dashboard-library__main-type005--circle,
+  .dashboard-library__main-type006--circle {
+    width: 88.05px;
+    height: 88.05px;
+    border-radius: 50%;
+  }
+
+  .dashboard-library__main-type001 p,
+  .dashboard-library__main-type002 p,
+  .dashboard-library__main-type003 p,
+  .dashboard-library__main-type004 p,
+  .dashboard-library__main-type005 p,
+  .dashboard-library__main-type006 p {
+    bottom: 10.5px;
+    left: 26px;
+  }
+
+  .dashboard-library__main-type001--likes,
+  .dashboard-library__main-type002--likes,
+  .dashboard-library__main-type003--likes,
+  .dashboard-library__main-type004--likes,
+  .dashboard-library__main-type005--likes,
+  .dashboard-library__main-type006--likes {
+    right: 9px;
+    bottom: 8.5px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .head-top {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .nav-cont {
+    display: none;
+  }
+
+  .btns {
+    display: none;
+  }
+
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  .dashboard-library__main {
+    flex-wrap: wrap;
+    margin-inline: 9px;
+    justify-content: center;
+  }
+
+  .dashboard-library__main-type001,
+  .dashboard-library__main-type002,
+  .dashboard-library__main-type003,
+  .dashboard-library__main-type004,
+  .dashboard-library__main-type005,
+  .dashboard-library__main-type006 {
+    width: 140px;
+    height: 160px;
+  }
+
+  .dashboard-library__main-type001--box,
+  .dashboard-library__main-type002--box,
+  .dashboard-library__main-type003--box,
+  .dashboard-library__main-type004--box,
+  .dashboard-library__main-type005--box,
+  .dashboard-library__main-type006--box {
+    width: 101px;
+    height: 90px;
+    left: 20px;
+    top: 18px;
+    border-radius: 10px;
+  }
+
+  .dashboard-library__main-type001--circle,
+  .dashboard-library__main-type002--circle,
+  .dashboard-library__main-type003--circle,
+  .dashboard-library__main-type004--circle,
+  .dashboard-library__main-type005--circle,
+  .dashboard-library__main-type006--circle {
+    width: 50.05px;
+    height: 50.05px;
+    border-radius: 50%;
+  }
+
+  .dashboard-library__main-type001 p,
+  .dashboard-library__main-type002 p,
+  .dashboard-library__main-type003 p,
+  .dashboard-library__main-type004 p,
+  .dashboard-library__main-type005 p,
+  .dashboard-library__main-type006 p {
+    bottom: 10.5px;
+    left: 15px;
+  }
+
+  .dashboard-library__main-type001--likes,
+  .dashboard-library__main-type002--likes,
+  .dashboard-library__main-type003--likes,
+  .dashboard-library__main-type004--likes,
+  .dashboard-library__main-type005--likes,
+  .dashboard-library__main-type006--likes {
+    right: 18px;
+    bottom: 10.5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .head-top {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .logo-head h1 {
+    font-size: 16px;
+  }
+
+  .logo-num {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-num span {
+    font-size: 16px;
+  }
+
+  .nav-cont {
+    display: none;
+  }
+
+  .btns {
+    display: none;
+  }
+
+  .dashboard-sidebar {
+    display: none;
+  }
+
+  .dashboard-library__main {
+    flex-wrap: wrap;
+    margin-inline: 9px;
+    justify-content: center;
+  }
+
+  .dashboard-library__main-type001,
+  .dashboard-library__main-type002,
+  .dashboard-library__main-type003,
+  .dashboard-library__main-type004,
+  .dashboard-library__main-type005,
+  .dashboard-library__main-type006 {
+    max-width: 208px;
+    height: 170px;
+  }
+
+  .dashboard-library__main-type001--box,
+  .dashboard-library__main-type002--box,
+  .dashboard-library__main-type003--box,
+  .dashboard-library__main-type004--box,
+  .dashboard-library__main-type005--box,
+  .dashboard-library__main-type006--box {
+    width: 145px;
+    height: 109px;
+    left: 33px;
+    top: 18px;
+    border-radius: 12px;
+  }
+
+  .dashboard-library__main-type001--circle,
+  .dashboard-library__main-type002--circle,
+  .dashboard-library__main-type003--circle,
+  .dashboard-library__main-type004--circle,
+  .dashboard-library__main-type005--circle,
+  .dashboard-library__main-type006--circle {
+    width: 70.05px;
+    height: 70.05px;
+    border-radius: 50%;
+  }
+
+  .dashboard-library__main-type001 p,
+  .dashboard-library__main-type002 p,
+  .dashboard-library__main-type003 p,
+  .dashboard-library__main-type004 p,
+  .dashboard-library__main-type005 p,
+  .dashboard-library__main-type006 p {
+    bottom: 10.5px;
+    left: 15px;
+  }
+
+  .dashboard-library__main-type001--likes,
+  .dashboard-library__main-type002--likes,
+  .dashboard-library__main-type003--likes,
+  .dashboard-library__main-type004--likes,
+  .dashboard-library__main-type005--likes,
+  .dashboard-library__main-type006--likes {
+    right: 18px;
+    bottom: 10.5px;
+  }
+}
+
+/* For usageExamples media Query */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .codepen-box {
+    max-width: 612px;
+    height: 456px;
+    margin-bottom: 61px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .dashboard-usageExamples__heading {
+    font-size: 36px;
+  }
+
+  .codepen-box {
+    max-width: 612px;
+    height: 370px;
+    margin-bottom: 61px;
+    margin-top: 32px;
+    position: relative;
+    margin-right: 23px;
+  }
+
+  .codepen-screen {
+    padding-top: 24px;
+    padding-inline: 17px;
+  }
+
+  .codepen-screen iframe {
+    height: 250px !important;
+  }
+
+  .codepen-example {
+    justify-content: space-around;
+    gap: 21px;
+    margin-inline: 0;
+    margin-block: 30px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .codepen-box {
+    max-width: 750px;
+    height: 460px;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-inline: 50px;
+  }
+
+  .codepen-example {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .dashboard-usageExamples__heading {
+    font-size: 36px;
+  }
+
+  .codepen-box {
+    max-width: 500px;
+    height: 330px;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-inline: 10px;
+  }
+
+  .codepen-screen {
+    padding-top: 24px;
+    padding-inline: 17px;
+  }
+
+  .codepen-example {
+    justify-content: space-between;
+    margin-inline: 10px;
+  }
+
+  .codepen-example__name {
+    font-size: 20px;
+  }
+
+  .codepen-screen iframe {
+    height: 200px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .dashboard-usageExamples__heading {
+    font-size: 36px;
+  }
+
+  .codepen-box {
+    max-width: 500px;
+    height: 330px;
+    margin-bottom: 40px;
+    margin-top: 32px;
+    margin-inline: 10px;
+  }
+
+  .codepen-screen {
+    padding-top: 24px;
+    padding-inline: 17px;
+  }
+
+  .codepen-example {
+    justify-content: space-between;
+    margin-inline: 10px;
+  }
+
+  .codepen-example__name {
+    font-size: 20px;
+  }
+
+  .codepen-screen iframe {
+    height: 200px !important;
+  }
+}
+
+/* Media query for the likes page */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+  .dashboard-likes__main-type001,
+  .dashboard-likes__main-type002,
+  .dashboard-likes__main-type003,
+  .dashboard-likes__main-type004,
+  .dashboard-likes__main-type005,
+  .dashboard-likes__main-type006 {
+    width: 280px;
+    height: 280px;
+  }
+
+  .dashboard-likes__main-type001--box,
+  .dashboard-likes__main-type002--box,
+  .dashboard-likes__main-type003--box,
+  .dashboard-likes__main-type004--box,
+  .dashboard-likes__main-type005--box,
+  .dashboard-likes__main-type006--box {
+    width: 186px;
+    height: 186px;
+  }
+
+  .dashboard-likes__main-type001--circle,
+  .dashboard-likes__main-type002--circle,
+  .dashboard-likes__main-type003--circle,
+  .dashboard-likes__main-type004--circle,
+  .dashboard-likes__main-type005--circle,
+  .dashboard-likes__main-type006--circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+  .dashboard-likes__main-type001,
+  .dashboard-likes__main-type002,
+  .dashboard-likes__main-type003,
+  .dashboard-likes__main-type004,
+  .dashboard-likes__main-type005,
+  .dashboard-likes__main-type006 {
+    width: 170px;
+    height: 170px;
+  }
+
+  .dashboard-likes__main-type001--box,
+  .dashboard-likes__main-type002--box,
+  .dashboard-likes__main-type003--box,
+  .dashboard-likes__main-type004--box,
+  .dashboard-likes__main-type005--box,
+  .dashboard-likes__main-type006--box {
+    width: 120px;
+    height: 106px;
+    left: 23px;
+    top: 16.5px;
+  }
+
+  .dashboard-likes__main-type001--circle,
+  .dashboard-likes__main-type002--circle,
+  .dashboard-likes__main-type003--circle,
+  .dashboard-likes__main-type004--circle,
+  .dashboard-likes__main-type005--circle,
+  .dashboard-likes__main-type006--circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .dashboard-likes__main-type001 p,
+  .dashboard-likes__main-type002 p,
+  .dashboard-likes__main-type003 p,
+  .dashboard-likes__main-type004 p,
+  .dashboard-likes__main-type005 p,
+  .dashboard-likes__main-type006 p {
+    bottom: 10.5px;
+    left: 10px;
+  }
+
+  .dashboard-likes__main-type001--likes,
+  .dashboard-likes__main-type002--likes,
+  .dashboard-likes__main-type003--likes,
+  .dashboard-likes__main-type004--likes,
+  .dashboard-likes__main-type005--likes,
+  .dashboard-likes__main-type006--likes {
+    bottom: 10.5px;
+    right: 13px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .dashboard-likes__main {
+    flex-wrap: wrap;
+    margin-left: 15px;
+    justify-content: center;
+  }
+
+  .dashboard-likes__main-type001,
+  .dashboard-likes__main-type002,
+  .dashboard-likes__main-type003,
+  .dashboard-likes__main-type004,
+  .dashboard-likes__main-type005,
+  .dashboard-likes__main-type006 {
+    width: 217px;
+    height: 220px;
+  }
+
+  .dashboard-likes__main-type001--box,
+  .dashboard-likes__main-type002--box,
+  .dashboard-likes__main-type003--box,
+  .dashboard-likes__main-type004--box,
+  .dashboard-likes__main-type005--box,
+  .dashboard-likes__main-type006--box {
+    width: 155px;
+    height: 145px;
+    left: 35px;
+    top: 20.5px;
+  }
+
+  .dashboard-likes__main-type001--circle,
+  .dashboard-likes__main-type002--circle,
+  .dashboard-likes__main-type003--circle,
+  .dashboard-likes__main-type004--circle,
+  .dashboard-likes__main-type005--circle,
+  .dashboard-likes__main-type006--circle {
+    width: 88.05px;
+    height: 88.05px;
+    border-radius: 50%;
+  }
+
+  .dashboard-likes__main-type001 p,
+  .dashboard-likes__main-type002 p,
+  .dashboard-likes__main-type003 p,
+  .dashboard-likes__main-type004 p,
+  .dashboard-likes__main-type005 p,
+  .dashboard-likes__main-type006 p {
+    bottom: 10.5px;
+    left: 26px;
+  }
+
+  .dashboard-likes__main-type001--likes,
+  .dashboard-likes__main-type002--likes,
+  .dashboard-likes__main-type003--likes,
+  .dashboard-likes__main-type004--likes,
+  .dashboard-likes__main-type005--likes,
+  .dashboard-likes__main-type006--likes {
+    right: 9px;
+    bottom: 8.5px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .dashboard-likes__main {
+    flex-wrap: wrap;
+    margin-inline: 9px;
+    justify-content: center;
+  }
+
+  .dashboard-likes__main-type001,
+  .dashboard-likes__main-type002,
+  .dashboard-likes__main-type003,
+  .dashboard-likes__main-type004,
+  .dashboard-likes__main-type005,
+  .dashboard-likes__main-type006 {
+    width: 140px;
+    height: 160px;
+  }
+
+  .dashboard-likes__main-type001--box,
+  .dashboard-likes__main-type002--box,
+  .dashboard-likes__main-type003--box,
+  .dashboard-likes__main-type004--box,
+  .dashboard-likes__main-type005--box,
+  .dashboard-likes__main-type006--box {
+    width: 101px;
+    height: 90px;
+    left: 20px;
+    top: 18px;
+    border-radius: 10px;
+  }
+
+  .dashboard-likes__main-type001--circle,
+  .dashboard-likes__main-type002--circle,
+  .dashboard-likes__main-type003--circle,
+  .dashboard-likes__main-type004--circle,
+  .dashboard-likes__main-type005--circle,
+  .dashboard-likes__main-type006--circle {
+    max-width: 80.05px;
+    max-height: 80.05px;
+    border-radius: 50%;
+  }
+
+  .dashboard-likes__main-type001 p,
+  .dashboard-likes__main-type002 p,
+  .dashboard-likes__main-type003 p,
+  .dashboard-likes__main-type004 p,
+  .dashboard-likes__main-type005 p,
+  .dashboard-likes__main-type006 p {
+    bottom: 10.5px;
+    left: 15px;
+  }
+
+  .dashboard-likes__main-type001--likes,
+  .dashboard-likes__main-type002--likes,
+  .dashboard-likes__main-type003--likes,
+  .dashboard-likes__main-type004--likes,
+  .dashboard-likes__main-type005--likes,
+  .dashboard-likes__main-type006--likes {
+    right: 18px;
+    bottom: 10.5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .dashboard-likes__main {
+    flex-wrap: wrap;
+    margin-inline: 9px;
+    justify-content: center;
+  }
+
+  .dashboard-likes__main-type001,
+  .dashboard-likes__main-type002,
+  .dashboard-likes__main-type003,
+  .dashboard-likes__main-type004,
+  .dashboard-likes__main-type005,
+  .dashboard-likes__main-type006 {
+    max-width: 250px;
+    height: 200px;
+  }
+
+  .dashboard-likes__main-type001--box,
+  .dashboard-likes__main-type002--box,
+  .dashboard-likes__main-type003--box,
+  .dashboard-likes__main-type004--box,
+  .dashboard-likes__main-type005--box,
+  .dashboard-likes__main-type006--box {
+    max-width: 180px;
+    height: 135px;
+    left: 33px;
+    top: 18px;
+    border-radius: 12px;
+  }
+
+  .dashboard-likes__main-type001--circle,
+  .dashboard-likes__main-type002--circle,
+  .dashboard-likes__main-type003--circle,
+  .dashboard-likes__main-type004--circle,
+  .dashboard-likes__main-type005--circle,
+  .dashboard-likes__main-type006--circle {
+    width: 80.05px;
+    height: 80.05px;
+  }
+
+  .dashboard-likes__main-type001 p,
+  .dashboard-likes__main-type002 p,
+  .dashboard-likes__main-type003 p,
+  .dashboard-likes__main-type004 p,
+  .dashboard-likes__main-type005 p,
+  .dashboard-likes__main-type006 p {
+    bottom: 10.5px;
+    left: 15px;
+  }
+
+  .dashboard-likes__main-type001--likes,
+  .dashboard-likes__main-type002--likes,
+  .dashboard-likes__main-type003--likes,
+  .dashboard-likes__main-type004--likes,
+  .dashboard-likes__main-type005--likes,
+  .dashboard-likes__main-type006--likes {
+    right: 18px;
+    bottom: 10.5px;
+  }
+}
+
+/* For the settings media query*/
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .settings-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .settings-image button {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .settings-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  .settings-image button {
+    width: 38%;
+    padding: 1rem 0.5rem;
+  }
+
+  .settings-main {
+    flex-direction: column;
+  }
+
+  .form-settings {
+    order: 1;
+    width: 100%;
+  }
+
+  .helper-text {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .settings-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-settings {
+    order: 1;
+    width: 80%;
+    margin-inline: 30px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .settings-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-settings {
+    order: 1;
+    width: 90%;
+    margin-inline: 20px;
+  }
+
+  .helper-text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .settings-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .settings-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+  }
+
+  .settings-image button {
+    width: 100%;
+  }
+
+  .form-settings {
+    order: 1;
+    width: 90%;
+    margin-inline: 20px;
+  }
+
+  .helper-text {
+    width: 100%;
+  }
+}
+
+/* For the small header */
+.small-header__nav {
+  background-color: #1d223a;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-inline: 3rem;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding-block: 1.2rem;
+
+  display: none;
+}
+
+.small-header__logo {
+  display: flex;
+  margin-left: 6rem;
+}
+
+.small-header__menu {
+  position: relative;
+  width: 3rem;
+  height: 2rem;
+}
+
+.small-header__menu:hover {
+  cursor: pointer;
+}
+
+.small-header__open {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.small-header__open::before {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  top: 0.9rem;
+}
+
+.small-header__open::after {
+  position: absolute;
+  content: "";
+  width: 3rem;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  top: 1.7rem;
+}
+
+.small-header__sidebar {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #f1f3fb;
+  padding-top: 7rem;
+  transition: width 0.5s;
+
+  width: 0;
+  overflow-x: hidden;
+}
+
+.small-header__nav-list {
+  list-style-type: none;
+}
+
+.small-header__nav-item {
+  margin-block: 1rem;
+  margin-inline: 1rem;
+  gap: 17.25px;
+  border-radius: 4px;
+  padding-left: 9.25px;
+  padding-block: 5px;
+  width: 30%;
+  transition: all 0.5s ease-in;
+}
+
+.small-header__nav-item:hover {
+  cursor: pointer;
+  background-color: #eebbc3;
+  color: #232946;
+}
+
+.small-header__user {
+  padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-header__userImage {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.small-header__options>* {
+  margin-inline: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 17.25px;
+  border-radius: 4px;
+  padding-left: 1rem;
+  padding-block: 1rem;
+  width: 80%;
+}
+
+.small-header__cancel {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+/* Display small header */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .small-header {
+    display: block;
+  }
+
+  .small-header__nav {
+    display: flex;
+  }
+
+  .head-top {
+    display: none;
+  }
+
+  .dashboard-main {
+    margin-top: 150px;
+  }
+
+  .dashboard-sidebar {
+    margin-top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .small-header {
+    display: block;
+  }
+
+  .small-header__nav {
+    display: flex;
+  }
+
+  .head-top {
+    display: none;
+  }
+
+  .dashboard-main {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .small-header {
+    display: block;
+  }
+
+  .small-header__nav {
+    display: flex;
+    padding-inline: 2rem;
+  }
+
+  .small-header__logo {
+    margin-left: 3rem;
+  }
+
+  .head-top {
+    display: none;
+  }
+
+  .dashboard-main {
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .small-header {
+    display: block;
+  }
+
+  .small-header__nav {
+    display: flex;
+    padding-inline: 1rem;
+  }
+
+  .small-header__logo {
+    margin-left: 3rem;
+  }
+
+  .small-header__logo h1 {
+    font-size: 1rem;
+  }
+
+  .small-header__logo .logo-num {
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .head-top {
+    display: none;
+  }
+
+  .dashboard-main {
+    margin-top: 150px;
+  }
 }
