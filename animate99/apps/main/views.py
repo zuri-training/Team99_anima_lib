@@ -1,22 +1,19 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core.mail import send_mail, BadHeaderError
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home (request):
     return render(request, 'main/home.html',)
 
+@login_required(login_url='login')
 def documentation (request):
     return render(request, 'main/documentation.html',)
 
+@login_required(login_url='login')
 def download (request):
     return render(request, 'main/download.html',)
-
-def login (request):
-    return render(request, 'accounts/login.html',)
-
-def register (request):
-    return render(request, 'accounts/register.html',)
 
 def support (request):
     if request.method == 'POST':

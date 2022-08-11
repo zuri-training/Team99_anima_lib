@@ -11,8 +11,9 @@ from django.views.generic.edit import UpdateView
 # from django.contrib.auth.forms import UserChangeForm
 # Create your views here.
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 
-class LibraryListView(View):
+class LibraryListView(View,LoginRequiredMixin):
     def get(self, request, pk, *args, **kwargs):
         animations = Animation.objects.all().order_by('created_on') 
         
@@ -22,7 +23,7 @@ class LibraryListView(View):
         
         return render(request, 'user_review/library.html', context)
     
-class LibraryDetailView(View):
+class LibraryDetailView(View,LoginRequiredMixin):
     def get(self, request, pk, *args, **kwargs):
         animation = Animation.objects.get(pk=pk)
         user = CustomUser.objects.get(pk=request.user.id)
@@ -41,7 +42,7 @@ class LibraryDetailView(View):
     
     
 
-class ProfileEditView(UpdateView):
+class ProfileEditView(UpdateView, LoginRequiredMixin):
     model = CustomUser
     template_name='user_review/settings.html'
     fields = ["name", "twitter_url","github_url", "image"]
@@ -52,7 +53,7 @@ class ProfileEditView(UpdateView):
 def usageExamples (request):
     return render(request, 'user_review/usageExamples.html',)
 
-class IsFavoriteView(View):
+class IsFavoriteView(View,LoginRequiredMixin):
     def post(self, request,pk, *args, **kwargs):
         animation = Animation.objects.get(pk=pk)
         is_favourite = False
@@ -74,7 +75,7 @@ class IsFavoriteView(View):
         
 
 
-class LikesView(View):
+class LikesView(View, LoginRequiredMixin):
     def get(self, request, pk, *args, **kwargs):
         user = CustomUser.objects.get(pk=pk)
         animations = Animation.objects.filter(favourites=request.user.id)
