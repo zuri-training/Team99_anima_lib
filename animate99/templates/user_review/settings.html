@@ -47,7 +47,7 @@
           <img src="{{user.image.url}}" alt="image" class="dashboard-userImage">
 
     
-          <p class="dashboard-username">{{user.name}}</p>
+          <p class="dashboard-username">{{user.email}}</p>
         </div>
         <div class="user-options">
           <div class="user-animation">
@@ -197,8 +197,12 @@
 
                 
               </form> {% endcomment %}
-              <button class="change-picture">Change Picture</button>
-                <button class="delete-picture">Delete Picture</button>
+
+
+              <button id="upload_widget" class="cloudinary-button">Upload files</button>
+              
+              
+             
             </div>
           </div>
         </section>

@@ -19,9 +19,8 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("accounts/", include("apps.accounts.urls")),
-    path("", include("apps.common.urls")),
+    path("", include("apps.main.urls")),
     path("blog/", include("apps.blog.urls")),
-    path("home/", include("apps.main.urls")),
     path('google-auth/', include('allauth.urls')),
     path("dashboard/", include("apps.user_review.urls")),
     

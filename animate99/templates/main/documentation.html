@@ -360,21 +360,17 @@
             <div class="foot-top-right">
                 <div class="foot-top-right-1">
                     <h2>Navigation</h2>
-                    <p>Home</p>
-                    <p>Documentation</p>
-                    <p>Forum</p>
+                    <a href="{% url 'home' %}"><p>Home</p></a>
+                    <a href="{% url 'documentation' %}"><p>Documentation</p></a>
+                    
                 </div>
                 <div class="foot-top-right-2">
                     <h2>Resources</h2>
-                    <p>Team</p>
-                    <p>Licence</p>
-                    <p>Versions</p>
-                    <p>Project Info</p>
+                    <a href="https://github.com/zuri-training/Team99_anima_lib/graphs/contributors"><p>Team</p></a>
                 </div>
                 <div class="foot-top-right-3">
                     <h2>Installation</h2>
-                    <p>Installation</p>
-                    <p>About Animate99</p>
+                    <a href="{% url 'download' %}"><p>Installation</p></a>
                 </div>
             </div>
         </div>

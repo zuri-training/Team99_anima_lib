@@ -33,33 +33,33 @@
       </div>
       <div class="nav-cont">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">Documentation</a></li>
+          <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
           <li class="nav-item"><a href="#">Dashboard</a></li>
-          <li class="nav-item"><a href="#">Support</a></li>
+          <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
         </ul>
       </div>
       
       <div class="btns">
-        <button class="btn-head">Download Library</button>
+        <a href="{% url 'download' %}"><button class="btn-head">Download Library</button></a>
       </div>
     </nav>
   </header>
     <div class="dashboard">
       <div class="dashboard-sidebar">
         <div class="dashboard-user">
-          <img src="{% static 'user_review/man.jpg' %}" alt="user-image" class="dashboard-userImage" />
-          <p class="dashboard-username">John Doe</p>
+          <!-- <img src="{{user.image.url}}" alt="image" class="dashboard-userImage"> -->
+          <p class="dashboard-username">logged in as: {{user.email}}</p>
         </div>
         <div class="user-options">
           <div class="user-animation">
             <img src="{% static 'user_review/library.png' %}" alt="heart-img" class="user-animation-img" />
-            <a href="{% url 'library' %}">
+            <a href="{% url 'library' user.pk %}">
               <p class="title">Library</p>
             </a>
           </div>
     
-          <div class="user-usageExamples">
+          <div class="user-usageExamples sidebar-active">
             <img src="{% static 'user_review/usage.png' %}" alt="heart-img" class="user-usageExamples-img" />
             <a href="{% url 'usageexamples' %}">
               <p class="title">Usage Examples</p>
@@ -68,17 +68,17 @@
     
           <div class="user-likes">
             <img src="{% static 'user_review/heart-2.png' %}" alt="heart-img" class="user-likes-img" />
-            <a href="{% url 'likes' %}">
+            <a href="{% url 'likes' user.pk %}">
               <p class="title">My Likes</p>
             </a>
           </div>
     
-          <div class="user-settings sidebar-active">
+          <!-- <div class="user-settings">
             <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
             <a href="{% url 'settings' user.pk %}">
               <p class="title">Settings</p>
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="user-logout">
           <img
@@ -165,6 +165,24 @@
                 <p class="codepen-example__name">Peace not war</p>
                 <div class="codepen-example__likes">
                  
+                </div>
+              </div>
+            </div>
+
+            <div class="codepen-box">
+              <div class="codepen-screen">
+                <iframe height="300" style="width: 100%;" scrolling="no" title="Shake Button"
+                  src="https://codepen.io/gneisscode/embed/KKoBJrY?default-tab=html%2Cresult&editable=true&theme-id=light"
+                  frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                  See the Pen <a href="https://codepen.io/gneisscode/pen/KKoBJrY">
+                    Shake Button</a> by gneisscode (<a href="https://codepen.io/gneisscode">@gneisscode</a>)
+                  on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
+              </div>
+              <div class="codepen-example">
+                <p class="codepen-example__name">Click me!</p>
+                <div class="codepen-example__likes">
+            
                 </div>
               </div>
             </div>

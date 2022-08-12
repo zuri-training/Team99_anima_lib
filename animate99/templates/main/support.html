@@ -49,21 +49,21 @@
             <div class="box-2-text">
                 <h1>Installation</h1>
                 <p>Have installation issues? Click on the link to learn more</p>
-                <button class="get-btn">Documentation</button>
+                <a href="{% url 'documentation' %}"><button class="get-btn">Documentation</button></a>
             </div>
         </div>
         <div class="header-box-3">
             <div class="box-3-text">
                 <h1>Library</h1>
                 <p>Want to use our animations? Click the link to learn more</p>
-                <button class="dow-btn">Download library</button>
+                <a href="{% url 'download' %}"><button class="dow-btn">Download library</button></a>
             </div>
         </div>
         <div class="header-box-4">
             <div class="box-4-text">
                 <h1>Available animations</h1>
                 <p>View all the available animations, Click the link to learn more</p>
-                <button class="us-btn">Usage Examples</button>
+                <a href="{% url 'login' %}"><button class="us-btn">Usage Examples</button></a>
             </div>
         </div>
     </div>
@@ -116,21 +116,25 @@
             <div class="foot-top-right">
                 <div class="foot-top-right-1">
                     <h2>Navigation</h2>
-                    <p>Home</p>
-                    <p>Documentation</p>
-                    <p>Forum</p>
+                    <a href="{% url 'home' %}">
+                        <p>Home</p>
+                    </a>
+                    <a href="{% url 'documentation' %}">
+                        <p>Documentation</p>
+                    </a>
+                
                 </div>
                 <div class="foot-top-right-2">
                     <h2>Resources</h2>
-                    <p>Team</p>
-                    <p>Licence</p>
-                    <p>Versions</p>
-                    <p>Project Info</p>
+                    <a href="https://github.com/zuri-training/Team99_anima_lib/graphs/contributors">
+                        <p>Team</p>
+                    </a>
                 </div>
                 <div class="foot-top-right-3">
                     <h2>Installation</h2>
-                    <p>Installation</p>
-                    <p>About Animate99</p>
+                    <a href="{% url 'download' %}">
+                        <p>Installation</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -142,7 +146,7 @@
                 </div>
                 <p>2022</p>
             </div>
-
+    
             <div class="footer-mid-bottom">
                 <p>&copy;ZuriTeam</p>
             </div>

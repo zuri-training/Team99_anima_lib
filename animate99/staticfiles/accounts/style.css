@@ -220,10 +220,9 @@ button {
     display: block;
     width: 100%;
     padding: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     font-weight: bold;
     background-color: #D0D6F2;
-    ;
     border: none;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -236,11 +235,17 @@ button {
     background-color: #D0D6F2;
     padding: 0.7em;
     margin-top: 0.5em;
+    color: #232946;
 }
 
 .btn-google img {
     margin-right: 0.5rem;
 }
+
+.password{
+    margin-bottom: 1em;
+}
+
 
 small {
     color: #fff;

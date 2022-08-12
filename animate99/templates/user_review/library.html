@@ -35,26 +35,26 @@
         </div>
         <div class="nav-cont">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">Documentation</a></li>
+            <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
             <li class="nav-item"><a href="#">Dashboard</a></li>
-            <li class="nav-item"><a href="#">Support</a></li>
+            <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
           </ul>
         </div>
     
         <div class="btns">
-          <button class="btn-head">Download Library</button>
+          <a href="{% url 'download' %}"><button class="btn-head">Download Library</button></a>
         </div>
       </nav>
     </header>
   <div class="dashboard">
     <div class="dashboard-sidebar">
       <div class="dashboard-user">
-        <img src="{% static 'user_review/man.jpg' %}" alt="user-image" class="dashboard-userImage" />
-        <p class="dashboard-username">John Doe</p>
+        <!-- <img src="{{user.image.url}}" alt="image" class="dashboard-userImage"> -->
+        <p class="dashboard-username">logged in as: {{user.email}}</p>
       </div>
       <div class="user-options">
-        <div class="user-animation">
+        <div class="user-animation sidebar-active">
           <img src="{% static 'user_review/library.png' %}" alt="heart-img" class="user-animation-img" />
           <a href="{% url 'library' user.pk %}">
             <p class="title">Library</p>
@@ -75,12 +75,12 @@
           </a>
         </div>
   
-        <div class="user-settings sidebar-active">
+        <!-- <div class="user-settings">
           <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
           <a href="{% url 'settings' user.pk %}">
             <p class="title">Settings</p>
           </a>
-        </div>
+        </div> -->
       </div>
         <div class="user-logout">
           <img
@@ -193,7 +193,7 @@
               </form>
             </div>
               {% endif %}
-              {% if animation.name == 'moveRight'%}
+              {% if animation.name == 'moveright'%}
               <!-- Fifth box  -->
             <div class="dashboard-library__main-type005">
               <div class="dashboard-library__main-type005--box">
@@ -427,7 +427,9 @@
           </div>
           <div class="small-header__logout">
             <img src="./images/logout.png" alt="logout-img" class="small-header__logout-img" />
-            <p class="title">Logout</p>
+            <a href='..\accounts\logout'>
+              <p class="title">Logout</p>
+            </a>
           </div>
         </div>
       </div>

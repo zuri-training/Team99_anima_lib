@@ -276,13 +276,16 @@ nav a:hover {
 
 .dashboard-username {
   text-align: center;
-  margin-top: 6px;
   margin-bottom: 73px;
-  color: #232946;
+  background-color: #232946;
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 150%;
+  color: #d0d6f2;
+  padding: 1.2em;
+  margin-top: 4em;
+  align-self: center;
 }
 
 /* For the user options */
@@ -344,7 +347,6 @@ nav a:hover {
   color: #1d223a;
   position: absolute;
   bottom: 52px;
-  border: 1px solid #232946;
   padding-left: 1.5em;
   padding-right: 1.5em;
   align-self: center;
