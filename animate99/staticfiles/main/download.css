@@ -87,6 +87,10 @@ nav a:hover {
   border: none;
 }
 
+a{
+  text-decoration: none;
+}
+
 .btn-head {
   padding: 8px, 12px;
   border-radius: 4px;
@@ -225,6 +229,9 @@ ul {
 
   background: #ffffff;
   border-radius: 4px;
+}
+.us-btn,.down-btn,.get-btn{
+  cursor: pointer;
 }
 
 .down-btn:hover {

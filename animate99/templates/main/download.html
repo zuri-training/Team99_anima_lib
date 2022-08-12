@@ -32,7 +32,7 @@
                 </ul>
                 <div class="btns">
                     <a href="{% url 'login' %}"><button class="btn-head">Sign In</button></a>
-                    <a href="{% url 'register' %}"><button class="btn-head-2">Register</button></a>
+                    <a href='..\accounts\register'><button class="btn-head-2">Register</button></a>
                 </div>
             </div>
         </nav>
@@ -42,7 +42,9 @@
                 when you
                 implement our animations on your next web project!</p>
 
-            <button class="down-btn">Download Library <span class="iconify" data-icon="el:download-alt"></span></button>
+            <a href="animate99\templates\main\script.js" download="index.js"><button class="down-btn">Download Library <span class="iconify" data-icon="el:download-alt"></span></button></a>
+
+           
 
         </div>
     </header>
@@ -78,21 +80,25 @@
             <div class="foot-top-right">
                 <div class="foot-top-right-1">
                     <h2>Navigation</h2>
-                    <p>Home</p>
-                    <p>Documentation</p>
-                    <p>Forum</p>
+                    <a href="{% url 'home' %}">
+                        <p>Home</p>
+                    </a>
+                    <a href="{% url 'documentation' %}">
+                        <p>Documentation</p>
+                    </a>
+                
                 </div>
                 <div class="foot-top-right-2">
                     <h2>Resources</h2>
-                    <p>Team</p>
-                    <p>Licence</p>
-                    <p>Versions</p>
-                    <p>Project Info</p>
+                    <a href="https://github.com/zuri-training/Team99_anima_lib/graphs/contributors">
+                        <p>Team</p>
+                    </a>
                 </div>
                 <div class="foot-top-right-3">
                     <h2>Installation</h2>
-                    <p>Installation</p>
-                    <p>About Animate99</p>
+                    <a href="{% url 'download' %}">
+                        <p>Installation</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -104,7 +110,7 @@
                 </div>
                 <p>2022</p>
             </div>
-
+    
             <div class="footer-mid-bottom">
                 <p>&copy;ZuriTeam</p>
             </div>

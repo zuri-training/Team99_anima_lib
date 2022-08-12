@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load socialaccount %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,8 +34,8 @@
         <div class="right">
             <div class="right__top">
                 <h2>Sign Up</h2>
-                <button class="btn btn-google">
-                    <img src="{% static 'accounts/Google - png 0.png'  %}" alt="google icon">Sign up with Google</button>
+                <a href="{% provider_login_url 'google' method='oauth2'%}" class="btn btn-google">
+                    <img src="{% static 'accounts/Google - png 0.png'  %}" alt="google icon">Sign Up with Google</a>
                 <p>Or</p>
             </div>
             <form action="./" method="POST">
@@ -56,7 +56,7 @@
                     {% comment %} <input type="password" name="password" id="password" placeholder="Enter password" /> {% endcomment %}
                 </div>
                 <div class="button">
-                    <input type="submit" name="register_user">
+                    <input type="submit" name="register_user" class="my_btn__login">
                     {% comment %} <button class="btn btn__login">Register</button> {% endcomment %}
                     <small>Already have an account?
                         <span>
