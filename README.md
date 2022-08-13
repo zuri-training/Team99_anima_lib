@@ -5,7 +5,7 @@
 - pages--- folder containing miscellaneousfiles containing html, css code(not part of django project)
 - contributions----folder containing team contributions(not part of django project)
 - vscode----folder added by default by vscode editor (not part of django project)
-- procfile-specifies directions for wsgi for DJANGO PROJECT FOLDER
+- procfile-specifies commands for wsgi for DJANGO PROJECT FOLDER
 - requirements.txt-contains dependencies for DJANGO PROJECT FOLDER
 - runtime.txt- contains python version for DJANGO PROJECT FOLDER
 
