@@ -31,15 +31,15 @@
                     <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
                 </ul>
                 <div class="btns">                   
-                    {% comment %} {% if user.is_authentication %}
-                        <p>Welcome, {{customuser.first_name}}</p>
+                    {% if request.user.is_authenticated %}
+                        <a href="{% url 'download' %}"><button class="btn-head-2">Download Library</button></a>
+ 
                     {% else %}
-                    <button class="btn-head">Sign In</button>
-                    <button class="btn-reg-head">Register</button>
-                    {% endif %}                     {% endcomment %}
-                <div class="btns">
-                    <a href="{% url 'login' %}"><button class="btn-head">Sign In</button></a>
+                    <a href="{% url 'accounts:login' %}"><button class="btn-head">Sign In</button></a>
                     <a href='..\accounts\register'><button class="btn-head-2">Register</button></a>
+                    {% endif %}                    
+                <div class="btns">
+
                 </div>
             </div>
         </nav>
@@ -51,7 +51,12 @@
                     Library For You.
                 </h1>
                 <p>Add cool animations to your program with ease and flexibility</p>
-                <a href="{% url 'login' %}"><button class="btn-info-text">Get Started &#129130;</button></a>
+                {% if request.user.is_authenticated %}
+                    <a href="{% url 'library' %}"><button class="btn-info-text">Go to dashboard &#129130;</button></a>
+                {% else %}
+                    <a href="{% url 'accounts:login' %}"><button class="btn-info-text">Get Started &#129130;</button></a>
+                {% endif %}
+
             </div>
             <div class="header-info-image">
                 <img src="{% static 'main/header-image.png'  %}" alt="Animation" id="headImg" onload="anima.flip('headImg',500, 2)" />
@@ -111,7 +116,7 @@
                     Not sure what kind of animations you'd like to create? Not to worry!
                     check out our interactive usage examples for some inspiration.
                 </p>
-                <a href="{% url 'login' %}"><button class="use-btn">Usage Examples &#129130;</button></a>
+                <a href="{% url 'accounts:login' %}"><button class="use-btn">Usage Examples &#129130;</button></a>
             </div>
         </div>
     </div>
@@ -127,7 +132,7 @@
                     Register or sign in now to have access to our full library of
                     customizable animations.
                 </p>
-                <a href="{% url 'login' %}"><button class="bottom-left-btn">View More &#129130;</button></a>
+                <a href="{% url 'accounts:login' %}"><button class="bottom-left-btn">View More &#129130;</button></a>
             </div>
 
             <div class="bottom-right">

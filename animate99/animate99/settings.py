@@ -18,6 +18,7 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,7 +32,7 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DJANGO_DEBUG", default=True, cast=bool)
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'animate-99.herokuapp.com']
 
@@ -194,7 +195,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 #All_auth set up to remove user name field
-SOCIALACCOUNT_FORMS ={'signup': 'accounts.forms.CreateUserForm'}
+SOCIALACCOUNT_FORMS ={'signup': 'apps.accounts.forms.CustomSignupForm'}
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
@@ -202,8 +203,9 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 
 
 # Account redirect URL
-ACCOUNT_SIGNUP_REDIRECT_URL = "/home/"
-# LOGIN_REDIRECT_URL = "/dashboard/library/"
+
+ACCOUNT_SIGNUP_REDIRECT_URL = "library"
+LOGIN_REDIRECT_URL = "library"
 
 
 

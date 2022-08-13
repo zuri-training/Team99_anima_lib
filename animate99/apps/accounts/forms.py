@@ -1,6 +1,8 @@
 from .models import CustomUser
 from django.contrib.auth.forms import UserCreationForm
 from django.forms import EmailInput, PasswordInput,TextInput
+from allauth.socialaccount.forms import SignupForm
+from django.forms import ValidationError
 
 class CreateUserForm(UserCreationForm):
     class Meta:
@@ -26,3 +28,9 @@ class CreateUserForm(UserCreationForm):
                 'placeholder': "Confirm password"
                 })
         }
+        
+
+
+class CustomSignupForm(SignupForm):
+     def raise_duplicate_email_error(self):
+         raise ValidationError("שם משתמש כבר קיים עם כתובת אימייל")

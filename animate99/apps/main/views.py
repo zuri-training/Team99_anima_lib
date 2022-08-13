@@ -2,6 +2,14 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth.decorators import login_required
+import mimetypes
+import os
+from pathlib import Path
+# Import HttpResponse module
+from django.http.response import HttpResponse
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Create your views here.
 def home (request):
@@ -14,6 +22,8 @@ def documentation (request):
 @login_required(login_url='login')
 def download (request):
     return render(request, 'main/download.html',)
+
+
 
 def support (request):
     if request.method == 'POST':

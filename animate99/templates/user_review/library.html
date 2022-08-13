@@ -23,6 +23,14 @@
     <link rel="stylesheet" href="{% static 'user_review/style.css' %}" />
     <link rel="shortcut icon" href="{% static 'main/favicon.svg' %}" type="image/x-icon">
     <title>Library</title>
+    <style>
+      .isliked{
+        color : red;
+      }
+      i{
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <header class="head-top">
@@ -56,7 +64,7 @@
       <div class="user-options">
         <div class="user-animation sidebar-active">
           <img src="{% static 'user_review/library.png' %}" alt="heart-img" class="user-animation-img" />
-          <a href="{% url 'library' user.pk %}">
+          <a href="{% url 'library' %}">
             <p class="title">Library</p>
           </a>
         </div>
@@ -126,7 +134,13 @@
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
                       {% comment %} <input type="hidden" name="next" value="{{request.path}}"> {% endcomment %}
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                    
+                      <i class="fa-solid fa-heart"></i>
+                                      
                     </div>
                   </button>
               </form>
@@ -147,8 +161,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                      {% comment %} <input type="hidden" name="next" value="{{request.path}}"> {% endcomment %}
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -168,7 +185,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -187,7 +208,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -206,7 +231,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -225,7 +254,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -244,7 +277,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -263,7 +300,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -282,7 +323,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -301,7 +346,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -320,7 +369,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -339,7 +392,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img class="isliked" src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img  src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>
@@ -358,7 +415,11 @@
                 <button style="background-color: transparent; border: none; box-shadow:none;" type="submit">
                     <div class="dashboard-library__main-type001--likes">
                       <span>{{animation.favourites.all.count}}</span>
-                        <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />                    
+                      {% if request.user in animation.favourites.all %}
+                        <img src="{% static 'user_review/heart-full.svg' %}" alt="like" />                     
+                      {% else %}
+                      <img src="{% static 'user_review/heart-regular.svg' %}" alt="like" />
+                      {% endif %}                 
                     </div>
                   </button>
               </form>

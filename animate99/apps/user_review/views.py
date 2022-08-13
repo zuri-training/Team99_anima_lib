@@ -14,11 +14,15 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 class LibraryListView(View,LoginRequiredMixin):
-    def get(self, request, pk, *args, **kwargs):
-        animations = Animation.objects.all().order_by('created_on') 
+    def get(self, request, *args, **kwargs):
+        animations = Animation.objects.all().order_by('created_on')
+        # is_liked = Animation.objects.filter(favourites=request.user.id)
+        
         
         context = {
             'animations': animations,
+            # 'is_liked': is_liked,
+            
         }
         
         return render(request, 'user_review/library.html', context)
@@ -49,11 +53,31 @@ class ProfileEditView(UpdateView, LoginRequiredMixin):
     success_url ="/" 
 
 
-    
+@login_required(login_url='login')    
 def usageExamples (request):
     return render(request, 'user_review/usageExamples.html',)
 
 class IsFavoriteView(View,LoginRequiredMixin):
+    def post(self, request,pk, *args, **kwargs):
+        animation = Animation.objects.get(pk=pk)
+        is_favourite = False
+        
+      
+        
+        
+        if animation.favourites.filter(id=request.user.id).exists():
+            animation.favourites.remove(request.user)
+            is_favourite = False
+        else:
+            animation.favourites.add(request.user)
+            is_favourite = True
+        
+            
+            
+        next = request.POST.get('next', f"/dashboard/library/")
+        return  HttpResponseRedirect(next)
+    
+class IsLiked(View,LoginRequiredMixin):
     def post(self, request,pk, *args, **kwargs):
         animation = Animation.objects.get(pk=pk)
         is_favourite = False
@@ -69,8 +93,8 @@ class IsFavoriteView(View,LoginRequiredMixin):
             is_favourite = True
         
             
-            
-        next = request.POST.get('next', f"/dashboard/library/{link_id}")
+        next = request.POST.get('next', f"/dashboard/likes/{link_id}/")            
+        # next = request.POST.get('next', f"/dashboard/likes/{link_id}/")
         return  HttpResponseRedirect(next)
         
 
