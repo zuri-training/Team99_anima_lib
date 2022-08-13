@@ -62,10 +62,6 @@
     <div class="dashboard-sidebar">
       <div class="dashboard-user">
         <img src="{{user.image.url}}" alt="image" class="dashboard-userImage"> 
-        <div class="user-logout">
-          <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
-          <a href="{% url 'accounts:logout' %}"><p class="title">Logout</p></a>
-        </div>
         <p class="dashboard-username">{{user.email}}</p>
       </div>
       <div class="user-options">
@@ -96,6 +92,12 @@
             <p class="title">Settings</p>
           </a>
         </div>
+      </div>
+      <div class="user-logout">
+        <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
+        <a href="{% url 'accounts:logout' %}">
+          <p class="title">Logout</p>
+        </a>
       </div>
         <!-- <div class="user-logout">
           <img

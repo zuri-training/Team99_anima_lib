@@ -33,7 +33,7 @@ div a {
   padding-left: 5em;
   padding-right: 4em;
   background-color: #232946;
-  height: 70px;
+  height: 50px;
   margin-bottom: 4em;
 }
 
@@ -250,7 +250,7 @@ nav a:hover {
 .dashboard {
   display: flex;
   gap: 40px;
-  background-color: #ebebeb;
+  background-color: #ffffff;
   min-height: 100vh;
   margin-top: -4em;
 }
@@ -262,8 +262,8 @@ nav a:hover {
 }
 
 .dashboard-userImage {
-  width: 195px;
-  height: 188px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #c5c6cc;
   display: block;
   border-radius: 40px;
@@ -293,7 +293,7 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  margin-top: -2em;
+  margin-top: -4.5em;
 }
 
 .user-options>* {
@@ -344,7 +344,7 @@ nav a:hover {
   justify-content: center;
   background-color: #f1f3fb;
   gap: 12px;
-  color: #1d223a;
+  color: #232946;
   /* position: absolute; */
   margin-top: 2em;
   padding-left: 1.5em;
@@ -357,15 +357,16 @@ nav a:hover {
 }
 
 .user-logout p {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   padding-block: 3px;
+  color: #232946;
 }
 
 /* Main section of the Dashboard */
 .dashboard-main {
-  background-color: #ebebeb;
+  background-color: #ffffff;
   width: 100%;
   padding-top: 56px;
 }
@@ -507,6 +508,7 @@ nav a:hover {
   display: flex;
   gap: 2rem;
   margin-right: 10px;
+  margin-top: -1.5em;
 }
 
 .form-settings {
@@ -9594,12 +9596,16 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: -4em;
 }
 
+
+
 .settings-image img {
-  width: 300px;
-  height: 300px;
+  width: 275px;
+  height: 275px;
   border-radius: 40px;
+  margin-right: 4em;
   display: block;
   -o-object-fit: cover;
   object-fit: cover;
