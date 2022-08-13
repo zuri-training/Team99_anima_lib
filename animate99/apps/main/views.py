@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, FileResponse
 from django.core.mail import send_mail, BadHeaderError
 from django.contrib.auth.decorators import login_required
 import mimetypes
@@ -7,6 +7,7 @@ import os
 from pathlib import Path
 # Import HttpResponse module
 from django.http.response import HttpResponse
+
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +24,11 @@ def documentation (request):
 def download (request):
     return render(request, 'main/download.html',)
 
-
+def download_file(request):
+    obj = BASE_DIR
+    filename = 'script.js'
+    response = FileResponse(open(filename, 'rb'))
+    return response
 
 def support (request):
     if request.method == 'POST':
