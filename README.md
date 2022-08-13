@@ -1,5 +1,6 @@
 # anima_lib_team99 :trophy:
 ## Framework used: Django Monolith Fullstack Framework
+## Staticfiles configured using whitenoise
 ## Project Folder Structure;
 - animate99--- DJANGO PROJECT FOLDER
 - pages--- folder containing miscellaneousfiles containing html, css code(not part of django project)
