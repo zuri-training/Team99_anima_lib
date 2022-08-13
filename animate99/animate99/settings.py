@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'crispy_forms',
     'cloudinary',
-    
+    'cloudinary_storage',
     #apps
     'apps.common.apps.CommonConfig',
     'apps.main.apps.MainConfig',
@@ -108,6 +108,11 @@ cloudinary.config(
   api_secret = "R8vSHpzBPvWvZ3k4fA4trIecaQg" 
 )
 
+# CLOUDINARY = {
+#   'cloud_name' : "dosj9cjie", 
+#   'api_key' : "177852858536987", 
+#   'api_secret' : "R8vSHpzBPvWvZ3k4fA4trIecaQg" 
+# }
 ROOT_URLCONF = 'animate99.urls'
 
 TEMPLATES = [
@@ -200,6 +205,11 @@ ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
+
+
+MEDIA_URL = '/profilepics/'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 
 # Account redirect URL

@@ -48,8 +48,8 @@
     <div class="dashboard">
       <div class="dashboard-sidebar">
         <div class="dashboard-user">
-          <!-- <img src="{{user.image.url}}" alt="image" class="dashboard-userImage"> -->
-          <p class="dashboard-username">logged in as: {{user.email}}</p>
+           <img src="{{user.image.url}}" alt="image" class="dashboard-userImage">
+          <p class="dashboard-username">{{user.email}}</p>
         </div>
         <div class="user-options">
           <div class="user-animation">
@@ -73,12 +73,12 @@
             </a>
           </div>
     
-          <!-- <div class="user-settings">
+          <div class="user-settings">
             <img src="{% static 'user_review/setting.png' %}" alt="heart-img" class="user-settings-img" />
             <a href="{% url 'settings' user.pk %}">
               <p class="title">Settings</p>
             </a>
-          </div> -->
+          </div> 
         </div>
         <div class="user-logout">
           <img

@@ -45,9 +45,7 @@ def login_view(request):
         context= {}
         return render(request, "accounts/login.html", context )
     
-def google_redirect(request):
-    a = request.user.id
-    return a
+
 
 # @login_required(login_url='login')
 def logout_user(request):

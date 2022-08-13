@@ -190,13 +190,13 @@
             <div class="settings-image">
              
               <img src="{{user.image.url}}" alt="image">
-              {% comment %} <form class="form-settings" method="POST">
+              <form action="" enctype="multipart/form-data" method="post">
                 {% csrf_token %}
                 {{form.image}}
-                <input type="submit" value="Save" />
+              <input type="submit" value="Save Picture" />
 
                 
-              </form> {% endcomment %}
+              </form>
 
 
               <button id="upload_widget" class="cloudinary-button">Upload files</button>

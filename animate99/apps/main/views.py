@@ -16,14 +16,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 def home (request):
     return render(request, 'main/home.html',)
 
-@login_required(login_url='login')
+@login_required
 def documentation (request):
     return render(request, 'main/documentation.html',)
 
-@login_required(login_url='login')
+@login_required
 def download (request):
     return render(request, 'main/download.html',)
 
+@login_required
 def download_file(request):
     obj = BASE_DIR
     filename = 'script.js'
