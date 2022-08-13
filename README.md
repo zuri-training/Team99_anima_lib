@@ -3,7 +3,7 @@
 ## Staticfiles configured using Whitenoise
 ## Project Folder Structure;
 - animate99--- DJANGO PROJECT FOLDER
-- pages--- folder containing miscellaneousfiles containing html, css code(not part of django project)
+- pages--- folder containing miscellaneous files containing html, css code(not part of django project)
 - contributions----folder containing team contributions(not part of django project)
 - vscode----folder added by default by vscode editor (not part of django project)
 - procfile-specifies commands for wsgi for DJANGO PROJECT FOLDER
