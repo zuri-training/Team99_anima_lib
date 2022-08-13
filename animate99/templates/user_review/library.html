@@ -53,12 +53,19 @@
         <div class="btns">
           <a href="{% url 'download' %}"><button class="btn-head">Download Library</button></a>
         </div>
+
+
+        
       </nav>
     </header>
   <div class="dashboard">
     <div class="dashboard-sidebar">
       <div class="dashboard-user">
         <img src="{{user.image.url}}" alt="image" class="dashboard-userImage"> 
+        <div class="user-logout">
+          <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
+          <p class="title">Logout</p>
+        </div>
         <p class="dashboard-username">{{user.email}}</p>
       </div>
       <div class="user-options">
@@ -90,14 +97,14 @@
           </a>
         </div>
       </div>
-        <div class="user-logout">
+        <!-- <div class="user-logout">
           <img
             src="{% static 'user_review/logout.png' %}"
             alt="heart-img"
             class="user-logout-img"
           />
           <p class="title">Logout</p>
-        </div>
+        </div> -->
       </div>
 
       <div class="dashboard-main">

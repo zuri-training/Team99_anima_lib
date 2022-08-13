@@ -29,15 +29,15 @@
         </div>
         <div class="nav-cont">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">Documentation</a></li>
+            <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
             <li class="nav-item"><a href="#">Dashboard</a></li>
-            <li class="nav-item"><a href="#">Support</a></li>
+            <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
           </ul>
         </div>
   
         <div class="btns">
-          <button class="btn-head">Download Library</button>
+          <a href="{% url 'download' %}"><button class="btn-head">Download Library</button></a>
         </div>
       </nav>
     </header>
@@ -45,6 +45,10 @@
       <div class="dashboard-sidebar">
         <div class="dashboard-user">
           <img src="{{user.image.url}}" alt="image" class="dashboard-userImage">
+          <div class="user-logout">
+          <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
+          <p class="title">Logout</p>
+        </div>
 
     
           <p class="dashboard-username">{{user.email}}</p>
@@ -88,7 +92,7 @@
             <a href="{% url 'settings' user.pk %}"><p class="title">Settings</p></a>
           </div>
         </div>
-        <div class="user-logout">
+        <!-- <div class="user-logout">
           <img
             src="{% static 'user_review/logout.png' %}"
             alt="heart-img"
@@ -97,7 +101,7 @@
           
           <p class="title">Logout</p>
         
-        </div>
+        </div> -->
       </div>
       <div class="dashboard-main">
         <!-- Settings page -->
@@ -106,21 +110,24 @@
           <div class="settings-main">
             <form class="form-settings" method="POST">
               {% csrf_token %}
+              <h3>Name</h3>
               <div class="form-input">
+                
                 {% comment %} <input type="text" placeholder="Name" /> {% endcomment %}
                 {{form.name}}
                 <div class="remove">
-                  <img
+                  <!-- <img
                     src="{% static 'user_review/cancel.png' %}"
                     alt="remove-icon"
                   />
-                  <span>Remove</span>
+                  <span>Remove</span> -->
                 </div>
               </div>
               <p class="helper-text">
-                Your name may appear around Animate99 where you make
-                contributions. You can remove it any time
+                <!-- Your name may appear around Animate99 where you make
+                contributions. You can remove it any time -->
               </p>
+              <h3>Email</h3>
               {% comment %} <input
                 type="email"
                 name="email"
@@ -128,19 +135,21 @@
                 placeholder="E-mail"
               /> {% endcomment %}
               {{form.email}}
-              <p class="helper-text">Please use a valid e-mail address</p>
+              <!-- <p class="helper-text">Please use a valid e-mail address</p> -->
+
+              
 
               {% comment %} <div class="form-input">
                 <textarea placeholder="Bio"></textarea>
                 <div class="remove">
-                  <img
+                  <!-- <img
                     src="{% static 'user_review/cancel.png' %}"
                     alt="remove-icon"
                   />
-                  <span>Remove</span>
+                  <span>Remove</span> -->
                 </div>
               </div> {% endcomment %}
-              <p class="helper-text">Tell us a little about yourself</p>
+              <!-- <p class="helper-text">Tell us a little about yourself</p> -->
               <div class="form-input">
                 {% comment %} <input
                   type="url"
@@ -150,13 +159,14 @@
                 /> {% endcomment %}
                 {{form.twitter_url}}
                 <div class="remove">
-                  <img
+                  <!-- <img
                     src="{% static 'user_review/cancel.png' %}"
                     alt="remove-icon"
                   />
-                  <span>Remove</span>
+                  <span>Remove</span> -->
                 </div>
               </div>
+              <h3>GitHub Profile Link</h3>
               <div class="form-input">
                 {% comment %} <input
                   type="url"
@@ -166,21 +176,21 @@
                 /> {% endcomment %}
                 {{form.github_url}}
                 <div class="remove">
-                  <img
+                  <!-- <img
                     src="{% static 'user_review/cancel.png' %}"
                     alt="remove-icon"
                   />
-                  <span>Remove</span>
+                  <span>Remove</span> -->
                   {% for message in messages %}
                     <p>{{message}}</p>
                   {% endfor %}
                 </div>
               </div>
               <p class="helper-text">
-                Some of the fields in this page is optional and can be removed
+                <!-- Some of the fields in this page is optional and can be removed
                 at any time and by filling them out you're giving us consent to
                 share this data wherever your user profile appears
-              </p>
+              </p> -->
                {% comment %} {{ form.as_p }} {% endcomment %}
 
               <input type="submit" value="Save" />
@@ -192,14 +202,30 @@
               <img src="{{user.image.url}}" alt="image">
               <form action="" enctype="multipart/form-data" method="post">
                 {% csrf_token %}
-                {{form.image}}
-              <input type="submit" value="Save Picture" />
+                <div class="form.image">{{form.image}}</div>
+              <input type="submit" value="Save Picture"  />
 
                 
               </form>
 
+              <style>
+                input[value="Save Picture"]{
+                  background-color:none;
+                  border: solid 1px #232946;
+                  color: #232946;
+                  padding: 16px 32px;
+                  text-decoration: none;
+                  margin-top: 2em;
+                  cursor: pointer;
+                  margin-left: 8em;
+                  border-radius: 5px;
+                  font-family:sans-serif;
+                  font-weight: 700;
+                }
+              </style>
 
-              <button id="upload_widget" class="cloudinary-button">Upload files</button>
+
+              <!-- <button id="upload_widget" class="cloudinary-button">Upload files</button> -->
               
               
              
