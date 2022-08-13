@@ -64,7 +64,7 @@
         <img src="{{user.image.url}}" alt="image" class="dashboard-userImage"> 
         <div class="user-logout">
           <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
-          <p class="title">Logout</p>
+          <a href="{% url 'accounts:logout' %}"><p class="title">Logout</p></a>
         </div>
         <p class="dashboard-username">{{user.email}}</p>
       </div>

@@ -47,7 +47,9 @@
           <img src="{{user.image.url}}" alt="image" class="dashboard-userImage">
           <div class="user-logout">
           <img src="{% static 'user_review/logout.png' %}" alt="heart-img" class="user-logout-img" />
-          <p class="title">Logout</p>
+          <a href="{% url 'accounts:logout' %}">
+            <p class="title">Logout</p>
+          </a>
         </div>
 
     
@@ -127,7 +129,7 @@
                 <!-- Your name may appear around Animate99 where you make
                 contributions. You can remove it any time -->
               </p>
-              <h3>Email</h3>
+              <h3>Twitter Profile Link</h3>
               {% comment %} <input
                 type="email"
                 name="email"

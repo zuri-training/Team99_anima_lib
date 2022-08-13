@@ -102,6 +102,37 @@ nav a:hover {
   height: 38px;
 }
 
+.btn-head-2 {
+  padding: 6px;
+  gap: 8px;
+
+  width: 100px;
+  height: 38px;
+
+  background: #d0d6f2;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-head {
+  padding: 8px, 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  border: 1px solid #ffa9b6;
+  background-color: transparent;
+  color: #ffa9b6;
+  line-height: 23.44px;
+  width: 100px;
+  height: 38px;
+}
+
 .btns {
   display: flex;
   flex-direction: row;
