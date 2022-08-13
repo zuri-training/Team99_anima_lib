@@ -32,7 +32,7 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DJANGO_DEBUG", default=True, cast=bool)
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'animate-99.herokuapp.com', '.zurifordummies.com', 'localhost', '148.251.6.230',]
 
@@ -227,7 +227,7 @@ SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "animate99team99@gmail.com"
-EMAIL_HOST_PASSWORD = "rrhwrsvquqznnahd"
+EMAIL_HOST_USER = "animatelib99@gmail.com"
+EMAIL_HOST_PASSWORD = "aflxvhzhlvecleyt"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True

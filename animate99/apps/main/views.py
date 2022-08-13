@@ -46,6 +46,6 @@ def support (request):
         # message = "\n".join(body.values())
         
         message = f"{body['name']} \n {body['email']} \n{body['textarea']}"   
-        send_mail("User Support Enquiry", message, 'animate99team99@gmail.com', ['animate99team99@gmail.com'], fail_silently=False)
+        send_mail("User Support Enquiry", message, 'animatelib99@gmail.com', ['animatelib99@gmail.com'], fail_silently=False)
             
     return render(request, 'main/support.html')
