@@ -22,6 +22,16 @@
                 <div class="brand">
                     Animate<a href="{% url 'home' %}" type="button" class="cta">99</a>
                 </div>
+                {% if request.user.is_authenticated %}
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'documentation' %}">Documentation</a></li>
+                        <li><a href="{% url 'library' %}">Dashboard</a></li>
+                        <li><a href="{% url 'support' %}">Support</a></li>
+                    </ul>
+                </div>
+                {% else %}
                 <div class="nav-list">
                     <ul>
                         <li><a href="{% url 'home' %}">Home</a></li>
@@ -30,7 +40,15 @@
                         <li><a href="{% url 'support' %}">Support</a></li>
                     </ul>
                 </div>
+                {% endif %}
+
+
+
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'download' %}" type="button" class="cta1">Download</a>
+                {% else %}
                 <a href="{% url 'accounts:login' %}" type="button" class="cta1">Get Full Access</a>
+                {% endif %}
             </div>
         </div>
     </section>

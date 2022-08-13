@@ -22,17 +22,30 @@
                 <div class="logo-num"><a href="{% url 'home' %}">
                     <span>99</span></a></div>
             </div>
-            <div class="nav-cont">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
-                    <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
-                    <li class="nav-item"><a href="{% url 'download' %}">Download</a></li>
-                    <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
-                </ul>
-            </div>
+            {% if request.user.is_authenticated %}
+            <ul class="nav-list">
+                <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
+                <li class="nav-item"><a href="{% url 'library' %}">Dashboard</a></li>
+                <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
+            </ul>
+            {% else %}
+            <ul class="nav-list">
+                <li class="nav-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="nav-item"><a href="{% url 'documentation' %}">Documentation</a></li>
+                <li class="nav-item"><a href="{% url 'download' %}">Download</a></li>
+                <li class="nav-item"><a href="{% url 'support' %}">Support</a></li>
+            </ul>
+            {% endif %}
 
             <div class="btns">
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'download' %}"><button class="btn-head">Download</button></a>
+                
+                {% else %}
                 <a href="{% url 'accounts:login' %}"><button class="btn-head">Get Full Access</button></a>
+                {% endif %}
+                
             </div>
         </nav>
     </header>

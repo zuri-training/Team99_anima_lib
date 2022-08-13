@@ -53,6 +53,7 @@ class ProfileEditView(UpdateView, LoginRequiredMixin):
     success_url ="/" 
 
 
+
 @login_required(login_url='login')    
 def usageExamples (request):
     return render(request, 'user_review/usageExamples.html',)

@@ -16,7 +16,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 def home (request):
     return render(request, 'main/home.html',)
 
-@login_required
 def documentation (request):
     return render(request, 'main/documentation.html',)
 
