@@ -119,6 +119,12 @@ h1 {
     color: #232946;
 }
 
+.error-message p{
+    color: #ffffff;
+    font-size: 16px;
+
+}
+
 form {
     display: flex;
     flex-direction: column;

@@ -201,7 +201,7 @@
             <div class="settings-image">
              
               <img src="{{user.image.url}}" alt="image">
-              <form action="" enctype="multipart/form-data" method="post">
+              <form action="" enctype="multipart/form-data" method="post" class="">
                 {% csrf_token %}
                 <div class="form.image">{{form.image}}</div>
               <input type="submit" value="Save Picture"  />

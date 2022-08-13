@@ -242,6 +242,22 @@ nav a:hover {
   margin-right: 154px;
 }
 
+/* input[type="file" i] {
+  background-color: #e55f5f;
+  color: #232946;
+
+}
+
+.form.image a:before {
+  content: 'ciao 1'
+}
+
+.form.image a:after {
+  content: 'ciao 2'
+}
+.form.image a{
+  display: none;
+} */
 .dashboard-download:hover {
   cursor: pointer;
 }

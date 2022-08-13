@@ -17,9 +17,15 @@ def register_view(request):
             if form.is_valid():
                 form.save()
                 user = form.cleaned_data.get('email')
-                messages.success(request, 'account was created for ' +  ' ' + user)                
+                messages.success(request, user + ' ' +  'account created, kindly login .'  )
+
+               
                 
-                return redirect('library')
+                
+                       
+                
+                return redirect('accounts:login')
+
             
         context= {
             'form':form,
