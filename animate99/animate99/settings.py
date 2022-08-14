@@ -32,7 +32,7 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = config("DJANGO_DEBUG", default=True, cast=bool)
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'animate-99.herokuapp.com', '.zurifordummies.com', 'localhost', '148.251.6.230',]
 
