@@ -42,8 +42,7 @@
                 {% csrf_token %}
                 <div class="email">
                     <label for="email">Email Address</label>
-                    {% comment %} <input type="email" name="email" id="email" placeholder="Enter email address" /> {% endcomment %}
-                    {{form.email}}
+                    <input type="email" name="email" id="email" placeholder="Enter email address" />
                 </div>
                 <div class="password">
                     <label for="password">Password</label>
@@ -64,6 +63,7 @@
                             <a href="{% url 'accounts:login' %}">Sign in</a></small></span>
                 </div>
             </form>
+
         </div>
 </body>
 
