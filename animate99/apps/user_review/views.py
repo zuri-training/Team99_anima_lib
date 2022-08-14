@@ -50,7 +50,10 @@ class ProfileEditView(UpdateView, LoginRequiredMixin):
     model = CustomUser
     template_name='user_review/settings.html'
     fields = ["name", "twitter_url","github_url", "image"]
-    success_url ="/" 
+    # success_url ="settings" 
+    
+    def get_success_url(self):
+        return self.request.path
 
 
 
@@ -62,8 +65,6 @@ class IsFavoriteView(View,LoginRequiredMixin):
     def post(self, request,pk, *args, **kwargs):
         animation = Animation.objects.get(pk=pk)
         is_favourite = False
-        
-      
         
         
         if animation.favourites.filter(id=request.user.id).exists():

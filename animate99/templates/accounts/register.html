@@ -46,16 +46,18 @@
                 </div>
                 <div class="password">
                     <label for="password">Password</label>
-                    {{form.password1}}
+                    <input type="password" name="password1" id="password1" placeholder="Enter your password" />
+                    {% comment %} {{form.password1}} {% endcomment %}
                     {% comment %} <input type="password" name="password" id="password" placeholder="Enter password" /> {% endcomment %}
                 </div>
                 <div class="password">
                     <label for="password">Confirm Password</label>
-                    {{form.password2}}
+                    <input type="password" name="password2" id="password2" placeholder="Confirm Password" />
+                    {% comment %} {{form.password2}} {% endcomment %}
                     {% comment %} <input type="password" name="password" id="password" placeholder="Enter password" /> {% endcomment %}
                 </div>
                 <div class="button">
-                    <input type="submit" name="register_user" class="my_btn__login">
+                    <input style="background-color:#D0D6F2; border:none; color: #232946; font-family: 'Open Sans'; font-weight: bold; font-size: 1em; border-radius:0;" type="submit" name="register_user" class="my_btn__login">
                     {% comment %} <button class="btn btn__login">Register</button> {% endcomment %}
                     <small>Already have an account?
                         <span>

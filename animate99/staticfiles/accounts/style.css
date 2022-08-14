@@ -267,6 +267,8 @@ a {
     font-weight: bold;
 }
 
+
+
 @media (max-width: 950px) {
     .container {
         flex-direction: column;
