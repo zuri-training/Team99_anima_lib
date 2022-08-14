@@ -1,4 +1,5 @@
 # anima_lib_team99 :trophy:
+## [Live Link](https://animate-99.herokuapp.com/)
 ## Framework used: Django Monolith Fullstack Framework
 ## Staticfiles configured using Whitenoise
 ## Repo Folder Structure;
